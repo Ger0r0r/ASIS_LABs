@@ -1,0 +1,25 @@
+****************************************
+Report : report_utilization
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 20:26:24 2024
+****************************************
+Utilization Ratio:			0.1444
+Utilization options:
+ - Area calculation based on:		site_row of block img2_jtag_tap_wrap/route_auto
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				1795.3229
+Total Capacity Area:			1795.3229
+Total Area of cells:			259.2518
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+
+Utilization of site-rows with:
+ - Site 'gaunit':				0.1838
+ - Site 'unit':				0.1444
+
+0.1444

@@ -1,0 +1,115 @@
+****************************************
+Report : Violation analysis
+Design : img2_jtag_tap_wrap
+Block  : img2_jtag_tap_wrap.nlib:img2_jtag_tap_wrap/route_opt.design
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 12:53:15 2024
+****************************************
+
+  Detect 3 violating paths.
+      Worst: -0.018      Total: -0.038      Average: -0.013
+  2 violating paths are categorized.
+      Worst: -0.018      Total: -0.035      Average: -0.018
+  1 violating paths are uncategorized.
+      Worst: -0.003      Total: -0.003      Average: -0.003
+
+****** Summary of Path Analysis ******
+
+  ****** Setup timing categories ******
+  category                                                      Count      Worst      Total   Percentage
+  -----------------                                            -------    -------    -------    ----- 
+  * category  S1: Large clock skew(LCS)                              0
+  * category  S2: Large external input delay(LID)                    0
+  * category  S3: Large driver adjustment(LDA)                       0
+  * category  S4: Large clock uncertainty(LCU)                       0
+  * category  S5: Large setup time of end point(LLS)                 0
+  * category  S6: Large external output delay(LOD)                   2     -0.018     -0.035   93.34%
+  * category  S7: Delay setting is illegal(ID)                       0
+  * category  S8: Path ends up at scan in pin(SIP)                   0
+  * category  S9: Small violations(SM)                               1     -0.003     -0.003    6.66%
+  * category  S10: Remaining violating paths(OT)                     0
+
+  ****** Remaining violations distributed by slack ******
+
+  ****** Net analysis categories ******
+
+### Following metrics will be used for net based analysis. ###
+  * category  S1: Entire net is dont_touch(D)                        0
+  * category  S2: Net between pad cell and port(PAD)                 0
+  * category  S3: Tristate nets(TR)                                  0
+  * category  S4: Nets with multiple drivers(MD)                     0
+  * category  S5: Nets in read-only sub blocks(RO)                   0
+  * category  S6: Nets are highly blocked(BLK)                       0
+  * category  S7: Nets with port far from the core area(FP)          0
+  * category  S8: High fanout nets(> 1000)(HFR)                      0
+
+  ****** Clock network ******
+  * category  S9: Clock is used as clock only(COC)                   0
+  * category  S10: Clock is used as data path only(COD)              0
+  * category  S11: Clock is used as clock and data(CAD)              0
+  * category  S12: Clock is used as others(CO)                       0
+
+  ****** Remaining uncategorized fixable violations ******
+  * category  S13: Net is crossing high density area(DEN)            0
+  * category  S14: Net is partially blocked(PB)                      0
+  * category  S15: Connect to excluded cell of XMB(XME)              0
+  * category  S16: Connect to excluded cell of HMB(HME)              0
+  * category  S17: Nets across different exclusive MBs(DXM)          0
+  * category  S18: Nets across different hard MBs(DHM)               0
+  * category  S19: Some segments of net are dont_touch(PD)           0
+  * category  S20: Nets crossing different voltage areas(MV)         0
+  * category  S21: Nets are too short(TS)                            0
+  * category  S22: Nets are long(> 400.0um)(LN)                      0
+  * category  S23: Other violations(OV)                              0
+
+
+### Detailed analysis results ###
+
+***************************************************************************
+  # 1:EP-tdo_enable, -0.018,(LOD)
+  Startpoint: i_img2_jtag_tap_tdo_enable_reg/CPN
+  Endpoint: tdo_enable
+  Scenario: norm.tt0p8v85c.typical_CCworst
+  Path Group: REGOUT
+  Slack: -0.018,  Require Time: 0.611, Num of Nets: 3
+  Path analysis result: Large external output delay
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+  
+* category  S21: Nets are too short(TS)                        3 nets
+    tdo_enable
+    ZINV_18_0
+    n462
+
+***************************************************************************
+  # 2:EP-tdo, -0.018,(LOD)
+  Startpoint: i_img2_jtag_tap_tdo_reg/CPN
+  Endpoint: tdo
+  Scenario: norm.tt0p8v85c.typical_CCworst
+  Path Group: REGOUT
+  Slack: -0.018,  Require Time: 0.611, Num of Nets: 3
+  Path analysis result: Large external output delay
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+  
+* category  S21: Nets are too short(TS)                        3 nets
+    tdo
+    ZINV_18_1
+    n405
+
+***************************************************************************
+  # 3:EP-i_img2_jtag_tap_tdo_reg/D, -0.003,(SM)
+  Startpoint: dbg_dat_so[0]
+  Endpoint: i_img2_jtag_tap_tdo_reg/D
+  Scenario: norm.tt0p8v85c.typical_CCworst
+  Path Group: REGIN
+  Slack: -0.003,  Require Time: 0.517, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******

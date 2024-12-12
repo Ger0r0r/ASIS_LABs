@@ -1,0 +1,71 @@
+****************************************
+Report : power
+        -significant_digits 4
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 18:10:25 2024
+****************************************
+Information: Doing activity propagation for mode 'norm.tt0p8v85c.typical_CCworst' and corner 'norm.tt0p8v85c.typical_CCworst' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario norm.tt0p8v85c.typical_CCworst (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 1: expecting at least 5
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 2: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 3: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 4: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 5: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 6: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 7: expecting at least 7
+Mode: norm.tt0p8v85c.typical_CCworst
+Corner: norm.tt0p8v85c.typical_CCworst
+Scenario: norm.tt0p8v85c.typical_CCworst
+Voltage: 0.8000
+Temperature: 85.0000
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.0000 (default)
+VSS (ground) probability 1.0000 (default)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!7', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!8', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_RIGHTBWP16P90CPD!236', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_LEFTBWP16P90CPD!237', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!9', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!10', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_RIGHTBWP16P90CPD!238', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!11', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!12', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_LEFTBWP16P90CPD!239', mismatches in operating condition settings have been found in the design. (POW-039)
+Note - message 'POW-039' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = N/A ( N/A )
+  Net Switching Power    = N/A ( N/A )
+Total Dynamic Power      = N/A (  0.0%)
+
+Cell Leakage Power       = 2.1471e+03 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+memory                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+black_box                      N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+clock_network                  N/A                    N/A             1.5897e+03             1.5897e+03    ( 74.0%)      
+register                       N/A                    N/A             3.5472e+02             3.5472e+02    ( 16.5%)      
+sequential                     N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+combinational                  N/A                    N/A             2.0268e+02             2.0268e+02    (  9.4%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                          N/A                    N/A             2.1471e+03 nW          2.1471e+03 nW
+1

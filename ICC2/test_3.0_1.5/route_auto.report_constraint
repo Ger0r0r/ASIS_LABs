@@ -1,0 +1,69 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 18:42:33 2024
+****************************************
+
+
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   ZBUF_2303_1                0.0600         0.0674        -0.0074  (VIOLATED) 
+     PIN : U396/B1            0.0600         0.0674        -0.0074  (VIOLATED) 
+     PIN : U406/B1            0.0600         0.0674        -0.0074  (VIOLATED) 
+     PIN : U401/B1            0.0600         0.0673        -0.0073  (VIOLATED) 
+     PIN : U407/B1            0.0600         0.0673        -0.0073  (VIOLATED) 
+     PIN : U399/B1            0.0600         0.0672        -0.0072  (VIOLATED) 
+     PIN : U370/A2            0.0600         0.0672        -0.0072  (VIOLATED) 
+     PIN : U400/B1            0.0600         0.0672        -0.0072  (VIOLATED) 
+     PIN : U410/B1            0.0600         0.0671        -0.0071  (VIOLATED) 
+     PIN : U409/A2            0.0600         0.0671        -0.0071  (VIOLATED) 
+     PIN : U402/A2            0.0600         0.0670        -0.0070  (VIOLATED) 
+     PIN : U397/B1            0.0600         0.0670        -0.0070  (VIOLATED) 
+     PIN : U398/B1            0.0600         0.0668        -0.0068  (VIOLATED) 
+     PIN : U403/B1            0.0600         0.0668        -0.0068  (VIOLATED) 
+     PIN : U371/B1            0.0600         0.0667        -0.0067  (VIOLATED) 
+     PIN : U405/B1            0.0600         0.0667        -0.0067  (VIOLATED) 
+     PIN : U372/B1            0.0600         0.0667        -0.0067  (VIOLATED) 
+     PIN : U408/B1            0.0600         0.0667        -0.0067  (VIOLATED) 
+     PIN : U404/B1            0.0600         0.0666        -0.0066  (VIOLATED) 
+     PIN : U377/A2            0.0600         0.0655        -0.0055  (VIOLATED) 
+     PIN : U411/B1            0.0600         0.0653        -0.0053  (VIOLATED) 
+     PIN : U378/A2            0.0600         0.0653        -0.0053  (VIOLATED) 
+     PIN : U373/A2            0.0600         0.0653        -0.0053  (VIOLATED) 
+     PIN : U380/B1            0.0600         0.0637        -0.0037  (VIOLATED) 
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_67_/D   0.0600   0.0635  -0.0035 (VIOLATED)
+     PIN : U379/A2            0.0600         0.0632        -0.0032  (VIOLATED) 
+     PIN : U381/B1            0.0600         0.0628        -0.0028  (VIOLATED) 
+     PIN : U382/A2            0.0600         0.0616        -0.0016  (VIOLATED) 
+     PIN : U415/A2            0.0600         0.0616        -0.0016  (VIOLATED) 
+     PIN : U413/A2            0.0600         0.0607        -0.0007  (VIOLATED) 
+     PIN : U412/B1            0.0600         0.0604        -0.0004  (VIOLATED) 
+
+   dbg_datf_sh[0]             0.0300         0.0312        -0.0012  (VIOLATED) 
+     PORT: dbg_datf_sh[0]     0.0300         0.0312        -0.0012  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 2
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n183                       0.0170         0.0028         0.0142  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 2
+1

@@ -1,0 +1,141 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+****************************************
+Report : clock qor
+        -type local_skew
+        -nosplit
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 18:29:47 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+===========================================================================
+==== Local Skew Reporting for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ====
+===========================================================================
+
+=========================== Summary Table for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ===========================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ffgnp0p88vm40c.rcbest_CCbest, Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+clock                                   M,D       139    0.0000    0.0000           440          --      0.0000
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139    0.0000    0.0000                        --      0.0000
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+================================== Details Table for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ==================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ffgnp0p88vm40c.rcbest_CCbest, Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+clock
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+
+
+=============================================================================
+==== Local Skew Reporting for Corner norm.ssgnp0p72v125c.rcworst_CCworst ====
+=============================================================================
+
+========================== Summary Table for Corner norm.ssgnp0p72v125c.rcworst_CCworst ==========================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ssgnp0p72v125c.rcworst_CCworst, Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+clock                                   M,D       139    0.0000    0.0000           440          --      0.0000
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139    0.0000    0.0000                        --      0.0000
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+================================= Details Table for Corner norm.ssgnp0p72v125c.rcworst_CCworst =================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ssgnp0p72v125c.rcworst_CCworst, Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+clock
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+
+
+========================================================================
+==== Local Skew Reporting for Corner norm.tt0p8v85c.typical_CCworst ====
+========================================================================
+
+============================ Summary Table for Corner norm.tt0p8v85c.typical_CCworst =============================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: norm.tt0p8v85c.typical_CCworst, Scenario: norm.tt0p8v85c.typical_CCworst
+clock                                   M,D       139    0.0000    0.0000           440      0.0000      0.0000
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139    0.0000    0.0000                    0.0000      0.0000
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+=================================== Details Table for Corner norm.tt0p8v85c.typical_CCworst ====================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.tt0p8v85c.typical_CCworst, Scenario: norm.tt0p8v85c.typical_CCworst
+clock
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   L   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   L   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   S   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   S   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) L   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+                               (H) S   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CP i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP    0.0000 r    0.0000 r        --        --    0.0000
+
+
+1

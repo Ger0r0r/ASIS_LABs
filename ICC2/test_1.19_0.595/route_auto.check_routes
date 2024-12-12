@@ -1,0 +1,635 @@
+Two layer enclosure iso-dense via enclosure rule is defined.
+Found antenna rule mode 1, diode mode 1:
+	layer M1: , diode ratio {0 0 1 0 0} 
+	layer M2: , diode ratio {0 0 1 0 0} 
+	layer M3: , diode ratio {0 0 1 0 0} 
+	layer M4: , diode ratio {0 0 1 0 0} 
+	layer M5: , diode ratio {0 0 1 0 0} 
+	layer M6: , diode ratio {0 0 1 0 0} 
+	layer M7: , diode ratio {0 0 1 0 0} 
+	layer M8: , diode ratio {0 0 1 0 0} 
+	layer M9: , diode ratio {0 0 1 0 0} 
+	layer M10: , diode ratio {0 0 1 0 0} 
+	layer M11: , diode ratio {0 0 1 0 0} 
+	layer M12: , diode ratio {0 0 1 0 0} 
+	layer AP: , diode ratio {0 0 1 0 0} 
+	layer VIA0: , diode ratio {0 0 1 0 0} 
+	layer VIA1:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA2:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA3:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA4:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA5:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA6:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA7:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA8:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA9:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA10:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer VIA11:  max ratio 20, diode ratio {0 0 1 0 0} 
+	layer RV:  max ratio 20, diode ratio {0 0 1 0 0} 
+Found antenna rule mode 2, diode mode 16:
+	layer M1:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M2:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M3:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M4:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M5:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M6:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M7:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M8:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M9:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M10:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M11:  max ratio 5000 metal scale 1, diode ratio {0 0 0 5000 0 0.03 0.5 7.6} 
+	layer M12:  max ratio 5000 metal scale 1, diode ratio {0 0 8000 50000 0 0 0 0} 
+	layer AP:  max ratio 10000 metal scale 1, diode ratio {0 0 0 10000 0 0 0 0} 
+	layer VIA0: , diode ratio {0 0 1 0 0} 
+	layer VIA1:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA2:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA3:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA4:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA5:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA6:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA7:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA8:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA9:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA10:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer VIA11:  max ratio 10000 cut scale 1, diode ratio {0 0 0 50 0 0.03 5 17} 
+	layer RV:  max ratio 200 cut scale 1, diode ratio {0 0 83 400 0 0 0 0} 
+Found antenna rule mode 5, diode mode 4:
+	layer M1:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M2:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M3:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M4:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M5:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M6:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M7:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M8:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M9:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M10:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M11:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer M12:  metal scale 1, diode ratio {0 0 1 0 0} 
+	layer AP:  max ratio 2000 metal scale 1, diode ratio {0 0 8000 30000} 
+	layer VIA0: , diode ratio {0 0 1 0 0} 
+	layer VIA1:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA2:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA3:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA4:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA5:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA6:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA7:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA8:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA9:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA10:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer VIA11:  cut scale 1, diode ratio {0 0 1 0 0} 
+	layer RV:  cut scale 1, diode ratio {0 0 1 0 0} 
+Cell Min-Routing-Layer = M2
+Cell Max-Routing-Layer = M10
+Skipping 3 internal pins that are not physical. Set route.common.verbose_level to > 0 and run routing command to get skipped pin names.
+Info: number of net_type_blockage: 110 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.064 may be too small: wire/via-down 0.100, wire/via-up 0.064. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.080 may be too small: wire/via-down 0.080, wire/via-up 0.120. (ZRT-026)
+Via on layer (VIA10) needs more than one tracks
+Warning: Layer M10 pitch 0.126 may be too small: wire/via-down 0.126, wire/via-up 0.320. (ZRT-026)
+Via on layer (RV) needs more than one tracks
+Warning: Layer M12 pitch 0.900 may be too small: wire/via-down 0.900, wire/via-up 2.475. (ZRT-026)
+Via on layer (RV) needs more than one tracks
+Warning: Layer AP pitch 3.600 may be too small: wire/via-down 4.500, wire/via-up 3.600. (ZRT-026)
+Transition layer name: M8(7)
+8 masters (8 pins) have donut holes
+
+
+Start checking for open nets ... 
+
+Total number of nets = 573, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 573 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used  182  Alloctr  183  Proc 6071 
+Printing options for 'route.common.*'
+common.concurrent_redundant_via_effort_level            :	 low                 
+common.concurrent_redundant_via_mode                    :	 off                 
+common.connect_within_pins_by_layer_name                :	 {M1 via_wire_standard_cell_pins}
+common.extra_nonpreferred_direction_wire_cost_multiplier_by_layer_name:	 {M4 3} {M5 3} {M6 3} {M7 3} {M8 3}
+common.global_max_layer_mode                            :	 allow_pin_connection
+common.global_min_layer_mode                            :	 allow_pin_connection
+common.interactive_mode_clear_timing                    :	 true                
+common.net_max_layer_mode                               :	 allow_pin_connection
+common.net_min_layer_mode                               :	 soft                
+common.post_detail_route_redundant_via_insertion        :	 off                 
+common.verbose_level                                    :	 0                   
+common.via_array_mode                                   :	 rotate              
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.antenna_fixing_preference                        :	 hop_layers          
+detail.antenna_on_iteration                             :	 1                   
+detail.antenna_verbose_level                            :	 1                   
+detail.check_antenna_on_pg                              :	 false               
+detail.check_port_min_area_min_length                   :	 false               
+detail.detail_route_special_design_rule_fixing_stage    :	 early_routing       
+detail.eco_route_special_design_rule_fixing_stage       :	 early_routing       
+detail.force_end_on_preferred_grid                      :	 true                
+detail.group_route_special_design_rule_fixing_stage     :	 early_routing       
+detail.hop_layers_to_fix_antenna                        :	 true                
+detail.incremental_detail_route_special_design_rule_fixing_stage:	 early_routing       
+detail.timing_driven                                    :	 true                
+detail.use_default_width_for_min_area_min_len_stub      :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+*****Start reporting antenna related parameters*****
+  Antenna/diode mode:
+    Antenna mode 1; diode mode 1
+      Metal lay (M1)0; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA1)1; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M2)1; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA2)2; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M3)2; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA3)3; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M4)3; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA4)4; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M5)4; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA5)5; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M6)5; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA6)6; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M7)6; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA7)7; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M8)7; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA8)8; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M9)8; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA9)9; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M10)9; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA10)10; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M11)10; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (VIA11)11; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (M12)11; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Cut lay (RV)12; maxRatio 20.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+      Metal lay (AP)12; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000)
+    Antenna mode 2; diode mode 16
+      Metal lay (M1)0; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA1)1; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M2)1; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA2)2; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M3)2; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA3)3; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M4)3; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA4)4; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M5)4; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA5)5; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M6)5; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA6)6; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M7)6; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA7)7; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M8)7; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA8)8; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M9)8; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA9)9; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M10)9; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA10)10; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M11)10; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 5000.000 0.000 0.030 0.500 7.600); protectedMetalScale 1.000
+      Cut lay (VIA11)11; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 50.000 0.000 0.030 5.000 17.000); protectedCutScale 1.000
+      Metal lay (M12)11; maxRatio 5000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 8000.000 50000.000 0.000 0.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (RV)12; maxRatio 200.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 83.000 400.000 0.000 0.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (AP)12; maxRatio 10000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 0.000 10000.000 0.000 0.000 0.000 0.000); protectedMetalScale 1.000
+    Antenna mode 5; diode mode 4
+      Metal lay (M1)0; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA1)1; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M2)1; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA2)2; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M3)2; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA3)3; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M4)3; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA4)4; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M5)4; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA5)5; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M6)5; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA6)6; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M7)6; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA7)7; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M8)7; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA8)8; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M9)8; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA9)9; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M10)9; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA10)10; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M11)10; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (VIA11)11; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (M12)11; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedMetalScale 1.000
+      Cut lay (RV)12; maxRatio 2147483648.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 1.000 0.000 0.000); protectedCutScale 1.000
+      Metal lay (AP)12; maxRatio 2000.000 maxPRatio 2147483648.000 maxNRatio 2147483648.000; vector (0.000 0.000 8000.000 30000.000 0.000); protectedMetalScale 1.000
+  Top lay antenna ratio fix threshold == -1
+  Antenna max pin count threshold == -1
+  Check PG net == false
+  MergeGate == true
+  Break antenna to port mode == float
+  Break antenna to macro pin mode == normal
+*****End reporting antenna related parameters*****
+Warning: Skipping antenna analysis for net tck. The pin tck on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net trstn. The pin trstn on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net tms. The pin tms on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net dbg_dat_so[0]. The pin dbg_dat_so[0] on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net dbg_datf_so[0]. The pin dbg_datf_so[0] on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net dbg_datm_so[0]. The pin dbg_datm_so[0] on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net dbg_attn_flags[0]. The pin dbg_attn_flags[0] on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net dbg_rstatn[0]. The pin dbg_rstatn[0] on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net dbg_ext_stat[0]. The pin dbg_ext_stat[0] on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Warning: Skipping antenna analysis for net tdi. The pin tdi on cell img2_jtag_tap_wrap does not have enough gate area information. (ZRT-311)
+Skipping antenna analysis for 10 nets as they don't have enough gate area info.
+
+Begin full DRC check ...
+
+Information: Using 4 threads for routing. (ZRT-444)
+Checked	1/2 Partitions, Violations =	0
+Checked	2/2 Partitions, Violations =	0
+
+Check local double pattern cycle DRC:
+Checked	1/2 Partitions, Violations =	0
+Checked	2/2 Partitions, Violations =	0
+[DRC CHECK] Elapsed real time: 0:00:01 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used  550  Alloctr  552  Proc 6071 
+Start net based rule analysis
+Found 0 antenna instance ports
+End net based rule analysis
+[Antenna analysis] Elapsed real time: 0:00:00 
+[Antenna analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Antenna analysis] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Antenna analysis] Total (MB): Used  551  Alloctr  552  Proc 6071 
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+
+Total Wire Length =                    3259 micron
+Total Number of Contacts =             5416
+Total Number of Wires =                3911
+Total Number of PtConns =              2026
+Total Number of Routed Wires =       3911
+Total Routed Wire Length =           3064 micron
+Total Number of Routed Contacts =       5416
+	Layer                     M1 :          0 micron
+	Layer                     M2 :        729 micron
+	Layer                     M3 :       1160 micron
+	Layer                     M4 :        679 micron
+	Layer                     M5 :         96 micron
+	Layer                     M6 :         86 micron
+	Layer                     M7 :        213 micron
+	Layer                     M8 :        194 micron
+	Layer                     M9 :         63 micron
+	Layer                    M10 :         39 micron
+	Layer                    M11 :          0 micron
+	Layer                    M12 :          0 micron
+	Layer                     AP :          0 micron
+	Via              VIA910_1cut :          3
+	Via        VIA910_FBDS27_1x2 :         12
+	Via               VIA89_1cut :          3
+	Via         VIA89_FBDS27_2x1 :         15
+	Via    VIA89_FBDS27(rot)_1x2 :          2
+	Via               VIA78_1cut :         24
+	Via            VIA78_1cut_W3 :          1
+	Via           VIA78_1cut_W3A :          1
+	Via            VIA78_1cut_W4 :          1
+	Via             VIA78_LONG_H :        107
+	Via             VIA78_LONG_V :          1
+	Via              VIA78_FBR20 :         33
+	Via         VIA78_FBR20(rot) :         21
+	Via             VIA78_PBR10B :          6
+	Via             VIA78_PBR20B :          5
+	Via              VIA78_FBS10 :          2
+	Via             VIA78_PBS10B :          2
+	Via    VIA78_FBDS10(rot)_2x1 :          2
+	Via               VIA67_1cut :         39
+	Via           VIA67_1cut_W4A :          1
+	Via             VIA67_LONG_H :         10
+	Via             VIA67_LONG_V :          7
+	Via              VIA67_FBR20 :         62
+	Via         VIA67_FBR20(rot) :          8
+	Via             VIA67_PBR10B :         12
+	Via              VIA67_PBR20 :          5
+	Via             VIA67_PBR20B :          2
+	Via              VIA67_FBS10 :          4
+	Via             VIA67_PBS10B :          5
+	Via           VIA67_1cut_FAT :          3
+	Via   VIA67_PBDS40B(rot)_1x2 :          3
+	Via    VIA67_FBDS10(rot)_1x2 :          9
+	Via               VIA56_1cut :         48
+	Via             VIA56_LONG_V :         13
+	Via              VIA56_FBR20 :         43
+	Via         VIA56_FBR20(rot) :         24
+	Via             VIA56_PBR10B :         13
+	Via              VIA56_PBR20 :         17
+	Via             VIA56_PBR20B :          6
+	Via              VIA56_FBS10 :         11
+	Via             VIA56_PBS10U :          1
+	Via             VIA56_PBS10B :          8
+	Via           VIA56_1cut_FAT :         10
+	Via         VIA56_FBDS10_1x2 :          4
+	Via        VIA56_PBDS40B_1x2 :          1
+	Via               VIA45_1cut :         51
+	Via             VIA45_LONG_H :         13
+	Via              VIA45_FBR20 :         39
+	Via         VIA45_FBR20(rot) :         23
+	Via             VIA45_PBR10B :         17
+	Via              VIA45_PBR20 :         21
+	Via             VIA45_PBR20B :         10
+	Via              VIA45_FBS10 :         10
+	Via             VIA45_PBS10U :          4
+	Via             VIA45_PBS10B :         11
+	Via           VIA45_1cut_FAT :         28
+	Via               VIA34_1cut :         67
+	Via             VIA34_LONG_H :          2
+	Via        VIA34_LONG_H(rot) :          5
+	Via             VIA34_LONG_V :          4
+	Via        VIA34_LONG_V(rot) :          2
+	Via             VIA34_FBR25B :        445
+	Via              VIA34_FBR14 :         28
+	Via              VIA34_PBR3B :        130
+	Via         VIA34_PBR3B(rot) :         16
+	Via              VIA34_FBS14 :         56
+	Via               VIA34_FBS4 :         83
+	Via           VIA34_1cut_FAT :         61
+	Via    VIA34_FBDS14(rot)_2x1 :          1
+	Via           VIA23_1cut_W3C :          3
+	Via      VIA23_1cut_W3C(rot) :          6
+	Via           VIA23_1cut_WA7 :          3
+	Via           VIA23_1cut_WAD :          2
+	Via      VIA23_1cut_WAF(rot) :          1
+	Via               VIA23_1cut :        107
+	Via            VIA23_1cut_VV :          1
+	Via       VIA23_1cut_VV(rot) :          1
+	Via           VIA23_1cut_W3B :         13
+	Via             VIA23_LONG_H :         26
+	Via             VIA23_LONG_V :          3
+	Via        VIA23_LONG_V(rot) :          2
+	Via            VIA23_LONG_HH :          1
+	Via       VIA23_LONG_HH(rot) :          4
+	Via         VIA23_LONG_EN7HH :          1
+	Via               VIA23_FBR7 :         21
+	Via          VIA23_FBR7(rot) :         14
+	Via              VIA23_FBR16 :        233
+	Via         VIA23_FBR16(rot) :         78
+	Via              VIA23_PBR7U :        177
+	Via         VIA23_PBR7U(rot) :          6
+	Via               VIA23_FBS3 :        107
+	Via          VIA23_FBS3(rot) :          6
+	Via              VIA23_FBS16 :          2
+	Via         VIA23_FBS16(rot) :         15
+	Via              VIA23_PBS3B :          1
+	Via         VIA23_PBS3B(rot) :          1
+	Via           VIA23_1cut_FAT :        377
+	Via        VIA23_PBDS25B_2x1 :          3
+	Via   VIA23_PBDS25B(rot)_1x2 :          3
+	Via        VIA23_FBDS25B_2x1 :         18
+	Via   VIA23_FBDS25B(rot)_1x2 :         57
+	Via         VIA23_FBDS3B_2x1 :        492
+	Via    VIA23_FBDS3B(rot)_1x2 :        322
+	Via           VIA12_1cut_W1A :          1
+	Via      VIA12_1cut_W1A(rot) :        217
+	Via      VIA12_1cut_W1B(rot) :          3
+	Via           VIA12_1cut_W1C :          1
+	Via           VIA12_1cut_WA9 :          1
+	Via           VIA12_1cut_WAC :          2
+	Via      VIA12_1cut_WAC(rot) :          3
+	Via           VIA12_1cut_WAD :          2
+	Via               VIA12_1cut :        334
+	Via            VIA12_1cut_VV :          2
+	Via       VIA12_1cut_VV(rot) :         29
+	Via            VIA12_1cut_W1 :          3
+	Via           VIA12_1cut_W3B :         18
+	Via             VIA12_LONG_H :          6
+	Via        VIA12_LONG_H(rot) :          3
+	Via             VIA12_LONG_V :          3
+	Via        VIA12_LONG_V(rot) :          1
+	Via          VIA12_LONG_EN7V :          1
+	Via            VIA12_LONG_HH :         11
+	Via               VIA12_FBR7 :          6
+	Via          VIA12_FBR7(rot) :         89
+	Via              VIA12_FBR16 :          2
+	Via         VIA12_FBR16(rot) :          7
+	Via              VIA12_PBR7U :         25
+	Via         VIA12_PBR7U(rot) :        182
+	Via               VIA12_FBS3 :         76
+	Via          VIA12_FBS3(rot) :          1
+	Via              VIA12_FBS16 :          1
+	Via         VIA12_FBS16(rot) :          3
+	Via              VIA12_PBS3B :        280
+	Via           VIA12_1cut_FAT :        243
+	Via         VIA12_FBDS3B_2x1 :         11
+	Via    VIA12_FBDS3B(rot)_1x2 :          5
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 77.51% (4198 / 5416 vias)
+ 
+    Layer VIA1       = 59.22% (931    / 1572    vias)
+        Weight 10    =  1.02% (16      vias)
+        Weight 7     =  0.57% (9       vias)
+        Weight 6     =  6.04% (95      vias)
+        Weight 5     = 13.17% (207     vias)
+        Weight 4     =  0.25% (4       vias)
+        Weight 3     =  4.90% (77      vias)
+        Weight 2     = 17.81% (280     vias)
+        Weight 1     = 15.46% (243     vias)
+        Un-optimized = 24.81% (390     vias)
+        Un-mapped    = 15.97% (251     vias)
+    Layer VIA2       = 91.74% (1933   / 2107    vias)
+        Weight 10    = 38.63% (814     vias)
+        Weight 9     =  3.56% (75      vias)
+        Weight 8     =  0.28% (6       vias)
+        Weight 7     = 14.76% (311     vias)
+        Weight 6     =  1.66% (35      vias)
+        Weight 5     =  8.69% (183     vias)
+        Weight 4     =  0.81% (17      vias)
+        Weight 3     =  5.36% (113     vias)
+        Weight 2     =  0.09% (2       vias)
+        Weight 1     = 17.89% (377     vias)
+        Un-optimized =  7.07% (149     vias)
+        Un-mapped    =  1.19% (25      vias)
+    Layer VIA3       = 91.11% (820    / 900     vias)
+        Weight 10    =  0.11% (1       vias)
+        Weight 8     = 49.44% (445     vias)
+        Weight 7     =  3.11% (28      vias)
+        Weight 6     = 16.22% (146     vias)
+        Weight 4     =  6.22% (56      vias)
+        Weight 3     =  9.22% (83      vias)
+        Weight 2     =  6.78% (61      vias)
+        Un-optimized =  7.44% (67      vias)
+        Un-mapped    =  1.44% (13      vias)
+    Layer VIA4       = 71.81% (163    / 227     vias)
+        Weight 8     = 27.31% (62      vias)
+        Weight 7     =  4.41% (10      vias)
+        Weight 6     =  7.49% (17      vias)
+        Weight 5     =  9.25% (21      vias)
+        Weight 4     =  4.41% (10      vias)
+        Weight 3     =  1.76% (4       vias)
+        Weight 2     =  4.85% (11      vias)
+        Weight 1     = 12.33% (28      vias)
+        Un-optimized = 22.47% (51      vias)
+        Un-mapped    =  5.73% (13      vias)
+    Layer VIA5       = 69.35% (138    / 199     vias)
+        Weight 10    =  2.01% (4       vias)
+        Weight 9     =  0.50% (1       vias)
+        Weight 8     = 33.67% (67      vias)
+        Weight 7     =  3.02% (6       vias)
+        Weight 6     =  6.53% (13      vias)
+        Weight 5     =  8.54% (17      vias)
+        Weight 4     =  5.53% (11      vias)
+        Weight 3     =  0.50% (1       vias)
+        Weight 2     =  4.02% (8       vias)
+        Weight 1     =  5.03% (10      vias)
+        Un-optimized = 24.12% (48      vias)
+        Un-mapped    =  6.53% (13      vias)
+    Layer VIA6       = 66.47% (113    / 170     vias)
+        Weight 10    =  5.29% (9       vias)
+        Weight 9     =  1.76% (3       vias)
+        Weight 8     = 41.18% (70      vias)
+        Weight 7     =  1.18% (2       vias)
+        Weight 6     =  7.06% (12      vias)
+        Weight 5     =  2.94% (5       vias)
+        Weight 4     =  2.35% (4       vias)
+        Weight 2     =  2.94% (5       vias)
+        Weight 1     =  1.76% (3       vias)
+        Un-optimized = 22.94% (39      vias)
+        Un-mapped    = 10.59% (18      vias)
+    Layer VIA7       = 34.47% (71     / 206     vias)
+        Weight 8     = 26.21% (54      vias)
+        Weight 7     =  2.43% (5       vias)
+        Weight 6     =  2.91% (6       vias)
+        Weight 4     =  0.97% (2       vias)
+        Weight 2     =  0.97% (2       vias)
+        Weight 1     =  0.97% (2       vias)
+        Un-optimized = 12.62% (26      vias)
+        Un-mapped    = 52.91% (109     vias)
+    Layer VIA8       = 85.00% (17     / 20      vias)
+        Weight 10    = 85.00% (17      vias)
+        Un-optimized = 15.00% (3       vias)
+        Un-mapped    =  0.00% (0       vias)
+    Layer VIA9       = 80.00% (12     / 15      vias)
+        Weight 10    = 80.00% (12      vias)
+        Un-optimized = 20.00% (3       vias)
+        Un-mapped    =  0.00% (0       vias)
+ 
+  Total double via conversion rate    = 17.73% (960 / 5416 vias)
+ 
+    Layer VIA1       =  1.02% (16     / 1572    vias)
+    Layer VIA2       = 42.48% (895    / 2107    vias)
+    Layer VIA3       =  0.11% (1      / 900     vias)
+    Layer VIA4       =  0.00% (0      / 227     vias)
+    Layer VIA5       =  2.51% (5      / 199     vias)
+    Layer VIA6       =  7.06% (12     / 170     vias)
+    Layer VIA7       =  0.97% (2      / 206     vias)
+    Layer VIA8       = 85.00% (17     / 20      vias)
+    Layer VIA9       = 80.00% (12     / 15      vias)
+ 
+  The optimized via conversion rate based on total routed via count = 77.51% (4198 / 5416 vias)
+ 
+    Layer VIA1       = 59.22% (931    / 1572    vias)
+        Weight 10    =  1.02% (16      vias)
+        Weight 7     =  0.57% (9       vias)
+        Weight 6     =  6.04% (95      vias)
+        Weight 5     = 13.17% (207     vias)
+        Weight 4     =  0.25% (4       vias)
+        Weight 3     =  4.90% (77      vias)
+        Weight 2     = 17.81% (280     vias)
+        Weight 1     = 15.46% (243     vias)
+        Un-optimized = 24.81% (390     vias)
+        Un-mapped    = 15.97% (251     vias)
+    Layer VIA2       = 91.74% (1933   / 2107    vias)
+        Weight 10    = 38.63% (814     vias)
+        Weight 9     =  3.56% (75      vias)
+        Weight 8     =  0.28% (6       vias)
+        Weight 7     = 14.76% (311     vias)
+        Weight 6     =  1.66% (35      vias)
+        Weight 5     =  8.69% (183     vias)
+        Weight 4     =  0.81% (17      vias)
+        Weight 3     =  5.36% (113     vias)
+        Weight 2     =  0.09% (2       vias)
+        Weight 1     = 17.89% (377     vias)
+        Un-optimized =  7.07% (149     vias)
+        Un-mapped    =  1.19% (25      vias)
+    Layer VIA3       = 91.11% (820    / 900     vias)
+        Weight 10    =  0.11% (1       vias)
+        Weight 8     = 49.44% (445     vias)
+        Weight 7     =  3.11% (28      vias)
+        Weight 6     = 16.22% (146     vias)
+        Weight 4     =  6.22% (56      vias)
+        Weight 3     =  9.22% (83      vias)
+        Weight 2     =  6.78% (61      vias)
+        Un-optimized =  7.44% (67      vias)
+        Un-mapped    =  1.44% (13      vias)
+    Layer VIA4       = 71.81% (163    / 227     vias)
+        Weight 8     = 27.31% (62      vias)
+        Weight 7     =  4.41% (10      vias)
+        Weight 6     =  7.49% (17      vias)
+        Weight 5     =  9.25% (21      vias)
+        Weight 4     =  4.41% (10      vias)
+        Weight 3     =  1.76% (4       vias)
+        Weight 2     =  4.85% (11      vias)
+        Weight 1     = 12.33% (28      vias)
+        Un-optimized = 22.47% (51      vias)
+        Un-mapped    =  5.73% (13      vias)
+    Layer VIA5       = 69.35% (138    / 199     vias)
+        Weight 10    =  2.01% (4       vias)
+        Weight 9     =  0.50% (1       vias)
+        Weight 8     = 33.67% (67      vias)
+        Weight 7     =  3.02% (6       vias)
+        Weight 6     =  6.53% (13      vias)
+        Weight 5     =  8.54% (17      vias)
+        Weight 4     =  5.53% (11      vias)
+        Weight 3     =  0.50% (1       vias)
+        Weight 2     =  4.02% (8       vias)
+        Weight 1     =  5.03% (10      vias)
+        Un-optimized = 24.12% (48      vias)
+        Un-mapped    =  6.53% (13      vias)
+    Layer VIA6       = 66.47% (113    / 170     vias)
+        Weight 10    =  5.29% (9       vias)
+        Weight 9     =  1.76% (3       vias)
+        Weight 8     = 41.18% (70      vias)
+        Weight 7     =  1.18% (2       vias)
+        Weight 6     =  7.06% (12      vias)
+        Weight 5     =  2.94% (5       vias)
+        Weight 4     =  2.35% (4       vias)
+        Weight 2     =  2.94% (5       vias)
+        Weight 1     =  1.76% (3       vias)
+        Un-optimized = 22.94% (39      vias)
+        Un-mapped    = 10.59% (18      vias)
+    Layer VIA7       = 34.47% (71     / 206     vias)
+        Weight 8     = 26.21% (54      vias)
+        Weight 7     =  2.43% (5       vias)
+        Weight 6     =  2.91% (6       vias)
+        Weight 4     =  0.97% (2       vias)
+        Weight 2     =  0.97% (2       vias)
+        Weight 1     =  0.97% (2       vias)
+        Un-optimized = 12.62% (26      vias)
+        Un-mapped    = 52.91% (109     vias)
+    Layer VIA8       = 85.00% (17     / 20      vias)
+        Weight 10    = 85.00% (17      vias)
+        Un-optimized = 15.00% (3       vias)
+        Un-mapped    =  0.00% (0       vias)
+    Layer VIA9       = 80.00% (12     / 15      vias)
+        Weight 10    = 80.00% (12      vias)
+        Un-optimized = 20.00% (3       vias)
+        Un-mapped    =  0.00% (0       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 573, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = 0
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+

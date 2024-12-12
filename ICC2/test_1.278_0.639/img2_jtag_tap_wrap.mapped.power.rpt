@@ -1,0 +1,160 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : img2_jtag_tap_wrap
+Scenario(s): norm.tt0p8v85c.typical_CCworst
+Version: P-2019.03-SP4
+Date   : Tue Nov 12 19:26:44 2024
+****************************************
+
+
+Library(s) Used:
+
+    tcbn16ffplusglbwp16p90cpdtt0p8v85c (File: /auto/da/project/16/selenga/lib/sc/syn/tt0p8v85c/tcbn16ffplusglbwp16p90cpdtt0p8v85c.db)
+    tcbn16ffplusglbwp16p90cpdlvttt0p8v85c (File: /auto/da/project/16/selenga/lib/sc/syn/tt0p8v85c/tcbn16ffplusglbwp16p90cpdlvttt0p8v85c.db)
+    tcbn16ffplusglbwp16p90cpdulvttt0p8v85c (File: /auto/da/project/16/selenga/lib/sc/syn/tt0p8v85c/tcbn16ffplusglbwp16p90cpdulvttt0p8v85c.db)
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+Information: Correlated power is not available. (PWR-761)
+Power Breakdown
+---------------
+
+                             Cell        Driven Net  Tot Dynamic      Cell
+                             Internal    Switching   Power (mW)       Leakage
+Cell                         Power (mW)  Power (mW)  (% Cell/Tot)     Power (nW)
+--------------------------------------------------------------------------------
+Netlist Power                   0.0976      0.0249   1.225e-01 (80%)  6.114e+03
+Estimated Clock Tree Power   N/A         N/A          (N/A)           N/A
+--------------------------------------------------------------------------------
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  9.0550e-03        7.8093e-03        1.5896e+03        1.8454e-02  (  14.35%)
+register       8.6179e-02        7.7237e-04        1.5687e+03        8.8520e-02  (  68.85%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.3348e-03        1.6304e-02        2.9554e+03        2.1594e-02  (  16.80%)
+--------------------------------------------------------------------------------------------------
+Total          9.7568e-02 mW     2.4886e-02 mW     6.1137e+03 nW         0.1286 mW
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : img2_jtag_tap_wrap
+Scenario(s): norm.ffgnp0p88vm40c.rcbest_CCbest
+Version: P-2019.03-SP4
+Date   : Tue Nov 12 19:26:44 2024
+****************************************
+
+
+Library(s) Used:
+
+    tcbn16ffplusglbwp16p90cpdffgnp0p88vm40c (File: /auto/da/project/16/selenga/lib/sc/syn/ffgnp0p88vm40c/tcbn16ffplusglbwp16p90cpdffgnp0p88vm40c.db)
+    tcbn16ffplusglbwp16p90cpdlvtffgnp0p88vm40c (File: /auto/da/project/16/selenga/lib/sc/syn/ffgnp0p88vm40c/tcbn16ffplusglbwp16p90cpdlvtffgnp0p88vm40c.db)
+    tcbn16ffplusglbwp16p90cpdulvtffgnp0p88vm40c (File: /auto/da/project/16/selenga/lib/sc/syn/ffgnp0p88vm40c/tcbn16ffplusglbwp16p90cpdulvtffgnp0p88vm40c.db)
+
+
+Global Operating Voltage = 0.88 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+Information: Correlated power is not available. (PWR-761)
+Power Breakdown
+---------------
+
+                             Cell        Driven Net  Tot Dynamic      Cell
+                             Internal    Switching   Power (mW)       Leakage
+Cell                         Power (mW)  Power (mW)  (% Cell/Tot)     Power (nW)
+--------------------------------------------------------------------------------
+Netlist Power                   0.1167      0.0299      0.1467 (80%)   336.4287
+Estimated Clock Tree Power   N/A         N/A          (N/A)           N/A
+--------------------------------------------------------------------------------
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  1.1892e-02        9.3533e-03           85.7365        2.1331e-02  (  14.51%)
+register           0.1021        9.2908e-04           67.9768            0.1031  (  70.13%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.7588e-03        1.9644e-02          182.7049        2.2585e-02  (  15.36%)
+--------------------------------------------------------------------------------------------------
+Total              0.1167 mW     2.9926e-02 mW       336.4182 nW         0.1470 mW
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : img2_jtag_tap_wrap
+Scenario(s): norm.ssgnp0p72v125c.rcworst_CCworst
+Version: P-2019.03-SP4
+Date   : Tue Nov 12 19:26:44 2024
+****************************************
+
+
+Library(s) Used:
+
+    tcbn16ffplusglbwp16p90cpdssgnp0p72v125c (File: /auto/da/project/16/selenga/lib/sc/syn/ssgnp0p72v125c/tcbn16ffplusglbwp16p90cpdssgnp0p72v125c.db)
+    tcbn16ffplusglbwp16p90cpdlvtssgnp0p72v125c (File: /auto/da/project/16/selenga/lib/sc/syn/ssgnp0p72v125c/tcbn16ffplusglbwp16p90cpdlvtssgnp0p72v125c.db)
+    tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c (File: /auto/da/project/16/selenga/lib/sc/syn/ssgnp0p72v125c/tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c.db)
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+Information: Correlated power is not available. (PWR-761)
+Power Breakdown
+---------------
+
+                             Cell        Driven Net  Tot Dynamic      Cell
+                             Internal    Switching   Power (mW)       Leakage
+Cell                         Power (mW)  Power (mW)  (% Cell/Tot)     Power (nW)
+--------------------------------------------------------------------------------
+Netlist Power                   0.0824      0.0202   1.026e-01 (80%)  6.247e+03
+Estimated Clock Tree Power   N/A         N/A          (N/A)           N/A
+--------------------------------------------------------------------------------
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  7.4576e-03        6.3784e-03        1.5506e+03        1.5387e-02  (  14.13%)
+register       7.2919e-02        6.2359e-04        1.6722e+03        7.5215e-02  (  69.08%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.0609e-03        1.3191e-02        3.0240e+03        1.8276e-02  (  16.79%)
+--------------------------------------------------------------------------------------------------
+Total          8.2437e-02 mW     2.0193e-02 mW     6.2468e+03 nW         0.1089 mW
+1

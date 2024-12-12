@@ -1,0 +1,53 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 19:14:46 2024
+****************************************
+
+
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   dbg_dat_cp[0]              0.0300         0.0305        -0.0005  (VIOLATED) 
+     PORT: dbg_dat_cp[0]      0.0300         0.0305        -0.0005  (VIOLATED) 
+
+   ZBUF_1962_0                0.0600         0.0603        -0.0003  (VIOLATED) 
+     PIN : U394/B1            0.0600         0.0603        -0.0003  (VIOLATED) 
+     PIN : U400/B1            0.0600         0.0603        -0.0003  (VIOLATED) 
+     PIN : U404/B1            0.0600         0.0603        -0.0003  (VIOLATED) 
+     PIN : U407/B1            0.0600         0.0603        -0.0003  (VIOLATED) 
+     PIN : U406/B1            0.0600         0.0601        -0.0001  (VIOLATED) 
+     PIN : U389/A2            0.0600         0.0601        -0.0001  (VIOLATED) 
+     PIN : U399/B1            0.0600         0.0601        -0.0001  (VIOLATED) 
+     PIN : U405/B1            0.0600         0.0600        -0.0000  (VIOLATED) 
+
+   dbg_datf_cp[0]             0.0300         0.0301        -0.0001  (VIOLATED) 
+     PORT: dbg_datf_cp[0]     0.0300         0.0301        -0.0001  (VIOLATED) 
+
+   dbg_datf_sh[0]             0.0300         0.0300        -0.0000  (VIOLATED) 
+     PORT: dbg_datf_sh[0]     0.0300         0.0300        -0.0000  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 4
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n221                       0.0162         0.0014         0.0149  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 4
+1

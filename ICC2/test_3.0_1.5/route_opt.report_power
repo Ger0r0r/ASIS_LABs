@@ -1,0 +1,137 @@
+****************************************
+Report : power
+        -significant_digits 4
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 18:45:39 2024
+****************************************
+Information: Activity for scenario norm.ffgnp0p88vm40c.rcbest_CCbest was cached, no propagation required. (POW-005)
+Information: Activity for scenario norm.ssgnp0p72v125c.rcworst_CCworst was cached, no propagation required. (POW-005)
+Information: Activity for scenario norm.tt0p8v85c.typical_CCworst was cached, no propagation required. (POW-005)
+Mode: norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner: norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+Voltage: 0.8800
+Temperature: -40.0000
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.0000 (default)
+VSS (ground) probability 1.0000 (default)
+
+  Cell Internal Power    = N/A ( N/A )
+  Net Switching Power    = N/A ( N/A )
+Total Dynamic Power      = N/A (  0.0%)
+
+Cell Leakage Power       = 1.8601e+03 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+memory                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+black_box                      N/A                    N/A             6.7630e-02             6.7630e-02    (  0.0%)      
+clock_network                  N/A                    N/A             4.7023e+02             4.7023e+02    ( 25.3%)      
+register                       N/A                    N/A             6.8456e+01             6.8456e+01    (  3.7%)      
+sequential                     N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+combinational                  N/A                    N/A             1.3213e+03             1.3213e+03    ( 71.0%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                          N/A                    N/A             1.8601e+03 nW          1.8601e+03 nW
+Mode: norm.ssgnp0p72v125c.rcworst_CCworst
+Corner: norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+Voltage: 0.7200
+Temperature: 125.0000
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.0000 (default)
+VSS (ground) probability 1.0000 (default)
+
+  Cell Internal Power    = N/A ( N/A )
+  Net Switching Power    = N/A ( N/A )
+Total Dynamic Power      = N/A (  0.0%)
+
+Cell Leakage Power       = 3.1304e+04 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+memory                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+black_box                      N/A                    N/A             2.3224e-02             2.3224e-02    (  0.0%)      
+clock_network                  N/A                    N/A             8.1827e+03             8.1827e+03    ( 26.1%)      
+register                       N/A                    N/A             3.1308e+03             3.1308e+03    ( 10.0%)      
+sequential                     N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+combinational                  N/A                    N/A             1.9991e+04             1.9991e+04    ( 63.9%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                          N/A                    N/A             3.1304e+04 nW          3.1304e+04 nW
+Mode: norm.tt0p8v85c.typical_CCworst
+Corner: norm.tt0p8v85c.typical_CCworst
+Scenario: norm.tt0p8v85c.typical_CCworst
+Voltage: 0.8000
+Temperature: 85.0000
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.0000 (default)
+VSS (ground) probability 1.0000 (default)
+
+  Cell Internal Power    = N/A ( N/A )
+  Net Switching Power    = N/A ( N/A )
+Total Dynamic Power      = N/A (  0.0%)
+
+Cell Leakage Power       = 3.1471e+04 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+memory                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+black_box                      N/A                    N/A             4.3640e-02             4.3640e-02    (  0.0%)      
+clock_network                  N/A                    N/A             8.3183e+03             8.3183e+03    ( 26.4%)      
+register                       N/A                    N/A             2.8131e+03             2.8131e+03    (  8.9%)      
+sequential                     N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+combinational                  N/A                    N/A             2.0340e+04             2.0340e+04    ( 64.6%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                          N/A                    N/A             3.1471e+04 nW          3.1471e+04 nW
+1

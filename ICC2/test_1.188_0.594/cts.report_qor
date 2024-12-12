@@ -1,0 +1,205 @@
+****************************************
+Report : qor
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Thu Nov 21 14:01:22 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+
+Scenario           'norm.ffgnp0p88vm40c.rcbest_CCbest'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:           -0.0001
+Total Hold Violation:           -0.0003
+No. of Hold Violations:               4
+----------------------------------------
+
+Scenario           'norm.ffgnp0p88vm40c.rcbest_CCbest'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ffgnp0p88vm40c.rcbest_CCbest'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ffgnp0p88vm40c.rcbest_CCbest'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ssgnp0p72v125c.rcworst_CCworst'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ssgnp0p72v125c.rcworst_CCworst'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ssgnp0p72v125c.rcworst_CCworst'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ssgnp0p72v125c.rcworst_CCworst'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                      9
+Critical Path Length:            0.2996
+Critical Path Slack:             0.2468
+Critical Path Clk Period:        1.1880
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                      3
+Critical Path Length:            0.5831
+Critical Path Slack:             0.0679
+Critical Path Clk Period:        1.1880
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      2
+Critical Path Length:            0.5319
+Critical Path Slack:             0.0044
+Critical Path Clk Period:        1.1880
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      1
+Critical Path Length:            0.0695
+Critical Path Slack:            -0.0088
+Critical Path Clk Period:        1.1880
+Total Negative Slack:           -0.0171
+No. of Violating Paths:               2
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                    562
+Buf/Inv Cell Count:                 198
+Buf Cell Count:                     137
+Inv Cell Count:                      61
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:           418
+Sequential Cell Count:              144
+   Integrated Clock-Gating Cell Count:                     5
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       139
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            111.3523
+Noncombinational Area:         153.1354
+Buf/Inv Area:                   57.7498
+Total Buffer Area:              40.5907
+Total Inverter Area:            17.1590
+Macro/Black Box Area:            0.0000
+Net Area:                             0
+Net XLength:                   339.7320
+Net YLength:                   353.0920
+----------------------------------------
+Cell Area (netlist):                          264.4877
+Cell Area (netlist and physical only):        387.7120
+Net Length:                    692.8240
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:               574
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Thu Nov 21 14:01:22 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+norm.tt0p8v85c.typical_CCworst (Setup)        -0.0088        -0.0171              2
+Design             (Setup)          -0.0088        -0.0171              2
+
+norm.ffgnp0p88vm40c.rcbest_CCbest (Hold)        -0.0001        -0.0003              4
+norm.ssgnp0p72v125c.rcworst_CCworst (Hold)         0.0241         0.0000              0
+norm.tt0p8v85c.typical_CCworst (Hold)         0.0071         0.0000              0
+Design             (Hold)           -0.0001        -0.0003              4
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          264.4877
+Cell Area (netlist and physical only):        387.7120
+Nets with DRC Violations:        0
+1

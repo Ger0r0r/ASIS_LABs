@@ -1,0 +1,513 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -max_delay
+        -min_delay
+        -max_capacitance
+        -max_transition
+Design : img2_jtag_tap_wrap
+Scenario(s): norm.tt0p8v85c.typical_CCworst norm.ffgnp0p88vm40c.rcbest_CCbest norm.ssgnp0p72v125c.rcworst_CCworst
+Version: P-2019.03-SP4
+Date   : Tue Nov 12 19:26:44 2024
+****************************************
+
+
+   min_delay/hold ('clock' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack             Scenario
+   -----------------------------------------------------------------
+   i_img2_jtag_attn_dbg_attn_flags_r1_reg_0_/D    0.070    0.062 f   -0.008 (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/D    0.070    0.063 f   -0.007 (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/D    0.070    0.064 f   -0.006 (VIOLATED) norm.tt0p8v85c.typical_CCworst
+
+
+   min_delay/hold ('clock' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack             Scenario
+   -----------------------------------------------------------------
+   i_img2_jtag_attn_dbg_attn_flags_r1_reg_0_/D    0.063    0.049 f   -0.014 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/D    0.063    0.049 f   -0.014 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/D    0.063    0.050 f   -0.013 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_stat_shift_reg_reg_0_/D    0.063    0.055 f   -0.008 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_stat_reg_reg_1_/D    0.063    0.055 f   -0.008  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_stat_shift_reg_reg_1_/D    0.063    0.055 f   -0.008 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_2_/D    0.063    0.056 f   -0.007 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_attn_shift_reg_reg_0_/D    0.063    0.056 f   -0.007 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_2_/D    0.063    0.056 f   -0.007 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_stat_reg_reg_0_/D    0.063    0.056 f   -0.007  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_1_/D    0.063    0.056 f   -0.007 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_3_/D    0.063    0.056 f   -0.007 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_stat_reg_reg_2_/D    0.063    0.056 f   -0.007  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/D    0.063    0.056 f   -0.006 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_stat_reg_reg_3_/D    0.063    0.057 f   -0.006  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_1_/D    0.063    0.057 f   -0.006 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/D    0.063    0.057 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_16_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_40_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_20_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_cont_reg_reg_1_/D    0.057    0.051 f   -0.005  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_12_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_17_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_cont_reg_reg_3_/D    0.057    0.052 f   -0.005  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_46_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_33_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_66_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_12_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_22_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_cont_reg_reg_2_/D    0.057    0.052 f   -0.005  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_39_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_25_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_11_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_13_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_15_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_41_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_9_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_13_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_59_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_18_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_24_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_42_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_4_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_21_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_10_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_30_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_6_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_60_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_37_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_20_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_47_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_52_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_29_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_53_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_57_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_50_/D    0.063    0.058 f   -0.005 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/D    0.063    0.058 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_5_/D    0.063    0.058 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_18_/D    0.063    0.058 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_19_/D    0.063    0.058 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_19_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_51_/D    0.063    0.058 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_10_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_25_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_23_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_9_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_1_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_26_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_21_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_6_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_16_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_26_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_11_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_7_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_64_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_0_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_17_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_44_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_0_/D    0.062    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_49_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_3_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_2_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_43_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_14_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_63_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_8_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_65_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_34_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_15_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_61_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_24_/D    0.063    0.059 f   -0.004 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_38_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_62_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_5_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_35_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_28_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_cont_shift_reg_reg_3_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_0_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_stat_shift_reg_reg_3_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_48_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_32_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_36_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_pnp_jpnp_shift_reg_reg_45_/D    0.063    0.060 f   -0.003 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_cont_reg_reg_0_/D    0.056    0.053 f   -0.003  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_8_/D    0.063    0.060 f   -0.002 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_stat_shift_reg_reg_2_/D    0.063    0.061 f   -0.002 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_4_/D    0.063    0.061 f   -0.001 (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_1_/D    0.063    0.063 f    0.000 (VIOLATED: increase significant digits) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_cont_shift_reg_reg_2_/D    0.063    0.062 f    0.000 (VIOLATED: increase significant digits) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_tap_idcode_reg_reg_27_/D    0.063    0.063 f    0.000 (VIOLATED: increase significant digits) norm.ffgnp0p88vm40c.rcbest_CCbest
+   i_img2_jtag_attn_attn_shift_reg_reg_1_/D    0.063    0.063 f    0.000 (VIOLATED: increase significant digits) norm.ffgnp0p88vm40c.rcbest_CCbest
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack             Scenario
+   -----------------------------------------------------------------
+   dbg_datm_ud[0]              0.030          0.410         -0.380  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_datm_ud[0]    0.030        0.410         -0.380  (VIOLATED)
+       PIN :   U550/ZN         0.060          0.410         -0.350  (VIOLATED)
+   dbg_dat_ud[0]               0.030          0.410         -0.380  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_dat_ud[0]    0.030         0.410         -0.380  (VIOLATED)
+       PIN :   U552/ZN         0.060          0.410         -0.350  (VIOLATED)
+   dbg_datf_ud[0]              0.030          0.410         -0.380  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_datf_ud[0]    0.030        0.410         -0.380  (VIOLATED)
+       PIN :   U548/ZN         0.060          0.410         -0.350  (VIOLATED)
+   dbg_datm_cp[0]              0.030          0.410         -0.380  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_datm_cp[0]    0.030        0.410         -0.380  (VIOLATED)
+       PIN :   U546/ZN         0.060          0.410         -0.350  (VIOLATED)
+   dbg_datf_cp[0]              0.030          0.408         -0.378  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_datf_cp[0]    0.030        0.408         -0.378  (VIOLATED)
+       PIN :   U343/ZN         0.060          0.408         -0.348  (VIOLATED)
+   dbg_resetn_force[0]         0.030          0.408         -0.378  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_resetn_force[0]    0.030    0.408        -0.378  (VIOLATED)
+       PIN :   U301/ZN         0.060          0.408         -0.348  (VIOLATED)
+   dbg_dat_sh[0]               0.030          0.408         -0.378  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_dat_sh[0]    0.030         0.408         -0.378  (VIOLATED)
+       PIN :   U541/ZN         0.060          0.408         -0.348  (VIOLATED)
+   dbg_avail_force[0]          0.030          0.408         -0.378  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_avail_force[0]    0.030    0.408         -0.378  (VIOLATED)
+       PIN :   U302/ZN         0.060          0.408         -0.348  (VIOLATED)
+   dbg_datf_sh[0]              0.030          0.408         -0.378  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_datf_sh[0]    0.030        0.408         -0.378  (VIOLATED)
+       PIN :   U525/ZN         0.060          0.408         -0.348  (VIOLATED)
+   dbg_resetn_flevel[0]        0.030          0.390         -0.360  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_resetn_flevel[0]    0.030    0.390       -0.360  (VIOLATED)
+       PIN :   U528/Z          0.060          0.390         -0.330  (VIOLATED)
+   dbg_datm_sh[0]              0.030          0.389         -0.359  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_datm_sh[0]    0.030        0.389         -0.359  (VIOLATED)
+       PIN :   U538/Z          0.060          0.389         -0.329  (VIOLATED)
+   dbg_dat_cp[0]               0.030          0.277         -0.247  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_dat_cp[0]    0.030         0.277         -0.247  (VIOLATED)
+       PIN :   U251/ZN         0.060          0.277         -0.217  (VIOLATED)
+   dbg_dat_si[0]               0.030          0.197         -0.167  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_dat_si[0]    0.030         0.197         -0.167  (VIOLATED)
+       PIN :   U560/ZN         0.060          0.197         -0.137  (VIOLATED)
+   dbg_datm_si[0]              0.030          0.197         -0.167  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_datm_si[0]    0.030        0.197         -0.167  (VIOLATED)
+       PIN :   U562/ZN         0.060          0.197         -0.137  (VIOLATED)
+   dbg_datf_si[0]              0.030          0.197         -0.167  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PORT :  dbg_datf_si[0]    0.030        0.197         -0.167  (VIOLATED)
+       PIN :   U558/ZN         0.060          0.197         -0.137  (VIOLATED)
+   n374                        0.060          0.098         -0.038  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_12_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_13_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_15_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_16_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_17_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_18_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_19_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_21_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_32_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_33_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_34_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_35_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_36_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_37_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_38_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_39_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_40_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_42_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_45_/CDN    0.060    0.098   -0.038 (VIOLATED)
+       PIN :   U286/Z          0.060          0.098         -0.038  (VIOLATED)
+   n376                        0.060          0.097         -0.037  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PIN :   i_img2_jtag_tap_tdo_enable_reg/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_0_/SDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_0_/SDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_3_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_3_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_0_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_1_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_tdo_reg/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_0_/SDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_2_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_1_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_1_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_2_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_attn_dbg_attn_flags_r1_reg_0_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_attn_dbg_attn_flags_r0_reg_0_/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   i_img2_jtag_tap_tdi_i_reg/CDN    0.060    0.097   -0.037 (VIOLATED)
+       PIN :   U288/Z          0.060          0.097         -0.037  (VIOLATED)
+   n375                        0.060          0.096         -0.036  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PIN :   i_img2_jtag_attn_cont_reg_reg_3_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_cont_reg_reg_0_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_cont_reg_reg_1_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_cont_reg_reg_2_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_cont_shift_reg_reg_0_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_cont_shift_reg_reg_1_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_cont_shift_reg_reg_2_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_cont_shift_reg_reg_3_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_attn_shift_reg_reg_0_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_attn_shift_reg_reg_1_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_stat_reg_reg_2_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_stat_shift_reg_reg_0_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_stat_shift_reg_reg_1_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_stat_reg_reg_3_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_stat_reg_reg_1_/SDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_stat_reg_reg_0_/SDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_dbg_rstatn_r0_reg_0_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   i_img2_jtag_attn_dbg_ext_stat_r0_reg_0_/CDN    0.060    0.096   -0.036 (VIOLATED)
+       PIN :   U287/Z          0.060          0.096         -0.036  (VIOLATED)
+   n377                        0.060          0.092         -0.032  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_67_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_1_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_2_/SDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_3_/SDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_4_/SDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_5_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_6_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_7_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_8_/SDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_9_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_15_/SDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_22_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_24_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_25_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_26_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_27_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_28_/SDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_29_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_30_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_31_/CDN    0.060    0.092   -0.032 (VIOLATED)
+       PIN :   U290/Z          0.060          0.092         -0.032  (VIOLATED)
+   n411                        0.060          0.075         -0.015  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_3_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_10_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_14_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_10_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_11_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_12_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_13_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_14_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_16_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_17_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_18_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_19_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_20_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_21_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   i_img2_jtag_tap_idcode_reg_reg_23_/CDN    0.060    0.075   -0.015 (VIOLATED)
+       PIN :   U389/Z          0.060          0.075         -0.015  (VIOLATED)
+   n412                        0.060          0.066         -0.006  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_20_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_24_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_25_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_26_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_31_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_41_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_43_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_46_/CDN    0.060    0.066   -0.006 (VIOLATED)
+       PIN :   U409/Z          0.060          0.066         -0.006  (VIOLATED)
+   n384                        0.060          0.064         -0.004  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PIN :   U436/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U435/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U432/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U428/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U425/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U424/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U423/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U420/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U399/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U398/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U397/A2         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U396/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U395/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U394/A2         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U393/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U392/A2         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U391/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U390/B1         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U373/A2         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U371/A2         0.060          0.064         -0.004  (VIOLATED)
+       PIN :   U297/ZN         0.060          0.064         -0.004  (VIOLATED)
+   n385                        0.060          0.061         -0.001  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+       PIN :   U441/A2         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U440/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U439/A2         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U438/A2         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U437/A2         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U434/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U433/A2         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U427/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U426/A2         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U417/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U416/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U415/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U414/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U413/A2         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U412/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U411/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U410/A1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U405/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   U335/B1         0.060          0.061         -0.001  (VIOLATED)
+       PIN :   i_img2_jtag_pnp_jpnp_shift_reg_reg_67_/D    0.060    0.061   -0.001 (VIOLATED)
+       PIN :   U298/ZN         0.060          0.061         -0.001  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      23                -5.047    norm.tt0p8v85c.typical_CCworst
+   dbg_datm_ud[0]              0.040          0.280         -0.240  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_datm_ud[0]    0.040        0.280         -0.240  (VIOLATED)
+       PIN :   U550/ZN         0.100          0.280         -0.180  (VIOLATED)
+   dbg_dat_ud[0]               0.040          0.280         -0.240  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_dat_ud[0]    0.040         0.280         -0.240  (VIOLATED)
+       PIN :   U552/ZN         0.100          0.280         -0.180  (VIOLATED)
+   dbg_datf_ud[0]              0.040          0.280         -0.240  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_datf_ud[0]    0.040        0.280         -0.240  (VIOLATED)
+       PIN :   U548/ZN         0.100          0.280         -0.180  (VIOLATED)
+   dbg_datm_cp[0]              0.040          0.280         -0.240  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_datm_cp[0]    0.040        0.280         -0.240  (VIOLATED)
+       PIN :   U546/ZN         0.100          0.280         -0.180  (VIOLATED)
+   dbg_resetn_force[0]         0.040          0.279         -0.239  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_resetn_force[0]    0.040    0.279        -0.239  (VIOLATED)
+       PIN :   U301/ZN         0.100          0.279         -0.179  (VIOLATED)
+   dbg_dat_sh[0]               0.040          0.279         -0.239  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_dat_sh[0]    0.040         0.279         -0.239  (VIOLATED)
+       PIN :   U541/ZN         0.100          0.279         -0.179  (VIOLATED)
+   dbg_datf_sh[0]              0.040          0.279         -0.239  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_datf_sh[0]    0.040        0.279         -0.239  (VIOLATED)
+       PIN :   U525/ZN         0.100          0.279         -0.179  (VIOLATED)
+   dbg_datf_cp[0]              0.040          0.279         -0.239  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_datf_cp[0]    0.040        0.279         -0.239  (VIOLATED)
+       PIN :   U343/ZN         0.100          0.279         -0.179  (VIOLATED)
+   dbg_avail_force[0]          0.040          0.279         -0.239  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_avail_force[0]    0.040    0.279         -0.239  (VIOLATED)
+       PIN :   U302/ZN         0.100          0.279         -0.179  (VIOLATED)
+   dbg_resetn_flevel[0]        0.040          0.275         -0.235  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_resetn_flevel[0]    0.040    0.275       -0.235  (VIOLATED)
+       PIN :   U528/Z          0.100          0.275         -0.175  (VIOLATED)
+   dbg_datm_sh[0]              0.040          0.274         -0.234  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_datm_sh[0]    0.040        0.274         -0.234  (VIOLATED)
+       PIN :   U538/Z          0.100          0.274         -0.174  (VIOLATED)
+   dbg_dat_cp[0]               0.040          0.199         -0.159  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_dat_cp[0]    0.040         0.199         -0.159  (VIOLATED)
+       PIN :   U251/ZN         0.100          0.199         -0.099  (VIOLATED)
+   dbg_dat_si[0]               0.040          0.140         -0.100  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_dat_si[0]    0.040         0.140         -0.100  (VIOLATED)
+       PIN :   U560/ZN         0.100          0.140         -0.040  (VIOLATED)
+   dbg_datm_si[0]              0.040          0.140         -0.100  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_datm_si[0]    0.040        0.140         -0.100  (VIOLATED)
+       PIN :   U562/ZN         0.100          0.140         -0.040  (VIOLATED)
+   dbg_datf_si[0]              0.040          0.140         -0.100  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+       PORT :  dbg_datf_si[0]    0.040        0.140         -0.100  (VIOLATED)
+       PIN :   U558/ZN         0.100          0.140         -0.040  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      15                -3.084    norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_datm_ud[0]              0.060          0.570         -0.510  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_datm_ud[0]    0.060        0.570         -0.510  (VIOLATED)
+       PIN :   U550/ZN         0.200          0.570         -0.370  (VIOLATED)
+   dbg_dat_ud[0]               0.060          0.570         -0.510  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_dat_ud[0]    0.060         0.570         -0.510  (VIOLATED)
+       PIN :   U552/ZN         0.200          0.570         -0.370  (VIOLATED)
+   dbg_datf_ud[0]              0.060          0.570         -0.510  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_datf_ud[0]    0.060        0.570         -0.510  (VIOLATED)
+       PIN :   U548/ZN         0.200          0.570         -0.370  (VIOLATED)
+   dbg_datm_cp[0]              0.060          0.569         -0.509  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_datm_cp[0]    0.060        0.569         -0.509  (VIOLATED)
+       PIN :   U546/ZN         0.200          0.569         -0.369  (VIOLATED)
+   dbg_resetn_force[0]         0.060          0.568         -0.508  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_resetn_force[0]    0.060    0.568        -0.508  (VIOLATED)
+       PIN :   U301/ZN         0.200          0.568         -0.368  (VIOLATED)
+   dbg_dat_sh[0]               0.060          0.568         -0.508  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_dat_sh[0]    0.060         0.568         -0.508  (VIOLATED)
+       PIN :   U541/ZN         0.200          0.568         -0.368  (VIOLATED)
+   dbg_datf_sh[0]              0.060          0.568         -0.508  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_datf_sh[0]    0.060        0.568         -0.508  (VIOLATED)
+       PIN :   U525/ZN         0.200          0.568         -0.368  (VIOLATED)
+   dbg_datf_cp[0]              0.060          0.568         -0.508  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_datf_cp[0]    0.060        0.568         -0.508  (VIOLATED)
+       PIN :   U343/ZN         0.200          0.568         -0.368  (VIOLATED)
+   dbg_avail_force[0]          0.060          0.568         -0.508  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_avail_force[0]    0.060    0.568         -0.508  (VIOLATED)
+       PIN :   U302/ZN         0.200          0.568         -0.368  (VIOLATED)
+   dbg_resetn_flevel[0]        0.060          0.537         -0.477  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_resetn_flevel[0]    0.060    0.537       -0.477  (VIOLATED)
+       PIN :   U528/Z          0.200          0.537         -0.337  (VIOLATED)
+   dbg_datm_sh[0]              0.060          0.536         -0.476  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_datm_sh[0]    0.060        0.536         -0.476  (VIOLATED)
+       PIN :   U538/Z          0.200          0.536         -0.336  (VIOLATED)
+   dbg_dat_cp[0]               0.060          0.340         -0.280  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_dat_cp[0]    0.060         0.340         -0.280  (VIOLATED)
+       PIN :   U251/ZN         0.200          0.340         -0.140  (VIOLATED)
+   dbg_dat_si[0]               0.060          0.270         -0.210  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_dat_si[0]    0.060         0.270         -0.210  (VIOLATED)
+       PIN :   U560/ZN         0.200          0.270         -0.070  (VIOLATED)
+   dbg_datm_si[0]              0.060          0.270         -0.210  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_datm_si[0]    0.060        0.270         -0.210  (VIOLATED)
+       PIN :   U562/ZN         0.200          0.270         -0.070  (VIOLATED)
+   dbg_datf_si[0]              0.060          0.270         -0.210  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+       PORT :  dbg_datf_si[0]    0.060        0.270         -0.210  (VIOLATED)
+       PIN :   U558/ZN         0.200          0.270         -0.070  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      15                -6.441    norm.ssgnp0p72v125c.rcworst_CCworst
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack             Scenario
+   -----------------------------------------------------------------
+   dbg_datm_ud[0]              0.055          0.101         -0.046  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_dat_ud[0]               0.055          0.100         -0.045  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_datf_ud[0]              0.055          0.100         -0.045  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_datm_cp[0]              0.055          0.100         -0.045  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_resetn_force[0]         0.055          0.100         -0.045  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_dat_sh[0]               0.055          0.100         -0.045  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_datf_sh[0]              0.055          0.100         -0.045  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_datf_cp[0]              0.055          0.100         -0.045  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_avail_force[0]          0.055          0.100         -0.045  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_resetn_flevel[0]        0.068          0.101         -0.032  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+   dbg_datm_sh[0]              0.068          0.100         -0.032  (VIOLATED) norm.tt0p8v85c.typical_CCworst
+
+   -----------------------------------------------------------------
+   Total                      11                -0.472    norm.tt0p8v85c.typical_CCworst
+   dbg_datm_ud[0]              0.055          0.101         -0.046  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_dat_ud[0]               0.055          0.101         -0.046  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_datf_ud[0]              0.055          0.100         -0.045  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_datm_cp[0]              0.055          0.100         -0.045  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_resetn_force[0]         0.055          0.100         -0.045  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_dat_sh[0]               0.055          0.100         -0.045  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_datf_sh[0]              0.055          0.100         -0.045  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_datf_cp[0]              0.055          0.100         -0.045  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_avail_force[0]          0.055          0.100         -0.045  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_resetn_flevel[0]        0.068          0.101         -0.032  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_datm_sh[0]              0.068          0.100         -0.032  (VIOLATED) norm.ffgnp0p88vm40c.rcbest_CCbest
+
+   -----------------------------------------------------------------
+   Total                      11                -0.472    norm.ffgnp0p88vm40c.rcbest_CCbest
+   dbg_datm_ud[0]              0.055          0.101         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_dat_ud[0]               0.055          0.100         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_datf_ud[0]              0.055          0.100         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_datm_cp[0]              0.055          0.100         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_resetn_force[0]         0.055          0.100         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_dat_sh[0]               0.055          0.100         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_datf_sh[0]              0.055          0.100         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_datf_cp[0]              0.055          0.100         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_avail_force[0]          0.055          0.100         -0.045  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_resetn_flevel[0]        0.068          0.101         -0.032  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+   dbg_datm_sh[0]              0.068          0.100         -0.032  (VIOLATED) norm.ssgnp0p72v125c.rcworst_CCworst
+
+   -----------------------------------------------------------------
+   Total                      11                -0.471    norm.ssgnp0p72v125c.rcworst_CCworst
+
+1

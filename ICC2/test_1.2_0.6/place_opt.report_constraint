@@ -1,0 +1,38 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 18:15:01 2024
+****************************************
+
+
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   n220                       0.0600         0.0604        -0.0004  (VIOLATED) 
+     PIN : U450/A1            0.0600         0.0604        -0.0004  (VIOLATED) 
+     PIN : U495/B2            0.0600         0.0604        -0.0004  (VIOLATED) 
+     PIN : U497/B1            0.0600         0.0604        -0.0004  (VIOLATED) 
+     PIN : U496/B2            0.0600         0.0603        -0.0003  (VIOLATED) 
+     PIN : U489/I             0.0600         0.0603        -0.0003  (VIOLATED) 
+     PIN : U276/A2            0.0600         0.0602        -0.0002  (VIOLATED) 
+     PIN : U262/A1            0.0600         0.0602        -0.0002  (VIOLATED) 
+     PIN : U257/ZN            0.0600         0.0600        -0.0000  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 1
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 1
+1

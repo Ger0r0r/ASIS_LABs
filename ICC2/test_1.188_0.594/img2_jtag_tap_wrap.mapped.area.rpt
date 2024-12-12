@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Thu Nov 21 13:27:16 2024
+****************************************
+
+Library(s) Used:
+
+    tcbn16ffplusglbwp16p90cpdssgnp0p72v125c (File: /auto/da/project/16/selenga/lib/sc/syn/ssgnp0p72v125c/tcbn16ffplusglbwp16p90cpdssgnp0p72v125c.db)
+    tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c (File: /auto/da/project/16/selenga/lib/sc/syn/ssgnp0p72v125c/tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c.db)
+    tcbn16ffplusglbwp16p90cpdlvtssgnp0p72v125c (File: /auto/da/project/16/selenga/lib/sc/syn/ssgnp0p72v125c/tcbn16ffplusglbwp16p90cpdlvtssgnp0p72v125c.db)
+
+Number of ports:                           27
+Number of nets:                           436
+Number of cells:                          426
+Number of combinational cells:            282
+Number of sequential cells:               144
+Number of macros/black boxes:               0
+Number of buf/inv:                         65
+Number of references:                      58
+
+Combinational area:                 57.594241
+Buf/Inv area:                       10.316160
+Noncombinational area:             151.891203
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   209.485444
+Total area:                 undefined
+
+Core Area:                      1795
+Aspect Ratio:                 0.4997
+Utilization Ratio:            0.0083
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 209.5
+  Total fixed cell area: 0.0
+  Total physical cell area: 209.5
+ Core area: 1.000, 1.008, 60.940, 30.960
+1

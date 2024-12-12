@@ -1,0 +1,42 @@
+****************************************
+Report : Reference Library Report
+Library: img2_jtag_tap_wrap.nlib
+Version: P-2019.03-SP4
+Date   : Tue Nov 12 19:30:54 2024
+****************************************
+
+    Name                          Path                                                                                                 Location
+    -------------------------------------------------------------------------------------------------------------------------------------------
+*+  tsmc16                        /auto/da/project/16/selenga/tech/ndm/tsmc16.ndm                                                      /auto/da/project/16/selenga/tech/ndm/tsmc16.ndm
+*+  tcbn16ffplusglbwp16p90cpdulvt /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdulvt.ndm /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdulvt.ndm
+*+  tcbn16ffplusglbwp16p90cpdilvt /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdilvt.ndm /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdilvt.ndm
+*+  tcbn16ffplusglbwp16p90cpdlvt  /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdlvt.ndm  /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdlvt.ndm
+*+  tcbn16ffplusglbwp16p90cpd     /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpd.ndm     /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpd.ndm
+*+  tcbn16ffplusglbwp16p90cpdpm   /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdpm.ndm   /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdpm.ndm
+*+  tcbn16ffplusglbwp16p90cpdmb   /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdmb.ndm   /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdmb.ndm
+*+  mem256x65_1w4r                /auto/da/project/16/selenga/lib/ip/ndm/mem256x65_1w4r.ndm                                            /auto/da/project/16/selenga/lib/ip/ndm/mem256x65_1w4r.ndm
+*+  mem256x78_2w4r                /auto/da/project/16/selenga/lib/ip/ndm/mem256x78_2w4r.ndm                                            /auto/da/project/16/selenga/lib/ip/ndm/mem256x78_2w4r.ndm
+*+  mem64x38_1w4r                 /auto/da/project/16/selenga/lib/ip/ndm/mem64x38_1w4r.ndm                                             /auto/da/project/16/selenga/lib/ip/ndm/mem64x38_1w4r.ndm
+*+  rf10w10r                      /auto/da/project/16/selenga/lib/ip/ndm/rf10w10r.ndm                                                  /auto/da/project/16/selenga/lib/ip/ndm/rf10w10r.ndm
+*+  dda                           /auto/da/project/16/selenga/lib/ip/ndm/dda.ndm                                                       /auto/da/project/16/selenga/lib/ip/ndm/dda.ndm
+*+  dda_v2                        /auto/da/project/16/selenga/lib/ip/ndm/dda_v2.ndm                                                    /auto/da/project/16/selenga/lib/ip/ndm/dda_v2.ndm
+*+  dwc_12gx2ns                   /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx2ns.ndm                                               /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx2ns.ndm
+*+  dwc_12gx4ns                   /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx4ns.ndm                                               /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx4ns.ndm
+*+  dwc_ddr43_phy                 /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm                                             /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm
+*+  LVDS                          /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm                                                      /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm
+*+  usb3_femtophy_otg_x1ns        /auto/da/project/16/selenga/lib/ip/ndm/usb3_femtophy_otg_x1ns.ndm                                    /auto/da/project/16/selenga/lib/ip/ndm/usb3_femtophy_otg_x1ns.ndm
+*+  hdmi20_tx_ns_6gbps            /auto/da/project/16/selenga/lib/ip/ndm/hdmi20_tx_ns_6gbps.ndm                                        /auto/da/project/16/selenga/lib/ip/ndm/hdmi20_tx_ns_6gbps.ndm
+*+  mr74116                       /auto/da/project/16/selenga/lib/ip/ndm/mr74116.ndm                                                   /auto/da/project/16/selenga/lib/ip/ndm/mr74116.ndm
+*+  mr74118                       /auto/da/project/16/selenga/lib/ip/ndm/mr74118.ndm                                                   /auto/da/project/16/selenga/lib/ip/ndm/mr74118.ndm
+*+  mr74119                       /auto/da/project/16/selenga/lib/ip/ndm/mr74119.ndm                                                   /auto/da/project/16/selenga/lib/ip/ndm/mr74119.ndm
+*+  bfs                           /auto/da/project/16/selenga/lib/ip/ndm/bfs.ndm                                                       /auto/da/project/16/selenga/lib/ip/ndm/bfs.ndm
+*+  TEF16FPGL256X32HD18_PHRM      /auto/da/project/16/selenga/lib/ip/ndm/TEF16FPGL256X32HD18_PHRM.ndm                                  /auto/da/project/16/selenga/lib/ip/ndm/TEF16FPGL256X32HD18_PHRM.ndm
+*+  tef16fpllesd_p                /auto/da/project/16/selenga/lib/ip/ndm/tef16fpllesd_p.ndm                                            /auto/da/project/16/selenga/lib/ip/ndm/tef16fpllesd_p.ndm
+*+  OVL_TCD                       /auto/da/project/16/selenga/lib/ip/ndm/OVL_TCD.ndm                                                   /auto/da/project/16/selenga/lib/ip/ndm/OVL_TCD.ndm
+*+  PAD_MCST                      /auto/da/project/16/selenga/lib/io/ndm/PAD_MCST.ndm                                                  /auto/da/project/16/selenga/lib/io/ndm/PAD_MCST.ndm
+*   tphn16ffpglgv18e              /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18e.ndm                                          /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18e.ndm
+*   tphn16ffpglgv18               /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18.ndm                                           /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18.ndm
+*   tphn16ffpglgv18od33           /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18od33.ndm                                       /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18od33.ndm
+    "*" = Library currently open
+    "+" = Library has technology information
+1

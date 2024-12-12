@@ -1,0 +1,64 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 19:33:39 2024
+****************************************
+
+
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   dbg_resetn_force[0]        0.0300         0.0343        -0.0043  (VIOLATED) 
+     PORT: dbg_resetn_force[0]   0.0300      0.0343        -0.0043  (VIOLATED) 
+
+   dbg_datm_ud[0]             0.0300         0.0338        -0.0038  (VIOLATED) 
+     PORT: dbg_datm_ud[0]     0.0300         0.0338        -0.0038  (VIOLATED) 
+
+   dbg_datm_cp[0]             0.0300         0.0336        -0.0035  (VIOLATED) 
+     PORT: dbg_datm_cp[0]     0.0300         0.0336        -0.0035  (VIOLATED) 
+
+   dbg_datf_ud[0]             0.0300         0.0335        -0.0035  (VIOLATED) 
+     PORT: dbg_datf_ud[0]     0.0300         0.0335        -0.0035  (VIOLATED) 
+
+   dbg_dat_cp[0]              0.0300         0.0331        -0.0031  (VIOLATED) 
+     PORT: dbg_dat_cp[0]      0.0300         0.0331        -0.0031  (VIOLATED) 
+
+   tdo_enable                 0.0300         0.0331        -0.0031  (VIOLATED) 
+     PORT: tdo_enable         0.0300         0.0331        -0.0031  (VIOLATED) 
+
+   dbg_dat_sh[0]              0.0300         0.0314        -0.0014  (VIOLATED) 
+     PORT: dbg_dat_sh[0]      0.0300         0.0314        -0.0014  (VIOLATED) 
+
+   dbg_avail_force[0]         0.0300         0.0309        -0.0009  (VIOLATED) 
+     PORT: dbg_avail_force[0]   0.0300       0.0309        -0.0009  (VIOLATED) 
+
+   dbg_resetn_flevel[0]       0.0300         0.0307        -0.0007  (VIOLATED) 
+     PORT: dbg_resetn_flevel[0]   0.0300     0.0307        -0.0007  (VIOLATED) 
+
+   dbg_datm_sh[0]             0.0300         0.0302        -0.0002  (VIOLATED) 
+     PORT: dbg_datm_sh[0]     0.0300         0.0302        -0.0002  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 10
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n236                       0.0186         0.0049         0.0137  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 10
+1

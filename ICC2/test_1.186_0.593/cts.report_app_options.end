@@ -1,0 +1,100 @@
+****************************************
+Report : app_option
+           -non_default
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 20:22:53 2024
+****************************************
+Name                                                                         Type                    Value                User-default System-default Scope      Status     Source
+---------------------------------------------------------------------------- ----------------------- -------------------- ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+clock_opt.flow.enable_ccd                                                    bool                    false                --           true           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:118
+cts.common.max_fanout                                                        integer                 30                   --           1000000        block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:202
+cts.common.max_net_length                                                    float                   200                  --           3.40282e+38    block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:199
+cts.common.user_instance_name_prefix                                         string                  ctst                 {}           --             block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:69
+cts.compile.primary_corner                                                   string                  norm.tt0p8v85c.typical_CCworst -|- {}           --             block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:117
+cts.compile.size_pre_existing_cell_to_cts_references                         bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:130
+custom.route.net_max_layer_mode                                              enum                    allow_pin_connection {}           hard           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:109
+design.on_disk_operation                                                     bool                    true                 true         false          global     normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/icc2_pnr_setup.tcl:587
+mv.upf.auto_resolve_pg_net                                                   bool                    false                --           true           block      normal     
+opt.area.effort                                                              enum                    high                 {}           low            block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:120
+opt.buffering.enable_rebuffering                                             bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/design_setup.tcl:332
+opt.common.advanced_logic_restructuring_mode                                 enum                    timing               {}           none           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/design_setup.tcl:332
+opt.common.buffer_area_effort                                                enum                    ultra                {}           low            block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:130
+opt.common.buffering_for_advanced_technology                                 bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/design_setup.tcl:332
+opt.common.use_route_aware_estimation                                        enum                    true                 {}           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:139
+opt.dft.optimize_scan_chain                                                  bool                    false                --           true           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/design_setup.tcl:332
+opt.port.eliminate_verilog_assign                                            bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:267
+opt.tie_cell.max_fanout                                                      integer                 8                    --           999            block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:232
+opt.timing.effort                                                            enum                    high                 {}           low            block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:23
+place.coarse.congestion_driven_max_util                                      float                   0.7                  --           0.93           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:193
+place.coarse.continue_on_missing_scandef                                     bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:270
+place.coarse.enable_enhanced_soft_blockages                                  bool                    true                 --           false          block      normal     
+place.coarse.max_density                                                     float                   0.5                  --           0              block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:181
+place.coarse.pin_density_aware                                               bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:287
+place.coarse.tns_driven_placement                                            bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:31
+place.common.pnet_aware_density                                              float                   0.001                --           1              block      normal     
+place.common.pnet_aware_layers                                               string                  M3                   {}           --             block      normal     
+place.legalize.enable_advanced_legalizer                                     bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:337
+place.legalize.enable_advanced_prerouted_net_check                           bool                    true                 --           false          block      normal     
+place.legalize.enable_ndr_pin_check                                          bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:127
+place.legalize.optimize_orientations                                         bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:315
+place.legalize.optimize_pin_access_using_cell_spacing                        bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/design_setup.tcl:332
+place.legalize.stream_place                                                  bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:308
+place_opt.final_place.effort                                                 enum                    high                 {}           medium         block      normal     
+place_opt.flow.do_path_opt                                                   bool                    true                 --           false          block      normal     
+place_opt.flow.enable_ccd                                                    bool                    false                --           true           block      normal     
+place_opt.initial_drc.global_route_based                                     enum                    1                    {}           false          block      normal     
+place_opt.place.congestion_effort                                            enum                    high                 {}           medium         block      normal     
+plan.pgcheck.check_rdl_routing                                               bool                    true                 --           false          block      normal     
+plan.pgcheck.treat_terminal_as_voltage_source                                bool                    true                 --           false          block      normal     
+plan.pgcheck.via_site_threshold                                              double                  1                    --           0              block      normal     
+plan.pgroute.connect_user_route_shapes                                       bool                    true                 --           false          block      normal     
+plan.pgroute.create_via_cellalign_maxpin_only                                bool                    false                --           true           block      normal     
+plan.pgroute.fix_via_drc_multiple_viadef                                     bool                    true                 --           false          block      normal     
+plan.pgroute.load_frame_view                                                 bool                    true                 --           false          block      normal     
+plan.pgroute.max_extension_distance                                          double                  100                  --           -1             block      normal     
+plan.pgroute.max_undo_steps                                                  integer                 100                  --           5              block      normal     
+plan.pgroute.maximize_total_cut_area                                         string                  Vv Vh Vs             {}           --             block      normal     
+plan.pgroute.maximum_cell_gap_for_alignment_strap                            double                  10                   --           -1             block      normal     
+plan.pgroute.merge_shapes_in_pad_cell                                        string                  io_pad corner_pad flip_chip_pad -|- {}           --             block      normal     
+plan.pgroute.snap_stdcell_rail                                               bool                    true                 --           false          block      normal     
+plan.pgroute.stapling_via_fast_mode                                          bool                    false                --           true           block      normal     
+plan.pgroute.via_site_threshold                                              double                  1                    --           0              block      normal     
+power.default_toggle_rate_reference_clock                                    enum                    fastest              {}           related        block      normal     
+refine_opt.hold.effort                                                       enum                    medium               {}           none           block      normal     
+refine_opt.place.congestion_effort                                           enum                    high                 {}           medium         block      normal     
+refine_opt.place.effort                                                      enum                    high                 {}           medium         block      normal     
+route.common.connect_within_pins_by_layer_name                               list_of {string string} {M1 via_wire_standard_cell_pins} -|- {}           --             block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/design_setup.tcl:332
+route.common.extra_nonpreferred_direction_wire_cost_multiplier_by_layer_name list_of {string float}  {M4 3} {M5 3} {M6 3} {M7 3} {M8 3} -|- {}           --             block      normal     
+route.common.global_max_layer_mode                                           enum                    allow_pin_connection {}           soft           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:110
+route.common.global_min_layer_mode                                           enum                    allow_pin_connection {}           soft           block      normal     
+route.common.net_max_layer_mode                                              enum                    allow_pin_connection {}           hard           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:111
+route.common.via_array_mode                                                  enum                    rotate               {}           all            block      normal     
+route.detail.check_port_min_area_min_length                                  bool                    false                --           true           block      normal     
+route.detail.detail_route_special_design_rule_fixing_stage                   enum                    early_routing        {}           late_routing   block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:124
+route.detail.eco_route_special_design_rule_fixing_stage                      enum                    early_routing        {}           late_routing   block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:123
+route.detail.group_route_special_design_rule_fixing_stage                    enum                    early_routing        {}           late_routing   block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:125
+route.detail.incremental_detail_route_special_design_rule_fixing_stage       enum                    early_routing        {}           late_routing   block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:122
+route.detail.use_default_width_for_min_area_min_len_stub                     bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:121
+route.global.timing_driven                                                   bool                    true                 --           false          block      normal     
+route.global.via_cut_modeling                                                bool                    true                 --           false          block      normal     
+shell.common.report_default_significant_digits                               integer                 4                    4            2              global     normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/icc2_pnr_setup.tcl:584
+time.disable_case_analysis_ti_hi_lo                                          bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts/settings.common.opt.tcl:233
+time.edge_specific_source_latency                                            bool                    false                --           true           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:119
+time.enable_clock_to_data_analysis                                           bool                    true                 --           false          block      normal     
+time.enable_io_path_groups                                                   bool                    false                --           true           block      normal     
+time.port_slew_derate_from_library                                           float                   0.5                  0.5          1              block      normal     
+time.port_slew_lower_threshold_fall                                          float                   30                   30           20             block      normal     
+time.port_slew_lower_threshold_rise                                          float                   30                   30           20             block      normal     
+time.port_slew_upper_threshold_fall                                          float                   70                   70           80             block      normal     
+time.port_slew_upper_threshold_rise                                          float                   70                   70           80             block      normal     
+time.remove_clock_reconvergence_pessimism                                    bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:120
+time.report_unconstrained_paths                                              bool                    true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl:285
+---------------------------------------------------------------------------- ----------------------- -------------------- ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+
+There are additional internal differences with no available TBC source.
+
+Files with Synopsys Patches
+----------------------------------------------------------------------------------------------------
+/export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/cts.tcl
+1

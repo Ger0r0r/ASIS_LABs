@@ -1,0 +1,1267 @@
+****************************************
+Report : design
+        -library
+        -netlist
+        -floorplan
+        -nosplit
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 18:34:50 2024
+****************************************
+--------------------------------------------------------------------------------
+                              LIBRARY INFORMATION
+--------------------------------------------------------------------------------
+
+Search path : ./flow/ICC2-RM_N-2017.09/rm_icc2_pnr_scripts ./flow/ICC2-RM_N-2017.09/rm_setup ./flow/scripts .  /auto/astro-29/users/da/projects/selenga/v1.0/rtl/google/VP9_encoder/verilog    /auto/astro-29/users/da/projects/selenga/v1.0/rtl/google/VP9_encoder/verilog/out     /auto/astro-29/users/da/projects/selenga/v1.0/rtl/google/VP9_encoder/verilog/out_tb      /auto/da/project/16/selenga/lib/sc/syn /auto/da/project/16/selenga/lib/mem/syn /auto/da/project/16/selenga/lib/ip/syn /auto/da/project/16/selenga/lib/io/syn /auto/da/project/16/selenga/lib/sc/syn/NLDM_vN-2017.12/ssgnp0p72v125c /auto/da/project/16/selenga/lib/sc/syn/NLDM_vN-2017.12/ffgnp0p88vm40c 
+
+Units : 
+    time                : 1.0000ns
+    resistance          : 1.0000kOhm
+    capacitance         : 1.0000pF
+    voltage             : 1.0000V
+    current             : 1.0000mA
+    power               : 1.0000nW
+
+Tech file : /auto/da/project/16/moskva/tech/mw/mw_7.tf
+
+Number of active scenarios 	= 3
+Number of inactive scenarios 	= 0
+
+Total number of standard cells 	= 4406
+
+Total number of dont_use lib cells 	= 1266
+Total number of dont_touch lib cells 	= 370
+
+Total number of buffers 	= 356
+Total number of inverters 	= 308
+Total number of flip-flops 	= 723
+Total number of latches 	= 132
+Total number of ICGs 		= 126
+
+
+Library : tsmc16
+  File path : /auto/da/project/16/selenga/tech/ndm/tsmc16.ndm
+
+Library : tcbn16ffplusglbwp16p90cpdulvt
+  File path : /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdulvt.ndm
+  Source .db libs :
+    tcbn16ffplusglbwp16p90cpdulvttt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvttt0p8v85c.db
+    tcbn16ffplusglbwp16p90cpdulvttt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvttt0p8v25c.db
+    tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c.db
+    tcbn16ffplusglbwp16p90cpdulvtssgnp0p72vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvtssgnp0p72vm40c.db
+    tcbn16ffplusglbwp16p90cpdulvtffgnp0p88vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvtffgnp0p88vm40c.db
+    tcbn16ffplusglbwp16p90cpdulvtffgnp0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvtffgnp0p88v125c.db
+    tcbn16ffplusglbwp16p90cpdulvttt0p8v85c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvttt0p8v85c_ccs.db
+    tcbn16ffplusglbwp16p90cpdulvttt0p8v25c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvttt0p8v25c_ccs.db
+    tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c_ccs.db
+    tcbn16ffplusglbwp16p90cpdulvtssgnp0p72vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvtssgnp0p72vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdulvtffgnp0p88vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvtffgnp0p88vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdulvtffgnp0p88v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdulvtffgnp0p88v125c_ccs.db
+
+Library : tcbn16ffplusglbwp16p90cpdilvt
+  File path : /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdilvt.ndm
+  Source .db libs :
+    tcbn16ffplusglbwp16p90cpdilvttt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvttt0p8v85c.db
+    tcbn16ffplusglbwp16p90cpdilvttt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvttt0p8v25c.db
+    tcbn16ffplusglbwp16p90cpdilvtssgnp0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvtssgnp0p72v125c.db
+    tcbn16ffplusglbwp16p90cpdilvtssgnp0p72vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvtssgnp0p72vm40c.db
+    tcbn16ffplusglbwp16p90cpdilvtffgnp0p88vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvtffgnp0p88vm40c.db
+    tcbn16ffplusglbwp16p90cpdilvtffgnp0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvtffgnp0p88v125c.db
+    tcbn16ffplusglbwp16p90cpdilvttt0p8v85c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvttt0p8v85c_ccs.db
+    tcbn16ffplusglbwp16p90cpdilvttt0p8v25c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvttt0p8v25c_ccs.db
+    tcbn16ffplusglbwp16p90cpdilvtssgnp0p72v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvtssgnp0p72v125c_ccs.db
+    tcbn16ffplusglbwp16p90cpdilvtssgnp0p72vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvtssgnp0p72vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdilvtffgnp0p88vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvtffgnp0p88vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdilvtffgnp0p88v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdilvtffgnp0p88v125c_ccs.db
+
+Library : tcbn16ffplusglbwp16p90cpdlvt
+  File path : /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdlvt.ndm
+  Source .db libs :
+    tcbn16ffplusglbwp16p90cpdlvttt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvttt0p8v85c.db
+    tcbn16ffplusglbwp16p90cpdlvttt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvttt0p8v25c.db
+    tcbn16ffplusglbwp16p90cpdlvtssgnp0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvtssgnp0p72v125c.db
+    tcbn16ffplusglbwp16p90cpdlvtssgnp0p72vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvtssgnp0p72vm40c.db
+    tcbn16ffplusglbwp16p90cpdlvtffgnp0p88vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvtffgnp0p88vm40c.db
+    tcbn16ffplusglbwp16p90cpdlvtffgnp0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvtffgnp0p88v125c.db
+    tcbn16ffplusglbwp16p90cpdlvttt0p8v85c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvttt0p8v85c_ccs.db
+    tcbn16ffplusglbwp16p90cpdlvttt0p8v25c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvttt0p8v25c_ccs.db
+    tcbn16ffplusglbwp16p90cpdlvtssgnp0p72v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvtssgnp0p72v125c_ccs.db
+    tcbn16ffplusglbwp16p90cpdlvtssgnp0p72vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvtssgnp0p72vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdlvtffgnp0p88vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvtffgnp0p88vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdlvtffgnp0p88v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdlvtffgnp0p88v125c_ccs.db
+
+Library : tcbn16ffplusglbwp16p90cpd
+  File path : /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpd.ndm
+  Source .db libs :
+    tcbn16ffplusglbwp16p90cpdtt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdtt0p8v85c.db
+    tcbn16ffplusglbwp16p90cpdtt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdtt0p8v25c.db
+    tcbn16ffplusglbwp16p90cpdssgnp0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdssgnp0p72v125c.db
+    tcbn16ffplusglbwp16p90cpdssgnp0p72vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdssgnp0p72vm40c.db
+    tcbn16ffplusglbwp16p90cpdffgnp0p88vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdffgnp0p88vm40c.db
+    tcbn16ffplusglbwp16p90cpdffgnp0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdffgnp0p88v125c.db
+    tcbn16ffplusglbwp16p90cpdtt0p8v85c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdtt0p8v85c_ccs.db
+    tcbn16ffplusglbwp16p90cpdtt0p8v25c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdtt0p8v25c_ccs.db
+    tcbn16ffplusglbwp16p90cpdssgnp0p72v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdssgnp0p72v125c_ccs.db
+    tcbn16ffplusglbwp16p90cpdssgnp0p72vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdssgnp0p72vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdffgnp0p88vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdffgnp0p88vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdffgnp0p88v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdffgnp0p88v125c_ccs.db
+
+Library : tcbn16ffplusglbwp16p90cpdpm
+  File path : /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdpm.ndm
+  Source .db libs :
+    tcbn16ffplusglbwp16p90cpdpmtt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmtt0p8v85c.db
+    tcbn16ffplusglbwp16p90cpdpmtt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmtt0p8v25c.db
+    tcbn16ffplusglbwp16p90cpdpmssgnp0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmssgnp0p72v125c.db
+    tcbn16ffplusglbwp16p90cpdpmssgnp0p72vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmssgnp0p72vm40c.db
+    tcbn16ffplusglbwp16p90cpdpmffgnp0p88vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmffgnp0p88vm40c.db
+    tcbn16ffplusglbwp16p90cpdpmffgnp0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmffgnp0p88v125c.db
+    tcbn16ffplusglbwp16p90cpdpmtt0p8v85c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmtt0p8v85c_ccs.db
+    tcbn16ffplusglbwp16p90cpdpmtt0p8v25c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmtt0p8v25c_ccs.db
+    tcbn16ffplusglbwp16p90cpdpmssgnp0p72v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmssgnp0p72v125c_ccs.db
+    tcbn16ffplusglbwp16p90cpdpmssgnp0p72vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmssgnp0p72vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdpmffgnp0p88vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmffgnp0p88vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdpmffgnp0p88v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdpmffgnp0p88v125c_ccs.db
+
+Library : tcbn16ffplusglbwp16p90cpdmb
+  File path : /auto/da/project/16/selenga/lib/sc/ndm/CCS_NLDM_vO-2018.06-SP3_CPD/tcbn16ffplusglbwp16p90cpdmb.ndm
+  Source .db libs :
+    tcbn16ffplusglbwp16p90cpdmbtt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbtt0p8v85c.db
+    tcbn16ffplusglbwp16p90cpdmbtt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbtt0p8v25c.db
+    tcbn16ffplusglbwp16p90cpdmbssgnp0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbssgnp0p72v125c.db
+    tcbn16ffplusglbwp16p90cpdmbssgnp0p72vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbssgnp0p72vm40c.db
+    tcbn16ffplusglbwp16p90cpdmbffgnp0p88vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbffgnp0p88vm40c.db
+    tcbn16ffplusglbwp16p90cpdmbffgnp0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbffgnp0p88v125c.db
+    tcbn16ffplusglbwp16p90cpdmbtt0p8v85c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbtt0p8v85c_ccs.db
+    tcbn16ffplusglbwp16p90cpdmbtt0p8v25c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbtt0p8v25c_ccs.db
+    tcbn16ffplusglbwp16p90cpdmbssgnp0p72v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbssgnp0p72v125c_ccs.db
+    tcbn16ffplusglbwp16p90cpdmbssgnp0p72vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbssgnp0p72vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdmbffgnp0p88vm40c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbffgnp0p88vm40c_ccs.db
+    tcbn16ffplusglbwp16p90cpdmbffgnp0p88v125c_ccs : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tcbn16ffplusglbwp16p90cpdmbffgnp0p88v125c_ccs.db
+
+Library : mem256x65_1w4r
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/mem256x65_1w4r.ndm
+  Source .db libs :
+    mem256x65_1w4r_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/mem256x65_1w4r_tt0p8v85c.db
+    mem256x65_1w4r_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/mem256x65_1w4r_tt0p8v25c.db
+    mem256x65_1w4r_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/mem256x65_1w4r_ss0p72v125c.db
+    mem256x65_1w4r_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/mem256x65_1w4r_ss0p72vn40c.db
+    mem256x65_1w4r_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/mem256x65_1w4r_ff0p88vn40c.db
+    mem256x65_1w4r_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/mem256x65_1w4r_ff0p88v125c.db
+    mem256x65_1w4r_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/ccs/mem256x65_1w4r_tt0p8v85c.db
+    mem256x65_1w4r_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/ccs/mem256x65_1w4r_tt0p8v25c.db
+    mem256x65_1w4r_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/ccs/mem256x65_1w4r_ss0p72v125c.db
+    mem256x65_1w4r_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/ccs/mem256x65_1w4r_ss0p72vn40c.db
+    mem256x65_1w4r_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/ccs/mem256x65_1w4r_ff0p88vn40c.db
+    mem256x65_1w4r_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x65_1w4r/v1.5c/syn/ccs/mem256x65_1w4r_ff0p88v125c.db
+
+Library : mem256x78_2w4r
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/mem256x78_2w4r.ndm
+  Source .db libs :
+    mem256x78_2w4r_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/mem256x78_2w4r_tt0p8v85c.db
+    mem256x78_2w4r_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/mem256x78_2w4r_tt0p8v25c.db
+    mem256x78_2w4r_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/mem256x78_2w4r_ss0p72v125c.db
+    mem256x78_2w4r_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/mem256x78_2w4r_ss0p72vn40c.db
+    mem256x78_2w4r_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/mem256x78_2w4r_ff0p88vn40c.db
+    mem256x78_2w4r_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/mem256x78_2w4r_ff0p88v125c.db
+    mem256x78_2w4r_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/ccs/mem256x78_2w4r_tt0p8v85c.db
+    mem256x78_2w4r_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/ccs/mem256x78_2w4r_tt0p8v25c.db
+    mem256x78_2w4r_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/ccs/mem256x78_2w4r_ss0p72v125c.db
+    mem256x78_2w4r_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/ccs/mem256x78_2w4r_ss0p72vn40c.db
+    mem256x78_2w4r_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/ccs/mem256x78_2w4r_ff0p88vn40c.db
+    mem256x78_2w4r_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem256x78_2w4r/v1.6c/syn/ccs/mem256x78_2w4r_ff0p88v125c.db
+
+Library : mem64x38_1w4r
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/mem64x38_1w4r.ndm
+  Source .db libs :
+    mem64x38_1w4r_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/mem64x38_1w4r_tt0p8v85c.db
+    mem64x38_1w4r_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/mem64x38_1w4r_tt0p8v25c.db
+    mem64x38_1w4r_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/mem64x38_1w4r_ss0p72v125c.db
+    mem64x38_1w4r_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/mem64x38_1w4r_ss0p72vn40c.db
+    mem64x38_1w4r_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/mem64x38_1w4r_ff0p88vn40c.db
+    mem64x38_1w4r_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/mem64x38_1w4r_ff0p88v125c.db
+    mem64x38_1w4r_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/ccs/mem64x38_1w4r_tt0p8v85c.db
+    mem64x38_1w4r_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/ccs/mem64x38_1w4r_tt0p8v25c.db
+    mem64x38_1w4r_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/ccs/mem64x38_1w4r_ss0p72v125c.db
+    mem64x38_1w4r_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/ccs/mem64x38_1w4r_ss0p72vn40c.db
+    mem64x38_1w4r_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/ccs/mem64x38_1w4r_ff0p88vn40c.db
+    mem64x38_1w4r_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/mem64x38_1w4r/v1.4c/syn/ccs/mem64x38_1w4r_ff0p88v125c.db
+
+Library : rf10w10r
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/rf10w10r.ndm
+  Source .db libs :
+    rf10w10r_tt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/rf10w10r_tt0p8v85c.db
+    rf10w10r_tt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/rf10w10r_tt0p8v25c.db
+    rf10w10r_ss0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/rf10w10r_ss0p72v125c.db
+    rf10w10r_ss0p72vn40c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/rf10w10r_ss0p72vn40c.db
+    rf10w10r_ff0p88vn40c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/rf10w10r_ff0p88vn40c.db
+    rf10w10r_ff0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/rf10w10r_ff0p88v125c.db
+    rf10w10r_tt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/ccs/rf10w10r_tt0p8v85c.db
+    rf10w10r_tt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/ccs/rf10w10r_tt0p8v25c.db
+    rf10w10r_ss0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/ccs/rf10w10r_ss0p72v125c.db
+    rf10w10r_ss0p72vn40c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/ccs/rf10w10r_ss0p72vn40c.db
+    rf10w10r_ff0p88vn40c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/ccs/rf10w10r_ff0p88vn40c.db
+    rf10w10r_ff0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/rf10w10r/v1.4/syn_vP-2019.03-SP5/ccs/rf10w10r_ff0p88v125c.db
+
+Library : dda
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dda.ndm
+  Source .db libs :
+    dda_tt0p8v85c_typical_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/dda_tt0p8v85c_typical_ccworst.db
+    dda_tt0p8v25c_typical_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/dda_tt0p8v25c_typical_ccworst.db
+    dda_ssgnp0p72v125c_cworst_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/dda_ssgnp0p72v125c_cworst_ccworst.db
+    dda_ssgnp0p72vn40c_cworst_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/dda_ssgnp0p72vn40c_cworst_ccworst.db
+    dda_ffgnp0p88vn40c_cbest_ccbest : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/dda_ffgnp0p88vn40c_cbest_ccbest.db
+    dda_ffgnp0p88v125c_cbest_ccbest : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/dda_ffgnp0p88v125c_cbest_ccbest.db
+    dda_tt0p8v85c_typical_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/ccs/dda_tt0p8v85c_typical_ccworst.db
+    dda_tt0p8v25c_typical_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/ccs/dda_tt0p8v25c_typical_ccworst.db
+    dda_ssgnp0p72v125c_cworst_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/ccs/dda_ssgnp0p72v125c_cworst_ccworst.db
+    dda_ssgnp0p72vn40c_cworst_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/ccs/dda_ssgnp0p72vn40c_cworst_ccworst.db
+    dda_ffgnp0p88vn40c_cbest_ccbest : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/ccs/dda_ffgnp0p88vn40c_cbest_ccbest.db
+    dda_ffgnp0p88v125c_cbest_ccbest : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda/v1.7/e12c/syn/ccs/dda_ffgnp0p88v125c_cbest_ccbest.db
+
+Library : dda_v2
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dda_v2.ndm
+  Source .db libs :
+    dda_v2_tt0p8v85c_typical_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/dda_v2_tt0p8v85c_typical_ccworst.db
+    dda_v2_tt0p8v25c_typical_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/dda_v2_tt0p8v25c_typical_ccworst.db
+    dda_v2_ssgnp0p72v125c_cworst_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/dda_v2_ssgnp0p72v125c_cworst_ccworst.db
+    dda_v2_ssgnp0p72vn40c_cworst_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/dda_v2_ssgnp0p72vn40c_cworst_ccworst.db
+    dda_v2_ffgnp0p88vn40c_cbest_ccbest : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/dda_v2_ffgnp0p88vn40c_cbest_ccbest.db
+    dda_v2_ffgnp0p88v125c_cbest_ccbest : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/dda_v2_ffgnp0p88v125c_cbest_ccbest.db
+    dda_v2_tt0p8v85c_typical_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/ccs/dda_v2_tt0p8v85c_typical_ccworst.db
+    dda_v2_tt0p8v25c_typical_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/ccs/dda_v2_tt0p8v25c_typical_ccworst.db
+    dda_v2_ssgnp0p72v125c_cworst_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/ccs/dda_v2_ssgnp0p72v125c_cworst_ccworst.db
+    dda_v2_ssgnp0p72vn40c_cworst_ccworst : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/ccs/dda_v2_ssgnp0p72vn40c_cworst_ccworst.db
+    dda_v2_ffgnp0p88vn40c_cbest_ccbest : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/ccs/dda_v2_ffgnp0p88vn40c_cbest_ccbest.db
+    dda_v2_ffgnp0p88v125c_cbest_ccbest : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/dda_v2/v0.7/syn/ccs/dda_v2_ffgnp0p88v125c_cbest_ccbest.db
+
+Library : dwc_12gx2ns|tsmc16_notlu
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx2ns.ndm/L0
+
+Library : dwc_12gx2ns|12g_phyx2ns_b80_pads_fc
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx2ns.ndm/L1
+  Source .db libs :
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest_pg.db
+
+Library : dwc_12gx2ns|12g_phyx2ns_b80_pma
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx2ns.ndm/L2
+  Source .db libs :
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x2ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x2_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest_pg.db
+
+Library : dwc_12gx4ns|tsmc16_notlu
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx4ns.ndm/L0
+
+Library : dwc_12gx4ns|12g_phyx4ns_b80_pads_fc
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx4ns.ndm/L1
+  Source .db libs :
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pads_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest_pg.db
+
+Library : dwc_12gx4ns|12g_phyx4ns_b80_pma
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_12gx4ns.ndm/L2
+  Source .db libs :
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_tt0p8v25c_typical_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_12g_phy_tsmc16ffpgl_x4ns_2.02a/2.02a/timing_vO-2018.06-SP3/lib_pg/ccs/dwc_e12mp_pma_x4_ns_12M_2Xa1Xd_h_4Xe_vhvh_2Y2R_ff0p88v125c_rcbest_CCbest_pg.db
+
+Library : dwc_ddr43_phy|tsmc16_notlu
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm/L0
+
+Library : dwc_ddr43_phy|dwc_ddr43_phy_acx4_ew
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm/L1
+  Source .db libs :
+    dwc_ddrphyacx4_top_ew_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ew_tt0p8v85c_typical.db
+    dwc_ddrphyacx4_top_ew_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ew_tt0p8v25c_typical.db
+    dwc_ddrphyacx4_top_ew_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ew_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphyacx4_top_ew_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ew_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphyacx4_top_ew_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ew_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphyacx4_top_ew_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ew_ff0p88v125c_rcbest_CCbest.db
+    dwc_ddrphyacx4_top_ew_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ew_tt0p8v85c_typical.db
+    dwc_ddrphyacx4_top_ew_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ew_tt0p8v25c_typical.db
+    dwc_ddrphyacx4_top_ew_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ew_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphyacx4_top_ew_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ew_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphyacx4_top_ew_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ew_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphyacx4_top_ew_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ew_ff0p88v125c_rcbest_CCbest.db
+
+Library : dwc_ddr43_phy|dwc_ddr43_phy_acx4_ns
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm/L2
+  Source .db libs :
+    dwc_ddrphyacx4_top_ns_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ns_tt0p8v85c_typical.db
+    dwc_ddrphyacx4_top_ns_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ns_tt0p8v25c_typical.db
+    dwc_ddrphyacx4_top_ns_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ns_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphyacx4_top_ns_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ns_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphyacx4_top_ns_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ns_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphyacx4_top_ns_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphyacx4_top_ns_ff0p88v125c_rcbest_CCbest.db
+    dwc_ddrphyacx4_top_ns_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ns_tt0p8v85c_typical.db
+    dwc_ddrphyacx4_top_ns_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ns_tt0p8v25c_typical.db
+    dwc_ddrphyacx4_top_ns_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ns_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphyacx4_top_ns_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ns_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphyacx4_top_ns_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ns_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphyacx4_top_ns_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphyacx4_top_ns_ff0p88v125c_rcbest_CCbest.db
+
+Library : dwc_ddr43_phy|dwc_ddr43_phy_dbyte_ew
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm/L3
+  Source .db libs :
+    dwc_ddrphydbyte_top_ew_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ew_tt0p8v85c_typical.db
+    dwc_ddrphydbyte_top_ew_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ew_tt0p8v25c_typical.db
+    dwc_ddrphydbyte_top_ew_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ew_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphydbyte_top_ew_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ew_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphydbyte_top_ew_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ew_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphydbyte_top_ew_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ew_ff0p88v125c_rcbest_CCbest.db
+    dwc_ddrphydbyte_top_ew_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ew_tt0p8v85c_typical.db
+    dwc_ddrphydbyte_top_ew_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ew_tt0p8v25c_typical.db
+    dwc_ddrphydbyte_top_ew_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ew_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphydbyte_top_ew_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ew_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphydbyte_top_ew_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ew_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphydbyte_top_ew_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ew_ff0p88v125c_rcbest_CCbest.db
+
+Library : dwc_ddr43_phy|dwc_ddr43_phy_dbyte_ns
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm/L4
+  Source .db libs :
+    dwc_ddrphydbyte_top_ns_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ns_tt0p8v85c_typical.db
+    dwc_ddrphydbyte_top_ns_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ns_tt0p8v25c_typical.db
+    dwc_ddrphydbyte_top_ns_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ns_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphydbyte_top_ns_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ns_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphydbyte_top_ns_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ns_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphydbyte_top_ns_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphydbyte_top_ns_ff0p88v125c_rcbest_CCbest.db
+    dwc_ddrphydbyte_top_ns_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ns_tt0p8v85c_typical.db
+    dwc_ddrphydbyte_top_ns_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ns_tt0p8v25c_typical.db
+    dwc_ddrphydbyte_top_ns_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ns_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphydbyte_top_ns_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ns_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphydbyte_top_ns_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ns_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphydbyte_top_ns_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphydbyte_top_ns_ff0p88v125c_rcbest_CCbest.db
+
+Library : dwc_ddr43_phy|dwc_ddr43_phy_decapvddq_ew
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm/L5
+  Source .db libs :
+    dwc_ddrphy_decapvddq_ew_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ew_tt0p8v85c.db
+    dwc_ddrphy_decapvddq_ew_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ew_tt0p8v25c.db
+    dwc_ddrphy_decapvddq_ew_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ew_ss0p72v125c.db
+    dwc_ddrphy_decapvddq_ew_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ew_ss0p72vn40c.db
+    dwc_ddrphy_decapvddq_ew_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ew_ff0p88vn40c.db
+    dwc_ddrphy_decapvddq_ew_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ew_ff0p88v125c.db
+    dwc_ddrphy_decapvddq_ew_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ew_tt0p8v85c.db
+    dwc_ddrphy_decapvddq_ew_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ew_tt0p8v25c.db
+    dwc_ddrphy_decapvddq_ew_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ew_ss0p72v125c.db
+    dwc_ddrphy_decapvddq_ew_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ew_ss0p72vn40c.db
+    dwc_ddrphy_decapvddq_ew_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ew_ff0p88vn40c.db
+    dwc_ddrphy_decapvddq_ew_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ew_ff0p88v125c.db
+
+Library : dwc_ddr43_phy|dwc_ddr43_phy_decapvddq_ns
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm/L6
+  Source .db libs :
+    dwc_ddrphy_decapvddq_ns_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ns_tt0p8v85c.db
+    dwc_ddrphy_decapvddq_ns_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ns_tt0p8v25c.db
+    dwc_ddrphy_decapvddq_ns_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ns_ss0p72v125c.db
+    dwc_ddrphy_decapvddq_ns_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ns_ss0p72vn40c.db
+    dwc_ddrphy_decapvddq_ns_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ns_ff0p88vn40c.db
+    dwc_ddrphy_decapvddq_ns_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphy_decapvddq_ns_ff0p88v125c.db
+    dwc_ddrphy_decapvddq_ns_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ns_tt0p8v85c.db
+    dwc_ddrphy_decapvddq_ns_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ns_tt0p8v25c.db
+    dwc_ddrphy_decapvddq_ns_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ns_ss0p72v125c.db
+    dwc_ddrphy_decapvddq_ns_ss0p72vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ns_ss0p72vn40c.db
+    dwc_ddrphy_decapvddq_ns_ff0p88vn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ns_ff0p88vn40c.db
+    dwc_ddrphy_decapvddq_ns_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphy_decapvddq_ns_ff0p88v125c.db
+
+Library : dwc_ddr43_phy|dwc_ddr43_phy_master
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/dwc_ddr43_phy.ndm/L7
+  Source .db libs :
+    dwc_ddrphymaster_top_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphymaster_top_tt0p8v85c_typical.db
+    dwc_ddrphymaster_top_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphymaster_top_tt0p8v25c_typical.db
+    dwc_ddrphymaster_top_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphymaster_top_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphymaster_top_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphymaster_top_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphymaster_top_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphymaster_top_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphymaster_top_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/dwc_ddrphymaster_top_ff0p88v125c_rcbest_CCbest.db
+    dwc_ddrphymaster_top_tt0p8v85c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphymaster_top_tt0p8v85c_typical.db
+    dwc_ddrphymaster_top_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphymaster_top_tt0p8v25c_typical.db
+    dwc_ddrphymaster_top_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphymaster_top_ss0p72v125c_rcworst_CCworst.db
+    dwc_ddrphymaster_top_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphymaster_top_ss0p72vn40c_rcworst_CCworst.db
+    dwc_ddrphymaster_top_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphymaster_top_ff0p88vn40c_rcbest_CCbest.db
+    dwc_ddrphymaster_top_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_ddr43_phy/1.30a/timing_vO-2018.06-SP3/lib/ccs/dwc_ddrphymaster_top_ff0p88v125c_rcbest_CCbest.db
+
+Library : LVDS|tsmc16_notlu
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L0
+
+Library : LVDS|LVDS_avdd_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L1
+  Source .db libs :
+    dti_tm16glp_18d_lvds_avdd_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_h_typ_85.db
+    dti_tm16glp_18d_lvds_avdd_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_avdd_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_avdd_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_avdd_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_h_ml.db
+
+Library : LVDS|LVDS_avdd
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L2
+  Source .db libs :
+    dti_tm16glp_18d_lvds_avdd_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_typ_85.db
+    dti_tm16glp_18d_lvds_avdd_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_ssgnp125c.db
+    dti_tm16glp_18d_lvds_avdd_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_avdd_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_avdd_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avdd_ml.db
+
+Library : LVDS|LVDS_avddo_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L3
+  Source .db libs :
+    dti_tm16glp_18d_lvds_avddo_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_h_typ_85.db
+    dti_tm16glp_18d_lvds_avddo_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_avddo_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_avddo_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_avddo_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_h_ml.db
+
+Library : LVDS|LVDS_avddo
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L4
+  Source .db libs :
+    dti_tm16glp_18d_lvds_avddo_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_typ_85.db
+    dti_tm16glp_18d_lvds_avddo_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_ssgnp125c.db
+    dti_tm16glp_18d_lvds_avddo_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_avddo_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_avddo_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_avddo_ml.db
+
+Library : LVDS|LVDS_b_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L5
+  Source .db libs :
+    dti_tm16glp_18d_lvds_b_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_h_typ_85.db
+    dti_tm16glp_18d_lvds_b_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_b_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_b_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_b_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_h_ml.db
+
+Library : LVDS|LVDS_b
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L6
+  Source .db libs :
+    dti_tm16glp_18d_lvds_b_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_typ_85.db
+    dti_tm16glp_18d_lvds_b_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_ssgnp125c.db
+    dti_tm16glp_18d_lvds_b_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_b_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_b_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_b_ml.db
+
+Library : LVDS|LVDS_comp_rtt_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L7
+  Source .db libs :
+    dti_tm16glp_18d_lvds_comp_rtt_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_h_typ_85.db
+    dti_tm16glp_18d_lvds_comp_rtt_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_comp_rtt_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_comp_rtt_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_comp_rtt_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_h_ml.db
+
+Library : LVDS|LVDS_comp_rtt
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L8
+  Source .db libs :
+    dti_tm16glp_18d_lvds_comp_rtt_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_typ_85.db
+    dti_tm16glp_18d_lvds_comp_rtt_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_ssgnp125c.db
+    dti_tm16glp_18d_lvds_comp_rtt_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_comp_rtt_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_comp_rtt_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_comp_rtt_ml.db
+
+Library : LVDS|LVDS_filler10p08_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L9
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler10p08_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_h_typ_85.db
+    dti_tm16glp_18d_lvds_filler10p08_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler10p08_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler10p08_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler10p08_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_h_ml.db
+
+Library : LVDS|LVDS_filler10p08
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L10
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler10p08_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_typ_85.db
+    dti_tm16glp_18d_lvds_filler10p08_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler10p08_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler10p08_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler10p08_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler10p08_ml.db
+
+Library : LVDS|LVDS_filler15p12_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L11
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler15p12_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_h_typ_85.db
+    dti_tm16glp_18d_lvds_filler15p12_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler15p12_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler15p12_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler15p12_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_h_ml.db
+
+Library : LVDS|LVDS_filler15p12
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L12
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler15p12_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_typ_85.db
+    dti_tm16glp_18d_lvds_filler15p12_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler15p12_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler15p12_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler15p12_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler15p12_ml.db
+
+Library : LVDS|LVDS_filler2p016_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L13
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler2p016_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_h_typ_85.db
+    dti_tm16glp_18d_lvds_filler2p016_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler2p016_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler2p016_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler2p016_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_h_ml.db
+
+Library : LVDS|LVDS_filler2p016
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L14
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler2p016_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_typ_85.db
+    dti_tm16glp_18d_lvds_filler2p016_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler2p016_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler2p016_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler2p016_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler2p016_ml.db
+
+Library : LVDS|LVDS_filler5p04_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L15
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler5p04_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_h_typ_85.db
+    dti_tm16glp_18d_lvds_filler5p04_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler5p04_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler5p04_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler5p04_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_h_ml.db
+
+Library : LVDS|LVDS_filler5p04
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L16
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler5p04_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_typ_85.db
+    dti_tm16glp_18d_lvds_filler5p04_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler5p04_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler5p04_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler5p04_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler5p04_ml.db
+
+Library : LVDS|LVDS_filler_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L17
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_h_typ_85.db
+    dti_tm16glp_18d_lvds_filler_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_h_ml.db
+
+Library : LVDS|LVDS_filler
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L18
+  Source .db libs :
+    dti_tm16glp_18d_lvds_filler_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_typ_85.db
+    dti_tm16glp_18d_lvds_filler_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_ssgnp125c.db
+    dti_tm16glp_18d_lvds_filler_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_filler_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_filler_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_filler_ml.db
+
+Library : LVDS|LVDS_pwrdn_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L19
+  Source .db libs :
+    dti_tm16glp_18d_lvds_pwrdn_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_h_typ_85.db
+    dti_tm16glp_18d_lvds_pwrdn_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_pwrdn_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_pwrdn_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_pwrdn_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_h_ml.db
+
+Library : LVDS|LVDS_pwrdn
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L20
+  Source .db libs :
+    dti_tm16glp_18d_lvds_pwrdn_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_typ_85.db
+    dti_tm16glp_18d_lvds_pwrdn_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_ssgnp125c.db
+    dti_tm16glp_18d_lvds_pwrdn_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_pwrdn_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_pwrdn_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_pwrdn_ml.db
+
+Library : LVDS|LVDS_ref_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L21
+  Source .db libs :
+    dti_tm16glp_18d_lvds_ref_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_h_typ_85.db
+    dti_tm16glp_18d_lvds_ref_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_ref_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_ref_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_ref_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_h_ml.db
+
+Library : LVDS|LVDS_ref
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L22
+  Source .db libs :
+    dti_tm16glp_18d_lvds_ref_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_typ_85.db
+    dti_tm16glp_18d_lvds_ref_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_ssgnp125c.db
+    dti_tm16glp_18d_lvds_ref_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_ref_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_ref_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_ref_ml.db
+
+Library : LVDS|LVDS_rx_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L23
+  Source .db libs :
+    dti_tm16glp_18d_lvds_rx_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_h_typ_85.db
+    dti_tm16glp_18d_lvds_rx_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_rx_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_rx_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_rx_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_h_ml.db
+
+Library : LVDS|LVDS_rx
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L24
+  Source .db libs :
+    dti_tm16glp_18d_lvds_rx_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_typ_85.db
+    dti_tm16glp_18d_lvds_rx_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_ssgnp125c.db
+    dti_tm16glp_18d_lvds_rx_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_rx_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_rx_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_rx_ml.db
+
+Library : LVDS|LVDS_spacer_0p048_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L25
+  Source .db libs :
+    dti_tm16glp_18d_lvds_spacer_0p048_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_h_typ_85.db
+    dti_tm16glp_18d_lvds_spacer_0p048_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_spacer_0p048_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_0p048_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_0p048_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_h_ml.db
+
+Library : LVDS|LVDS_spacer_0p048
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L26
+  Source .db libs :
+    dti_tm16glp_18d_lvds_spacer_0p048_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_typ_85.db
+    dti_tm16glp_18d_lvds_spacer_0p048_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_ssgnp125c.db
+    dti_tm16glp_18d_lvds_spacer_0p048_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_0p048_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_0p048_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p048_ml.db
+
+Library : LVDS|LVDS_spacer_0p096_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L27
+  Source .db libs :
+    dti_tm16glp_18d_lvds_spacer_0p096_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_h_typ_85.db
+    dti_tm16glp_18d_lvds_spacer_0p096_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_spacer_0p096_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_0p096_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_0p096_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_h_ml.db
+
+Library : LVDS|LVDS_spacer_0p096
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L28
+  Source .db libs :
+    dti_tm16glp_18d_lvds_spacer_0p096_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_typ_85.db
+    dti_tm16glp_18d_lvds_spacer_0p096_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_ssgnp125c.db
+    dti_tm16glp_18d_lvds_spacer_0p096_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_0p096_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_0p096_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_0p096_ml.db
+
+Library : LVDS|LVDS_spacer_1p008_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L29
+  Source .db libs :
+    dti_tm16glp_18d_lvds_spacer_1p008_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_h_typ_85.db
+    dti_tm16glp_18d_lvds_spacer_1p008_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_spacer_1p008_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_1p008_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_1p008_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_h_ml.db
+
+Library : LVDS|LVDS_spacer_1p008
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L30
+  Source .db libs :
+    dti_tm16glp_18d_lvds_spacer_1p008_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_typ_85.db
+    dti_tm16glp_18d_lvds_spacer_1p008_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_ssgnp125c.db
+    dti_tm16glp_18d_lvds_spacer_1p008_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_1p008_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_spacer_1p008_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_spacer_1p008_ml.db
+
+Library : LVDS|LVDS_testpad_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L31
+  Source .db libs :
+    dti_tm16glp_18d_lvds_testpad_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_h_typ_85.db
+    dti_tm16glp_18d_lvds_testpad_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_testpad_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_testpad_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_testpad_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_h_ml.db
+
+Library : LVDS|LVDS_testpad
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L32
+  Source .db libs :
+    dti_tm16glp_18d_lvds_testpad_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_typ_85.db
+    dti_tm16glp_18d_lvds_testpad_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_ssgnp125c.db
+    dti_tm16glp_18d_lvds_testpad_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_testpad_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_testpad_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_testpad_ml.db
+
+Library : LVDS|LVDS_vdd_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L33
+  Source .db libs :
+    dti_tm16glp_18d_lvds_vdd_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_h_typ_85.db
+    dti_tm16glp_18d_lvds_vdd_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_vdd_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_vdd_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_vdd_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_h_ml.db
+
+Library : LVDS|LVDS_vdd
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L34
+  Source .db libs :
+    dti_tm16glp_18d_lvds_vdd_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_typ_85.db
+    dti_tm16glp_18d_lvds_vdd_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_ssgnp125c.db
+    dti_tm16glp_18d_lvds_vdd_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_vdd_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_vdd_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vdd_ml.db
+
+Library : LVDS|LVDS_vddo_brk_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L35
+  Source .db libs :
+    dti_tm16glp_18d_lvds_vddo_brk_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_h_typ_85.db
+    dti_tm16glp_18d_lvds_vddo_brk_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_vddo_brk_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_vddo_brk_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_vddo_brk_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_h_ml.db
+
+Library : LVDS|LVDS_vddo_brk
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L36
+  Source .db libs :
+    dti_tm16glp_18d_lvds_vddo_brk_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_typ_85.db
+    dti_tm16glp_18d_lvds_vddo_brk_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_ssgnp125c.db
+    dti_tm16glp_18d_lvds_vddo_brk_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_vddo_brk_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_vddo_brk_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_brk_ml.db
+
+Library : LVDS|LVDS_vddo_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L37
+  Source .db libs :
+    dti_tm16glp_18d_lvds_vddo_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_h_typ_85.db
+    dti_tm16glp_18d_lvds_vddo_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_vddo_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_vddo_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_vddo_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_h_ml.db
+
+Library : LVDS|LVDS_vddo
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L38
+  Source .db libs :
+    dti_tm16glp_18d_lvds_vddo_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_typ_85.db
+    dti_tm16glp_18d_lvds_vddo_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_ssgnp125c.db
+    dti_tm16glp_18d_lvds_vddo_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_vddo_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_vddo_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vddo_ml.db
+
+Library : LVDS|LVDS_vss_h
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L39
+  Source .db libs :
+    dti_tm16glp_18d_lvds_vss_h_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_h_typ_85.db
+    dti_tm16glp_18d_lvds_vss_h_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_h_ssgnp125c.db
+    dti_tm16glp_18d_lvds_vss_h_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_h_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_vss_h_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_h_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_vss_h_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_h_ml.db
+
+Library : LVDS|LVDS_vss
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/LVDS.ndm/L40
+  Source .db libs :
+    dti_tm16glp_18d_lvds_vss_typ_85 : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_typ_85.db
+    dti_tm16glp_18d_lvds_vss_ssgnp125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_ssgnp125c.db
+    dti_tm16glp_18d_lvds_vss_ssgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_ssgnpn40c.db
+    dti_tm16glp_18d_lvds_vss_ffgnpn40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_ffgnpn40c.db
+    dti_tm16glp_18d_lvds_vss_ml : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/dolphin/tsmc16GLP_lvds_18DLVDS_BASEONLY_rev1p0p0_BE/syn/dti_tm16glp_18d_lvds_vss_ml.db
+
+Library : usb3_femtophy_otg_x1ns|tsmc16_notlu
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/usb3_femtophy_otg_x1ns.ndm/L0
+
+Library : usb3_femtophy_otg_x1ns|usb3_femtophy_otg_x1ns_pads_fc
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/usb3_femtophy_otg_x1ns.ndm/L1
+  Source .db libs :
+    dwc_usb3_pads_sspx1_hspx1_ns_tt0p8v25c_typical : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_pads_sspx1_hspx1_ns_tt0p8v25c_typical_pg.db
+    dwc_usb3_pads_sspx1_hspx1_ns_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_pads_sspx1_hspx1_ns_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_usb3_pads_sspx1_hspx1_ns_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_pads_sspx1_hspx1_ns_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_usb3_pads_sspx1_hspx1_ns_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_pads_sspx1_hspx1_ns_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_usb3_pads_sspx1_hspx1_ns_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_pads_sspx1_hspx1_ns_ff0p88v125c_rcbest_CCbest_pg.db
+
+Library : usb3_femtophy_otg_x1ns|usb3_femtophy_otg_x1ns_phy
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/usb3_femtophy_otg_x1ns.ndm/L2
+  Source .db libs :
+    dwc_usb3_sspx1_hspx1_ns_ss0p72v125c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_sspx1_hspx1_ns_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_usb3_sspx1_hspx1_ns_ss0p72vn40c_rcworst_CCworst : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_sspx1_hspx1_ns_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_usb3_sspx1_hspx1_ns_ff0p88vn40c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_sspx1_hspx1_ns_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_usb3_sspx1_hspx1_ns_ff0p88v125c_rcbest_CCbest : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_usb3_femtophy_otg_tsmc16ffpgl_x1ns_4.13a_cust1_new/4.13a_cust1/timing/lib_pg/dwc_usb3_sspx1_hspx1_ns_ff0p88v125c_rcbest_CCbest_pg.db
+
+Library : hdmi20_tx_ns_6gbps|tsmc16_notlu
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/hdmi20_tx_ns_6gbps.ndm/L0
+
+Library : hdmi20_tx_ns_6gbps|hdmi20_tx_ns_6gbps_pads_fc
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/hdmi20_tx_ns_6gbps.ndm/L1
+  Source .db libs :
+    dwc_hdmi20txio_ss0p72v125c_rcworst_CCworst : /auto/da/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_hdmi20_tx_ns_6gbps_tsmc_16ffpgl18_4.12a_cust1/Latest/timing_vN-2017.12/pg/dwc_hdmi20txio_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_hdmi20txio_ss0p72vn40c_rcworst_CCworst : /auto/da/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_hdmi20_tx_ns_6gbps_tsmc_16ffpgl18_4.12a_cust1/Latest/timing_vN-2017.12/pg/dwc_hdmi20txio_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_hdmi20txio_ff0p88vn40c_rcbest_CCbest : /auto/da/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_hdmi20_tx_ns_6gbps_tsmc_16ffpgl18_4.12a_cust1/Latest/timing_vN-2017.12/pg/dwc_hdmi20txio_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_hdmi20txio_ff0p88v125c_rcbest_CCbest : /auto/da/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_hdmi20_tx_ns_6gbps_tsmc_16ffpgl18_4.12a_cust1/Latest/timing_vN-2017.12/pg/dwc_hdmi20txio_ff0p88v125c_rcbest_CCbest_pg.db
+
+Library : hdmi20_tx_ns_6gbps|hdmi20_tx_ns_6gbps_macro
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/hdmi20_tx_ns_6gbps.ndm/L2
+  Source .db libs :
+    dwc_hdmi20_tx_phy_ns_ss0p72v125c_rcworst_CCworst : /auto/da/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_hdmi20_tx_ns_6gbps_tsmc_16ffpgl18_4.12a_cust1/Latest/timing_vN-2017.12/pg/dwc_hdmi20_tx_phy_ns_ss0p72v125c_rcworst_CCworst_pg.db
+    dwc_hdmi20_tx_phy_ns_ss0p72vn40c_rcworst_CCworst : /auto/da/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_hdmi20_tx_ns_6gbps_tsmc_16ffpgl18_4.12a_cust1/Latest/timing_vN-2017.12/pg/dwc_hdmi20_tx_phy_ns_ss0p72vn40c_rcworst_CCworst_pg.db
+    dwc_hdmi20_tx_phy_ns_ff0p88vn40c_rcbest_CCbest : /auto/da/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_hdmi20_tx_ns_6gbps_tsmc_16ffpgl18_4.12a_cust1/Latest/timing_vN-2017.12/pg/dwc_hdmi20_tx_phy_ns_ff0p88vn40c_rcbest_CCbest_pg.db
+    dwc_hdmi20_tx_phy_ns_ff0p88v125c_rcbest_CCbest : /auto/da/technology/16/tsmc_cln16ffp/lib/synopsys/dwc_hdmi20_tx_ns_6gbps_tsmc_16ffpgl18_4.12a_cust1/Latest/timing_vN-2017.12/pg/dwc_hdmi20_tx_phy_ns_ff0p88v125c_rcbest_CCbest_pg.db
+
+Library : mr74116
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/mr74116.ndm
+  Source .db libs :
+    mr74116_tc_vtyp_85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/mr74116_tc_vtyp_85c.db
+    mr74116_tc_vtyp_25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/mr74116_tc_vtyp_25c.db
+    mr74116_wc_vmin_125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/mr74116_wc_vmin_125c.db
+    mr74116_wc_vmin_m40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/mr74116_wc_vmin_m40c.db
+    mr74116_bc_vmax_m40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/mr74116_bc_vmax_m40c.db
+    mr74116_bc_vmax_125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/mr74116_bc_vmax_125c.db
+    mr74116_tc_vtyp_85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/ccs/mr74116_tc_vtyp_85c.db
+    mr74116_tc_vtyp_25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/ccs/mr74116_tc_vtyp_25c.db
+    mr74116_wc_vmin_125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/ccs/mr74116_wc_vmin_125c.db
+    mr74116_wc_vmin_m40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/ccs/mr74116_wc_vmin_m40c.db
+    mr74116_bc_vmax_m40c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/ccs/mr74116_bc_vmax_m40c.db
+    mr74116_bc_vmax_125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74116_TS_TSMC16FF_PLUS_GL_FULL_V1R6/timing_vO-2018.06-SP3/ccs/mr74116_bc_vmax_125c.db
+
+Library : mr74118
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/mr74118.ndm
+  Source .db libs :
+    mr74118_TT0P80V85C_CTYP : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/mr74118_TT0P80V85C_CTYP.db
+    mr74118_TT0P80V25C_CTYP : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/mr74118_TT0P80V25C_CTYP.db
+    mr74118_SS0P72V125C_RCWORST_CCWORST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/mr74118_SS0P72V125C_RCWORST_CCWORST.db
+    mr74118_SS0P72VM40C_RCWORST_CCWORST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/mr74118_SS0P72VM40C_RCWORST_CCWORST.db
+    mr74118_FF0P88VM40C_RCBEST_CCBEST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/mr74118_FF0P88VM40C_RCBEST_CCBEST.db
+    mr74118_FF0P88V125C_RCBEST_CCBEST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/mr74118_FF0P88V125C_RCBEST_CCBEST.db
+    mr74118_TT0P80V85C_CTYP : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/ccs/mr74118_TT0P80V85C_CTYP.db
+    mr74118_TT0P80V25C_CTYP : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/ccs/mr74118_TT0P80V25C_CTYP.db
+    mr74118_SS0P72V125C_RCWORST_CCWORST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/ccs/mr74118_SS0P72V125C_RCWORST_CCWORST.db
+    mr74118_SS0P72VM40C_RCWORST_CCWORST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/ccs/mr74118_SS0P72VM40C_RCWORST_CCWORST.db
+    mr74118_FF0P88VM40C_RCBEST_CCBEST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/ccs/mr74118_FF0P88VM40C_RCBEST_CCBEST.db
+    mr74118_FF0P88V125C_RCBEST_CCBEST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74118_VM_TSMC16FF_PLUS_GL_FULL_V1R4/timing_vO-2018.06-SP3/ccs/mr74118_FF0P88V125C_RCBEST_CCBEST.db
+
+Library : mr74119
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/mr74119.ndm
+  Source .db libs :
+    mr74119_TT0P80V85C_CTYP : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/mr74119_TT0P80V85C_CTYP.db
+    mr74119_TT0P80V25C_CTYP : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/mr74119_TT0P80V25C_CTYP.db
+    mr74119_SS0P72V125C_RCWORST_CCWORST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/mr74119_SS0P72V125C_RCWORST_CCWORST.db
+    mr74119_SS0P72VM40C_RCWORST_CCWORST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/mr74119_SS0P72VM40C_RCWORST_CCWORST.db
+    mr74119_FF0P88VM40C_RCBEST_CCBEST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/mr74119_FF0P88VM40C_RCBEST_CCBEST.db
+    mr74119_FF0P88V125C_RCBEST_CCBEST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/mr74119_FF0P88V125C_RCBEST_CCBEST.db
+    mr74119_TT0P80V85C_CTYP : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/ccs/mr74119_TT0P80V85C_CTYP.db
+    mr74119_TT0P80V25C_CTYP : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/ccs/mr74119_TT0P80V25C_CTYP.db
+    mr74119_SS0P72V125C_RCWORST_CCWORST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/ccs/mr74119_SS0P72V125C_RCWORST_CCWORST.db
+    mr74119_SS0P72VM40C_RCWORST_CCWORST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/ccs/mr74119_SS0P72VM40C_RCWORST_CCWORST.db
+    mr74119_FF0P88VM40C_RCBEST_CCBEST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/ccs/mr74119_FF0P88VM40C_RCBEST_CCBEST.db
+    mr74119_FF0P88V125C_RCBEST_CCBEST : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/moortec/MR74119_PD_TSMC16FF_PLUS_GL_FULL_V1R3/liberty_mcst/ccs/mr74119_FF0P88V125C_RCBEST_CCBEST.db
+
+Library : bfs
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/bfs.ndm
+  Source .db libs :
+    bfs_tt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/bfs_tt0p8v85c_pg.db
+    bfs_tt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/bfs_tt0p8v25c_pg.db
+    bfs_ss0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/bfs_ss0p72v125c_pg.db
+    bfs_ss0p72vn40c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/bfs_ss0p72vn40c_pg.db
+    bfs_ff0p88vn40c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/bfs_ff0p88vn40c_pg.db
+    bfs_ff0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/bfs_ff0p88v125c_pg.db
+    bfs_tt0p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/ccs/bfs_tt0p8v85c_pg.db
+    bfs_tt0p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/ccs/bfs_tt0p8v25c_pg.db
+    bfs_ss0p72v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/ccs/bfs_ss0p72v125c_pg.db
+    bfs_ss0p72vn40c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/ccs/bfs_ss0p72vn40c_pg.db
+    bfs_ff0p88vn40c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/ccs/bfs_ff0p88vn40c_pg.db
+    bfs_ff0p88v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/mcst/bfs/v2.6/syn_vP-2019.03-SP5/lib_pg/ccs/bfs_ff0p88v125c_pg.db
+
+Library : TEF16FPGL256X32HD18_PHRM
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/TEF16FPGL256X32HD18_PHRM.ndm
+  Source .db libs :
+    tef16fpgl256x32hd18_phrm_tt0p8v1p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/efuse/Front_End/timing_power_noise/NLDM_vN-2017.12/tef16fpgl256x32hd18_phrm_100a/tef16fpgl256x32hd18_phrm_100a_tt0p8v1p8v85c.db
+    tef16fpgl256x32hd18_phrm_ssgnp0p72v1p62v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/efuse/Front_End/timing_power_noise/NLDM_vN-2017.12/tef16fpgl256x32hd18_phrm_100a/tef16fpgl256x32hd18_phrm_100a_ssgnp0p72v1p62v125c.db
+    tef16fpgl256x32hd18_phrm_ssgnp0p72v1p62vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/efuse/Front_End/timing_power_noise/NLDM_vN-2017.12/tef16fpgl256x32hd18_phrm_100a/tef16fpgl256x32hd18_phrm_100a_ssgnp0p72v1p62vm40c.db
+
+Library : tef16fpllesd_p
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/tef16fpllesd_p.ndm
+  Source .db libs :
+    tef16fpllesd_p_tt0p8v1p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/efuse/Front_End/timing_power_noise/NLDM_vN-2017.12/tef16fpllesd_p_110a/tef16fpllesd_p_110a_tt0p8v1p8v85c.db
+    tef16fpllesd_p_ssgnp0p72v1p62v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/efuse/Front_End/timing_power_noise/NLDM_vN-2017.12/tef16fpllesd_p_110a/tef16fpllesd_p_110a_ssgnp0p72v1p62v125c.db
+    tef16fpllesd_p_ssgnp0p72v1p62vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/efuse/Front_End/timing_power_noise/NLDM_vN-2017.12/tef16fpllesd_p_110a/tef16fpllesd_p_110a_ssgnp0p72v1p62vm40c.db
+
+Library : OVL_TCD
+  File path : /auto/da/project/16/selenga/lib/ip/ndm/OVL_TCD.ndm
+
+Library : PAD_MCST
+  File path : /auto/da/project/16/selenga/lib/io/ndm/PAD_MCST.ndm
+  Source .db libs :
+    PAD_MCST_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/PAD_MCST/v0.7/syn/PAD_MCST_tt0p8v85c.db
+    PAD_MCST_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/PAD_MCST/v0.7/syn/PAD_MCST_tt0p8v25c.db
+    PAD_MCST_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/PAD_MCST/v0.7/syn/PAD_MCST_ss0p72v125c.db
+    PAD_MCST_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/PAD_MCST/v0.7/syn/PAD_MCST_ff0p88v125c.db
+    PAD_MCST_tt0p8v85c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/PAD_MCST/v0.7/syn/ccs/PAD_MCST_tt0p8v85c.db
+    PAD_MCST_tt0p8v25c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/PAD_MCST/v0.7/syn/ccs/PAD_MCST_tt0p8v25c.db
+    PAD_MCST_ss0p72v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/PAD_MCST/v0.7/syn/ccs/PAD_MCST_ss0p72v125c.db
+    PAD_MCST_ff0p88v125c : /auto/storage-04/technology/16/tsmc_cln16ffp/lib/mcst/PAD_MCST/v0.7/syn/ccs/PAD_MCST_ff0p88v125c.db
+
+Library : tphn16ffpglgv18e|tphn16ffpglgv18e_no_physical_only_cells
+  File path : /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18e.ndm/L0
+  Source .db libs :
+    tphn16ffpglgv18ett0p8v1p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18ett0p8v1p8v85c.db
+    tphn16ffpglgv18ett0p8v1p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18ett0p8v1p8v25c.db
+    tphn16ffpglgv18essgnp0p72v1p62v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18essgnp0p72v1p62v125c.db
+    tphn16ffpglgv18essgnp0p72v1p62vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18essgnp0p72v1p62vm40c.db
+    tphn16ffpglgv18effgnp0p88v1p98vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18effgnp0p88v1p98vm40c.db
+    tphn16ffpglgv18effgnp0p88v1p98v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18effgnp0p88v1p98v125c.db
+    tphn16ffpglgv18ett0p8v1p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18ett0p8v1p8v85c.db
+    tphn16ffpglgv18ett0p8v1p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18ett0p8v1p8v25c.db
+    tphn16ffpglgv18essgnp0p72v1p62v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18essgnp0p72v1p62v125c.db
+    tphn16ffpglgv18essgnp0p72v1p62vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18essgnp0p72v1p62vm40c.db
+    tphn16ffpglgv18effgnp0p88v1p98vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18effgnp0p88v1p98vm40c.db
+    tphn16ffpglgv18effgnp0p88v1p98v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18effgnp0p88v1p98v125c.db
+
+Library : tphn16ffpglgv18e|tphn16ffpglgv18e_physical_only_cells
+  File path : /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18e.ndm/L1
+
+Library : tphn16ffpglgv18|tphn16ffpglgv18_no_physical_only_cells
+  File path : /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18.ndm/L0
+  Source .db libs :
+    tphn16ffpglgv18tt0p8v1p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18tt0p8v1p8v85c.db
+    tphn16ffpglgv18tt0p8v1p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18tt0p8v1p8v25c.db
+    tphn16ffpglgv18ssgnp0p72v1p62v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18ssgnp0p72v1p62v125c.db
+    tphn16ffpglgv18ssgnp0p72v1p62vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18ssgnp0p72v1p62vm40c.db
+    tphn16ffpglgv18ffgnp0p88v1p98vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18ffgnp0p88v1p98vm40c.db
+    tphn16ffpglgv18ffgnp0p88v1p98v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18ffgnp0p88v1p98v125c.db
+    tphn16ffpglgv18tt0p8v1p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18tt0p8v1p8v85c.db
+    tphn16ffpglgv18tt0p8v1p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18tt0p8v1p8v25c.db
+    tphn16ffpglgv18ssgnp0p72v1p62v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18ssgnp0p72v1p62v125c.db
+    tphn16ffpglgv18ssgnp0p72v1p62vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18ssgnp0p72v1p62vm40c.db
+    tphn16ffpglgv18ffgnp0p88v1p98vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18ffgnp0p88v1p98vm40c.db
+    tphn16ffpglgv18ffgnp0p88v1p98v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18ffgnp0p88v1p98v125c.db
+
+Library : tphn16ffpglgv18|tphn16ffpglgv18_physical_only_cells
+  File path : /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18.ndm/L1
+
+Library : tphn16ffpglgv18od33|tphn16ffpglgv18od33_no_physical_only_cells
+  File path : /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18od33.ndm/L0
+  Source .db libs :
+    tphn16ffpglgv18od33tt0p8v1p8v1p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18od33tt0p8v1p8v1p8v85c.db
+    tphn16ffpglgv18od33tt0p8v1p8v1p8v25c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18od33tt0p8v1p8v1p8v25c.db
+    tphn16ffpglgv18od33ssgnp0p72v1p62v1p62v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18od33ssgnp0p72v1p62v1p62v125c.db
+    tphn16ffpglgv18od33ssgnp0p72v1p62v1p62vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18od33ssgnp0p72v1p62v1p62vm40c.db
+    tphn16ffpglgv18od33ffgnp0p88v1p98v1p98vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18od33ffgnp0p88v1p98v1p98vm40c.db
+    tphn16ffpglgv18od33ffgnp0p88v1p98v1p98v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/NLDM_vO-2018.06-SP3/tphn16ffpglgv18od33ffgnp0p88v1p98v1p98v125c.db
+    tphn16ffpglgv18od33tt0p8v1p8v1p8v85c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18od33tt0p8v1p8v1p8v85c.db
+    tphn16ffpglgv18od33ssgnp0p72v1p62v1p62v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18od33ssgnp0p72v1p62v1p62v125c.db
+    tphn16ffpglgv18od33ssgnp0p72v1p62v1p62vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18od33ssgnp0p72v1p62v1p62vm40c.db
+    tphn16ffpglgv18od33ffgnp0p88v1p98v1p98vm40c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18od33ffgnp0p88v1p98v1p98vm40c.db
+    tphn16ffpglgv18od33ffgnp0p88v1p98v1p98v125c : /auto/da/technology/16/tsmc_cln16ffp/lib/tsmc/digital/Front_End/timing_power_noise/CCS_vO-2018.06-SP3/tphn16ffpglgv18od33ffgnp0p88v1p98v1p98v125c.db
+
+Library : tphn16ffpglgv18od33|tphn16ffpglgv18od33_physical_only_cells
+  File path : /auto/da/project/16/selenga/lib/io/ndm/tphn16ffpglgv18od33.ndm/L1
+
+--------------------------------------------------------------------------------
+                              NETLIST INFORMATION
+--------------------------------------------------------------------------------
+
+CELL INSTANCE INFORMATION
+-----------------------------------------------------------------------------
+Cell Instance Type          Count % of         Area  % of siteAreaPerSite
+                                  total             total
+-----------------------------------------------------------------------------
+TOTAL LEAF CELLS             1011  100     379.3133   100 unit:7317  
+
+  Standard cells             1011  100     379.3133   100 unit:7317  
+  Filler cells                  0    0       0.0000     0 
+  Diode cells                   0    0       0.0000     0 
+  Hard macro cells              0    0       0.0000     0 
+  Soft macro cells              0    0       0.0000     0 
+    Black box cells             0    0       0.0000     0 
+  Analog block cells            0    0       0.0000     0 
+  Pad cells                     0    0       0.0000     0 
+    Flip-chip pad cells         0    0       0.0000     0 
+  Cover cells                   0    0       0.0000     0 
+  Flip-chip driver cells        0    0       0.0000     0 
+  Corner pad cells              0    0       0.0000     0 
+  Pad spacer cells              0    0       0.0000     0 
+  Others                        0    0       0.0000     0 
+
+Special cells                   2    0       0.4147     0 unit:8  
+  Level shifter                 0    0       0.0000     0 
+  Isolation                     0    0       0.0000     0 
+  Switch                        0    0       0.0000     0 
+  Always on                     0    0       0.0000     0 
+  Retention                     0    0       0.0000     0 
+  Tie off                       2    0       0.4147     0 unit:8  
+
+LVT                             0    0       0.0000     0 
+HVT                             0    0       0.0000     0 
+Normal VT                       0    0       0.0000     0 
+Others                       1011  100     379.3133   100 unit:7317  
+
+Netlist cells                 526   52     256.0896    67 unit:4940  
+Physical only                 485   47     123.2237    32 unit:2377  
+
+Fixed cells                   485   47     123.2237    32 unit:2377  
+Moveable cells                526   52     256.0896    67 unit:4940  
+
+Combinational                 867   85     227.8368    60 unit:4395  
+Sequential                    144   14     151.4765    39 unit:2922  
+Others                          0    0       0.0000     0 
+
+Buffer                        115   11      43.2346    11 unit:834  
+Inverter                       56    5      10.7827     2 unit:208  
+Buffer/inverter               171   16      54.0173    14 unit:1042  
+
+Spare cells                     2    0       8.7091     2 unit:168  
+ICG cells                       5    0       4.9766     1 unit:96  
+Flip-flop cells               139   13     146.4998    38 unit:2826  
+Latch cells                     0    0       0.0000     0 
+Antenna cells                   0    0       0.0000     0 
+
+Mux logic                       0    0       0.0000     0 
+Double height                   0    0       0.0000     0 
+Triple height                   0    0       0.0000     0 
+More than triple height         0    0       0.0000     0 
+
+Logic Hierarchies          0
+
+REFERENCE DESIGN INFORMATION
+----------------------------------------------------------------------------------------------
+Number of reference designs used:76   
+----------------------------------------------------------------------------------------------
+Name           Type          Count     Width    Height        Area   PinDens SiteName siteArea
+----------------------------------------------------------------------------------------------
+BOUNDARY_PROW4BWP16P90CPD lib_cell 318    0.3600    0.5760      0.2074    9.6451 unit        4
+DFCNQD1BWP16P90CPDILVT lib_cell 92    1.8000    0.5760      1.0368    5.7870 unit           20
+DEL025D1BWP16P90CPD lib_cell    83    0.6300    0.5760      0.3629   11.0229 unit            7
+INR2D1BWP16P90CPD lib_cell      66    0.3600    0.5760      0.2074   24.1127 unit            4
+TAPCELLBWP16P90CPD lib_cell     53    0.8100    0.5760      0.4666    4.2867 unit            9
+BOUNDARY_LEFTBWP16P90CPD lib_cell 50    0.3600    0.5760      0.2074    9.6451 unit          4
+BOUNDARY_RIGHTBWP16P90CPD lib_cell 50    0.3600    0.5760      0.2074    9.6451 unit         4
+INVD1BWP16P90CPD lib_cell       30    0.1800    0.5760      0.1037   38.5802 unit            2
+NR2D1BWP16P90CPD lib_cell       29    0.2700    0.5760      0.1555   32.1502 unit            3
+OR2D1BWP16P90CPD lib_cell       26    0.3600    0.5760      0.2074   24.1127 unit            4
+DFCNQD1BWP16P90CPD lib_cell     22    1.8000    0.5760      1.0368    5.7870 unit           20
+CKBD1BWP16P90CPD lib_cell       20    0.2700    0.5760      0.1555   25.7202 unit            3
+ND2D1BWP16P90CPD lib_cell       16    0.2700    0.5760      0.1555   32.1502 unit            3
+AOI22D1BWP16P90CPD lib_cell     11    0.4500    0.5760      0.2592   27.0062 unit            5
+INVD1BWP16P90CPDULVT lib_cell   11    0.1800    0.5760      0.1037   38.5802 unit            2
+CKOR2D2BWP16P90CPD lib_cell      8    0.5400    0.5760      0.3110   16.0751 unit            6
+DFSNQD1BWP16P90CPDILVT lib_cell  7    1.8900    0.5760      1.0886    5.5115 unit           21
+DFCNQND1BWP16P90CPD lib_cell     6    1.8900    0.5760      1.0886    5.5115 unit           21
+INVD12BWP16P90CPDULVT lib_cell   6    1.1700    0.5760      0.6739    5.9354 unit           13
+OAI22D1BWP16P90CPD lib_cell      6    0.4500    0.5760      0.2592   27.0062 unit            5
+CKBD12BWP16P90CPDULVT lib_cell   5    1.5300    0.5760      0.8813    4.5389 unit           17
+BUFFD12BWP16P90CPDULVT lib_cell  5    1.5300    0.5760      0.8813    4.5389 unit           17
+ND3D1BWP16P90CPD lib_cell        4    0.3600    0.5760      0.2074   28.9352 unit            4
+IOAI21D1BWP16P90CPD lib_cell     4    0.5400    0.5760      0.3110   19.2901 unit            6
+BOUNDARY_PCORNERBWP16P90CPD lib_cell 4    0.3600    0.5760      0.2074    9.6451 unit        4
+EDFCNQD1BWP16P90CPDILVT lib_cell 4    2.4300    0.5760      1.3997    5.0011 unit           27
+BOUNDARY_PTAPBWP16P90CPD lib_cell 4    0.8100    0.5760      0.4666    4.2867 unit           9
+OAI31D1BWP16P90CPD lib_cell      3    0.4500    0.5760      0.2592   27.0062 unit            5
+OAI21D1BWP16P90CPD lib_cell      3    0.3600    0.5760      0.2074   28.9352 unit            4
+NR3D1BWP16P90CPD lib_cell        3    0.3600    0.5760      0.2074   28.9352 unit            4
+OAI211D1BWP16P90CPD lib_cell     3    0.4500    0.5760      0.2592   27.0062 unit            5
+AOI21D1BWP16P90CPD lib_cell      3    0.3600    0.5760      0.2074   28.9352 unit            4
+GDCAP12MCOBWP16P90CPDULVT lib_cell 2    7.5600    0.5760      4.3546    0.4593 unit         84
+INVD2BWP16P90CPDULVT lib_cell    2    0.2700    0.5760      0.1555   25.7202 unit            3
+INVD4BWP16P90CPDILVT lib_cell    2    0.4500    0.5760      0.2592   15.4321 unit            5
+BOUNDARY_PROW1BWP16P90CPD lib_cell 2    0.0900    0.5760      0.0518   38.5802 unit          1
+BOUNDARY_PROW3BWP16P90CPD lib_cell 2    0.2700    0.5760      0.1555   12.8601 unit          3
+DFSNQD2BWP16P90CPD lib_cell      2    1.8900    0.5760      1.0886    5.5115 unit           21
+CKLNQD2BWP16P90CPDLVT lib_cell   2    1.4400    0.5760      0.8294    8.4394 unit           16
+AOI33D1BWP16P90CPD lib_cell      2    0.6300    0.5760      0.3629   24.8016 unit            7
+AOAI211D1BWP16P90CPD lib_cell    2    0.5400    0.5760      0.3110   22.5051 unit            6
+OAI221D1BWP16P90CPD lib_cell     2    0.6300    0.5760      0.3629   22.0459 unit            7
+TIELBWP16P90CPD lib_cell         2    0.3600    0.5760      0.2074   14.4676 unit            4
+DFNCNQD1BWP16P90CPD lib_cell     2    1.8000    0.5760      1.0368    5.7870 unit           20
+AOI22D8BWP16P90CPD lib_cell      1    2.9700    0.5760      1.7107    4.0918 unit           33
+OAOI211D1BWP16P90CPD lib_cell    1    0.5400    0.5760      0.3110   22.5051 unit            6
+DFSNQD1BWP16P90CPDLVT lib_cell   1    1.8900    0.5760      1.0886    5.5115 unit           21
+DFCNQND1BWP16P90CPDLVT lib_cell  1    1.8900    0.5760      1.0886    5.5115 unit           21
+DFCNQD1BWP16P90CPDLVT lib_cell   1    1.8000    0.5760      1.0368    5.7870 unit           20
+OAI222D1BWP16P90CPD lib_cell     1    0.8100    0.5760      0.4666   19.2901 unit            9
+IOA21D1BWP16P90CPD lib_cell      1    0.4500    0.5760      0.2592   23.1481 unit            5
+AN3D1BWP16P90CPD lib_cell        1    0.4500    0.5760      0.2592   23.1481 unit            5
+CKBD14BWP16P90CPDULVT lib_cell   1    1.8000    0.5760      1.0368    3.8580 unit           20
+OAI21OPTPBD4BWP16P90CPD lib_cell 1    1.4400    0.5760      0.8294    7.2338 unit           16
+OAI22D6BWP16P90CPD lib_cell      1    2.2500    0.5760      1.2960    5.4012 unit           25
+OAI22D4BWP16P90CPD lib_cell      1    1.5300    0.5760      0.8813    7.9430 unit           17
+OAI22SKPD4BWP16P90CPD lib_cell   1    1.5300    0.5760      0.8813    7.9430 unit           17
+BUFFD1BWP16P90CPDULVT lib_cell   1    0.2700    0.5760      0.1555   25.7202 unit            3
+DFSNQND1BWP16P90CPD lib_cell     1    1.8900    0.5760      1.0886    5.5115 unit           21
+AO21D4BWP16P90CPD lib_cell       1    0.7200    0.5760      0.4147   14.4676 unit            8
+CKND4BWP16P90CPDULVT lib_cell    1    0.4500    0.5760      0.2592   15.4321 unit            5
+ND3SKNBD1BWP16P90CPDULVT lib_cell 1    0.3600    0.5760      0.2074   28.9352 unit           4
+CKLNQD2BWP16P90CPDULVT lib_cell  1    1.4400    0.5760      0.8294    8.4394 unit           16
+IND4D1BWP16P90CPD lib_cell       1    0.5400    0.5760      0.3110   22.5051 unit            6
+CKLNQD8BWP16P90CPDULVT lib_cell  1    2.3400    0.5760      1.3478    5.1935 unit           26
+AO21D1BWP16P90CPD lib_cell       1    0.4500    0.5760      0.2592   23.1481 unit            5
+NR4D1BWP16P90CPD lib_cell        1    0.4500    0.5760      0.2592   27.0062 unit            5
+INVD3BWP16P90CPDULVT lib_cell    1    0.3600    0.5760      0.2074   19.2901 unit            4
+AOI222D1BWP16P90CPD lib_cell     1    0.8100    0.5760      0.4666   19.2901 unit            9
+ND4D1BWP16P90CPD lib_cell        1    0.4500    0.5760      0.2592   27.0062 unit            5
+AOI211D1BWP16P90CPD lib_cell     1    0.4500    0.5760      0.2592   27.0062 unit            5
+AOI32D1BWP16P90CPD lib_cell      1    0.5400    0.5760      0.3110   25.7202 unit            6
+INVD2BWP16P90CPDILVT lib_cell    1    0.2700    0.5760      0.1555   25.7202 unit            3
+CKND8BWP16P90CPDLVT lib_cell     1    0.8100    0.5760      0.4666    8.5734 unit            9
+CKLNQD4BWP16P90CPDULVT lib_cell  1    1.9800    0.5760      1.1405    6.1378 unit           22
+CKND10BWP16P90CPDLVT lib_cell    1    0.9900    0.5760      0.5702    7.0146 unit           11
+
+NET INFORMATION
+------------------------------------------------------------------
+NetType                 Count FloatingNets         Vias Nets/Cells
+------------------------------------------------------------------
+Total                     538            0         4587     0.5321
+Signal                    536            0            0     0.5302
+Power                       1            0         2256     0.0010
+Ground                      1            0         2331     0.0010
+Analog Signal               0            0            0     0.0000
+Analog Ground               0            0            0     0.0000
+Analog Power                0            0            0     0.0000
+Clock                       0            0            0     0.0000
+Tie Low                     0            0            0     0.0000
+Tie High                    0            0            0     0.0000
+Others                      0            0            0     0.0000
+
+NET FANOUT AND PIN COUNT INFORMATION
+---------------------------------------------------
+Fanout        Netcount     netPinCount     NetCount
+---------------------------------------------------
+<2                 415     <2                     0
+2                   48     2                    415
+3                   33     3                     48
+4                   12     4                     33
+5                    4     5                     12
+6-10                 9     6-10                  13
+11-20                4     11-20                  4
+21-30                5     21-30                  5
+31-50                5     31-50                  5
+51-100               1     51-100                 1
+101-500              0     101-500                0
+501-1000             0     501-1000               0
+>1000                2     >1000                  2
+
+PORT AND PIN INFORMATION
+------------------------------------------------------------------------------
+Type         Total     Input    Output     Inout      3-st     Power    Ground
+------------------------------------------------------------------------------
+Total         3694      3163       526         0         0      1011      1011
+Macro            0         0         0         0         0         0         0
+Ports           29        12        17         0         0         1         1
+------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                              FLOORPLAN INFORMATION
+--------------------------------------------------------------------------------
+
+CORE AND CHIP AREA INFORMATION
+---------------------------
+Core Area is :    1795.3229
+Chip Area is :    1980.0979
+---------------------------
+
+SITE ROW INFORMATION
+-----------------------------------------------------------------------
+Site Name    Width    Height   Total Rows     Total Tiles          Area
+-----------------------------------------------------------------------
+gaunit      0.6300    0.5760           52            4940     1792.6272
+unit        0.0900    0.5760           52           34632     1795.3229
+-----------------------------------------------------------------------
+
+BLOCKAGE INFORMATION
+------------------------------------------------
+Blockage Type                Count          Area
+------------------------------------------------
+Hard placement                   0        0.0000
+Soft placement                   0        0.0000
+Hard macro                       0        0.0000
+Partial placement                0        0.0000
+Register                         0        0.0000
+Placement allow Buffer Only      0        0.0000
+Placement allow RP Group Only    0        0.0000
+RP Group                         0        0.0000
+Category                         0        0.0000
+Routing                         55       18.7416
+Routing for Top                  0        0.0000
+Routing For Design Rule          0        0.0000
+Shaping                          0        0.0000
+------------------------------------------------
+
+POWER DOMAIN INFORMATION
+--------------------------------------------------------------------
+Power Domain Name    VA Name         Primary Power Net Primary Ground Net
+--------------------------------------------------------------------
+DEFAULT_POWER_DOMAIN DEFAULT_VA      VDD               VSS
+--------------------------------------------------------------------
+
+VOLTAGE AREA INFORMATION
+-------------------------------------------------------------------------------------
+VA Name          Number             Area       Target    bbox    bbox    bbox    bbox
+              of shapes                   Utilization     llx     lly     urx     ury
+-------------------------------------------------------------------------------------
+DEFAULT_VA            1        1795.3229         1.0000  1.0000  1.0080 60.9400 30.9600
+-------------------------------------------------------------------------------------
+
+GROUP BOUND INFORMATION
+----------------------------------------
+No Group Bound exists
+
+EXCLUSIVE MOVEBOUND INFORMATION
+----------------------------------------
+No Exclusive MoveBound exists.
+
+HARD AND SOFT MOVEBOUND INFORMATION
+----------------------------------------
+No Hard Or Soft MoveBound exists.
+
+ROUTE GUIDE INFORMATION
+------------------------------------------------
+Route Guide Type             Count          Area
+------------------------------------------------
+Extra Detour Region              0        0.0000
+Over icovl CellLayers            0        0.0000
+River Routing                    0        0.0000
+Area Double Via                  0        0.0000
+Access Preference                0        0.0000
+Default                          0        0.0000
+Switched Direction Only          0        0.0000
+Max Patterns                     0        0.0000
+Others                           0        0.0000
+------------------------------------------------
+
+MULTIBIT REGISTER INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+MULTIBIT LS/ISO CELLS INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+RP GROUP INFORMATION
+----------------------------------------
+No RP Group exists
+
+LAYER INFORMATION
+--------------------------------------------------------------------------
+Layer Name Direction Ignored Pitch  default minWidth minSpacing    sameNet
+                                      Width                     MinSpacing
+--------------------------------------------------------------------------
+M1         Ver       YES     0.0900  0.0320   0.0320     0.0320     0.0000
+M2         Hor       NO      0.0640  0.0320   0.0320     0.0320     0.0000
+M3         Ver       NO      0.0700  0.0380   0.0320     0.0320     0.0000
+M4         Hor       NO      0.0800  0.0400   0.0400     0.0400     0.0000
+M5         Ver       NO      0.0800  0.0400   0.0400     0.0400     0.0000
+M6         Hor       NO      0.0800  0.0400   0.0400     0.0400     0.0000
+M7         Ver       NO      0.0800  0.0400   0.0400     0.0400     0.0000
+M8         Hor       NO      0.0800  0.0400   0.0400     0.0400     0.0000
+M9         Ver       NO      0.1260  0.0620   0.0620     0.0640     0.0000
+M10        Hor       NO      0.1260  0.0620   0.0620     0.0640     0.0000
+M11        Ver       YES     0.9000  0.4500   0.4500     0.4500     0.0000
+M12        Hor       YES     0.9000  0.4500   0.4500     0.4500     0.0000
+AP         Hor       YES     3.6000  1.8000   1.8000     1.8000     0.0000
+--------------------------------------------------------------------------
+1

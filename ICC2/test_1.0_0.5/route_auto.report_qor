@@ -1,0 +1,261 @@
+****************************************
+Report : qor
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 20:23:37 2024
+****************************************
+Information: The stitching and editing of coupling caps is turned ON for design 'img2_jtag_tap_wrap.nlib:img2_jtag_tap_wrap/route_auto.design'. (TIM-125)
+Begin building search trees for block img2_jtag_tap_wrap.nlib:img2_jtag_tap_wrap/route_auto.design
+Done building search trees for block img2_jtag_tap_wrap.nlib:img2_jtag_tap_wrap/route_auto.design (time 0s)
+Information: Design img2_jtag_tap_wrap has 579 nets, 0 global routed, 577 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'img2_jtag_tap_wrap'. (NEX-022)
+---extraction options---
+Corner: norm.tt0p8v85c.typical_CCworst
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_ccap_scale               : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_ccap_scale              : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Corner: norm.ffgnp0p88vm40c.rcbest_CCbest
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_ccap_scale               : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_ccap_scale              : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Corner: norm.ssgnp0p72v125c.rcworst_CCworst
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_ccap_scale               : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_ccap_scale              : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Global options:
+ late_ccap_threshold       : 0.0031pF
+ late_ccap_ratio           : 0.03
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : false
+---app options---
+ host.max_cores                   : 4
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : true
+Extracting design: img2_jtag_tap_wrap 
+Information: coupling capacitance is created explicitly. (NEX-029)
+Information: 577 nets are successfully extracted. (NEX-028)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 577, routed nets = 577, across physical hierarchy nets = 0, parasitics cached nets = 577, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+
+Scenario           'norm.ffgnp0p88vm40c.rcbest_CCbest'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:           -0.0013
+Total Hold Violation:           -0.0206
+No. of Hold Violations:              48
+----------------------------------------
+
+Scenario           'norm.ffgnp0p88vm40c.rcbest_CCbest'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ffgnp0p88vm40c.rcbest_CCbest'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ffgnp0p88vm40c.rcbest_CCbest'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ssgnp0p72v125c.rcworst_CCworst'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ssgnp0p72v125c.rcworst_CCworst'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ssgnp0p72v125c.rcworst_CCworst'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.ssgnp0p72v125c.rcworst_CCworst'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     10
+Critical Path Length:            0.2777
+Critical Path Slack:             0.1761
+Critical Path Clk Period:        1.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                      3
+Critical Path Length:            0.5505
+Critical Path Slack:            -0.0875
+Critical Path Clk Period:        1.0000
+Total Negative Slack:           -0.2623
+No. of Violating Paths:               3
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      4
+Critical Path Length:            0.5253
+Critical Path Slack:            -0.0782
+Critical Path Clk Period:        1.0000
+Total Negative Slack:           -0.1396
+No. of Violating Paths:               3
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      2
+Critical Path Length:            0.0740
+Critical Path Slack:            -0.1099
+Critical Path Clk Period:        1.0000
+Total Negative Slack:           -0.2117
+No. of Violating Paths:               2
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                    567
+Buf/Inv Cell Count:                 204
+Buf Cell Count:                     135
+Inv Cell Count:                      69
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:           423
+Sequential Cell Count:              144
+   Integrated Clock-Gating Cell Count:                     5
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       139
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            117.5731
+Noncombinational Area:         152.7206
+Buf/Inv Area:                   64.3853
+Total Buffer Area:              41.6275
+Total Inverter Area:            22.7578
+Macro/Black Box Area:            0.0000
+Net Area:                             0
+Net XLength:                  1833.3370
+Net YLength:                  1572.9250
+----------------------------------------
+Cell Area (netlist):                          270.2938
+Cell Area (netlist and physical only):        393.5180
+Net Length:                   3406.2620
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:               579
+Nets with Violations:                 3
+Max Trans Violations:                 3
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 20:23:37 2024
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+norm.tt0p8v85c.typical_CCworst (Setup)        -0.1099        -0.6136              8
+Design             (Setup)          -0.1099        -0.6136              8
+
+norm.ffgnp0p88vm40c.rcbest_CCbest (Hold)        -0.0013        -0.0206             48
+norm.ssgnp0p72v125c.rcworst_CCworst (Hold)         0.0263         0.0000              0
+norm.tt0p8v85c.typical_CCworst (Hold)         0.0070         0.0000              0
+Design             (Hold)           -0.0013        -0.0206             48
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          270.2938
+Cell Area (netlist and physical only):        393.5180
+Nets with DRC Violations:        3
+1

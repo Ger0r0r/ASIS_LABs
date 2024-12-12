@@ -1,0 +1,88 @@
+Information: Performing automatic clock gating circuitry identification in design 'img2_jtag_tap_wrap'. (PWR-757)
+Information: No gating element has been automatically identified (PWR-878)
+ 
+****************************************
+Report : scenarios
+Design : img2_jtag_tap_wrap
+Scenario(s): norm.tt0p8v85c.typical_CCworst norm.ffgnp0p88vm40c.rcbest_CCbest norm.ssgnp0p72v125c.rcworst_CCworst
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 18:29:56 2024
+****************************************
+
+All scenarios (Total=3): norm.tt0p8v85c.typical_CCworst norm.ffgnp0p88vm40c.rcbest_CCbest norm.ssgnp0p72v125c.rcworst_CCworst
+All Active scenarios (Total=3): norm.tt0p8v85c.typical_CCworst norm.ffgnp0p88vm40c.rcbest_CCbest norm.ssgnp0p72v125c.rcworst_CCworst
+Current scenario     : norm.tt0p8v85c.typical_CCworst
+
+Scenario #0: norm.tt0p8v85c.typical_CCworst is active.
+Scenario options: Setup Hold Leakage_power
+Cts_corner: none
+Has timing derate: Yes
+
+Library(s) Used:
+ gtech (File: /auto/da/cad/synopsys/DC/syn_vP-2019.03-SP4/libraries/syn/gtech.db)
+
+Operating condition(s) Used:
+  Analysis Type    : bc_wc
+  Max Operating Condition: tcbn16ffplusglbwp16p90cpdulvttt0p8v85c:tt0p8v85c
+  Max Process    : 1.00
+  Max Voltage    : 0.80
+  Max Temperature: 85.00
+  Min Operating Condition: tcbn16ffplusglbwp16p90cpdulvttt0p8v85c:tt0p8v85c
+  Min Process    : 1.00
+  Min Voltage    : 0.80
+  Min Temperature: 85.00
+
+TLU+ Files Used:
+  Max TLU+ file: /auto/da/technology/16/tsmc_cln16ffp/tech/rc/TN16CLBL060B2_1_0P1A/typical/Tech/typical_CCworst/cln16ff+_1p12m_2xa1xd4xe2y2r_mim_ut-alrdl_typical_CCworst.tluplus
+  Min TLU+ file: /auto/da/technology/16/tsmc_cln16ffp/tech/rc/TN16CLBL060B2_1_0P1A/typical/Tech/typical_CCworst/cln16ff+_1p12m_2xa1xd4xe2y2r_mim_ut-alrdl_typical_CCworst.tluplus
+  Tech2ITF mapping file: /auto/da/project/16/selenga/tech/mw/map_file_b.map
+
+Scenario #1: norm.ffgnp0p88vm40c.rcbest_CCbest is active.
+Scenario options: Hold
+Cts_corner: none
+Has timing derate: Yes
+
+Library(s) Used:
+ gtech (File: /auto/da/cad/synopsys/DC/syn_vP-2019.03-SP4/libraries/syn/gtech.db)
+
+Operating condition(s) Used:
+  Analysis Type    : bc_wc
+  Max Operating Condition: tcbn16ffplusglbwp16p90cpdulvtffgnp0p88vm40c:ffgnp0p88vm40c
+  Max Process    : 1.00
+  Max Voltage    : 0.88
+  Max Temperature: -40.00
+  Min Operating Condition: tcbn16ffplusglbwp16p90cpdulvtffgnp0p88vm40c:ffgnp0p88vm40c
+  Min Process    : 1.00
+  Min Voltage    : 0.88
+  Min Temperature: -40.00
+
+TLU+ Files Used:
+  Max TLU+ file: /auto/da/technology/16/tsmc_cln16ffp/tech/rc/TN16CLBL060B2_1_0P1A/rcbest/Tech/rcbest_CCbest/cln16ff+_1p12m_2xa1xd4xe2y2r_mim_ut-alrdl_rcbest_CCbest.tluplus
+  Min TLU+ file: /auto/da/technology/16/tsmc_cln16ffp/tech/rc/TN16CLBL060B2_1_0P1A/rcbest/Tech/rcbest_CCbest/cln16ff+_1p12m_2xa1xd4xe2y2r_mim_ut-alrdl_rcbest_CCbest.tluplus
+  Tech2ITF mapping file: /auto/da/project/16/selenga/tech/mw/map_file_b.map
+
+Scenario #2: norm.ssgnp0p72v125c.rcworst_CCworst is active.
+Scenario options: Hold
+Cts_corner: none
+Has timing derate: Yes
+
+Library(s) Used:
+ gtech (File: /auto/da/cad/synopsys/DC/syn_vP-2019.03-SP4/libraries/syn/gtech.db)
+
+Operating condition(s) Used:
+  Analysis Type    : bc_wc
+  Max Operating Condition: tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c:ssgnp0p72v125c
+  Max Process    : 1.00
+  Max Voltage    : 0.72
+  Max Temperature: 125.00
+  Min Operating Condition: tcbn16ffplusglbwp16p90cpdulvtssgnp0p72v125c:ssgnp0p72v125c
+  Min Process    : 1.00
+  Min Voltage    : 0.72
+  Min Temperature: 125.00
+
+TLU+ Files Used:
+  Max TLU+ file: /auto/da/technology/16/tsmc_cln16ffp/tech/rc/TN16CLBL060B2_1_0P1A/rcworst/Tech/rcworst_CCworst/cln16ff+_1p12m_2xa1xd4xe2y2r_mim_ut-alrdl_rcworst_CCworst.tluplus
+  Min TLU+ file: /auto/da/technology/16/tsmc_cln16ffp/tech/rc/TN16CLBL060B2_1_0P1A/rcworst/Tech/rcworst_CCworst/cln16ff+_1p12m_2xa1xd4xe2y2r_mim_ut-alrdl_rcworst_CCworst.tluplus
+  Tech2ITF mapping file: /auto/da/project/16/selenga/tech/mw/map_file_b.map
+
+1

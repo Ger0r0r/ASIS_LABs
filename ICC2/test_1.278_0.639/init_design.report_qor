@@ -1,0 +1,154 @@
+****************************************
+Report : qor
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 12 19:31:20 2024
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'img2_jtag_tap_wrap.nlib:img2_jtag_tap_wrap.design'. (TIM-125)
+Information: Design Average RC for design img2_jtag_tap_wrap  (NEX-011)
+Information: r = 11.385273 ohm/um, via_r = 12.227441 ohm/cut, c = 0.138552 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 13.112630 ohm/um, via_r = 12.374203 ohm/cut, c = 0.131181 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'img2_jtag_tap_wrap'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 448, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 23, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                      8
+Critical Path Length:            0.2586
+Critical Path Slack:             0.3354
+Critical Path Clk Period:        1.2780
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:           -0.0077
+Total Hold Violation:           -0.0196
+No. of Hold Violations:               3
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                      2
+Critical Path Length:            0.6529
+Critical Path Slack:             0.0881
+Critical Path Clk Period:        1.2780
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      2
+Critical Path Length:            0.6187
+Critical Path Slack:            -0.0160
+Critical Path Clk Period:        1.2780
+Total Negative Slack:           -0.0317
+No. of Violating Paths:               2
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      1
+Critical Path Length:            0.0688
+Critical Path Slack:             0.0312
+Critical Path Clk Period:        1.2780
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                    438
+Buf/Inv Cell Count:                  82
+Buf Cell Count:                      22
+Inv Cell Count:                      60
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:           294
+Sequential Cell Count:              144
+   Integrated Clock-Gating Cell Count:                     5
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       139
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             57.3869
+Noncombinational Area:         151.8912
+Buf/Inv Area:                   11.6640
+Total Buffer Area:               5.1840
+Total Inverter Area:             6.4800
+Macro/Black Box Area:            0.0000
+Net Area:                             0
+Net XLength:                  1366.8405
+Net YLength:                  1247.1715
+----------------------------------------
+Cell Area (netlist):                          209.2781
+Cell Area (netlist and physical only):        332.5020
+Net Length:                   2614.0120
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:               450
+Nets with Violations:                26
+Max Trans Violations:                26
+Max Cap Violations:                  11
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 12 19:31:21 2024
+****************************************
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+norm.tt0p8v85c.typical_CCworst (Setup)        -0.0160        -0.0317              2
+Design             (Setup)          -0.0160        -0.0317              2
+
+norm.tt0p8v85c.typical_CCworst (Hold)        -0.0077        -0.0196              3
+Design             (Hold)           -0.0077        -0.0196              3
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          209.2781
+Cell Area (netlist and physical only):        332.5020
+Nets with DRC Violations:       26
+1

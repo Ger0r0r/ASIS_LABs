@@ -1,0 +1,252 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : qor
+Design : img2_jtag_tap_wrap
+Scenario(s): norm.tt0p8v85c.typical_CCworst norm.ffgnp0p88vm40c.rcbest_CCbest norm.ssgnp0p72v125c.rcworst_CCworst
+Version: P-2019.03-SP4
+Date   : Wed Oct 30 14:57:11 2024
+****************************************
+
+
+  Scenario 'norm.tt0p8v85c.typical_CCworst'
+  Timing Path Group 'FEEDTHROUGH'
+  -----------------------------------
+  Levels of Logic:             2.0000
+  Critical Path Length:        0.1493
+  Critical Path Slack:         0.0807
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.tt0p8v85c.typical_CCworst'
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:             4.0000
+  Critical Path Length:        0.0685
+  Critical Path Slack:         0.0012
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.tt0p8v85c.typical_CCworst'
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:             1.0000
+  Critical Path Length:        0.0773
+  Critical Path Slack:         0.0027
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.tt0p8v85c.typical_CCworst'
+  Timing Path Group 'clock'
+  -----------------------------------
+  Levels of Logic:             7.0000
+  Critical Path Length:        0.2160
+  Critical Path Slack:         0.3537
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:       -0.0075
+  Total Hold Violation:       -0.0207
+  No. of Hold Violations:      3.0000
+  -----------------------------------
+
+
+  Scenario 'norm.ffgnp0p88vm40c.rcbest_CCbest'
+  Timing Path Group 'FEEDTHROUGH'
+  -----------------------------------
+  Levels of Logic:             2.0000
+  Critical Path Length:        0.1076
+  Critical Path Slack:         0.1824
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.ffgnp0p88vm40c.rcbest_CCbest'
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:             4.0000
+  Critical Path Length:        0.0506
+  Critical Path Slack:         0.0809
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.ffgnp0p88vm40c.rcbest_CCbest'
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:             1.0000
+  Critical Path Length:        0.0604
+  Critical Path Slack:         0.0796
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.ffgnp0p88vm40c.rcbest_CCbest'
+  Timing Path Group 'clock'
+  -----------------------------------
+  Levels of Logic:             7.0000
+  Critical Path Length:        0.1657
+  Critical Path Slack:         0.4658
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:       -0.0140
+  Total Hold Violation:       -0.5569
+  No. of Hold Violations:    120.0000
+  -----------------------------------
+
+
+  Scenario 'norm.ssgnp0p72v125c.rcworst_CCworst'
+  Timing Path Group 'FEEDTHROUGH'
+  -----------------------------------
+  Levels of Logic:             2.0000
+  Critical Path Length:        0.2105
+  Critical Path Slack:         0.0795
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.ssgnp0p72v125c.rcworst_CCworst'
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:             4.0000
+  Critical Path Length:        0.1026
+  Critical Path Slack:         0.0234
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.ssgnp0p72v125c.rcworst_CCworst'
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:             1.0000
+  Critical Path Length:        0.1057
+  Critical Path Slack:         0.0343
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+  Scenario 'norm.ssgnp0p72v125c.rcworst_CCworst'
+  Timing Path Group 'clock'
+  -----------------------------------
+  Levels of Logic:             7.0000
+  Critical Path Length:        0.3421
+  Critical Path Slack:         0.2838
+  Critical Path Clk Period:    1.3000
+  Total Negative Slack:        0.0000
+  No. of Violating Paths:      0.0000
+  Worst Hold Violation:        0.0000
+  Total Hold Violation:        0.0000
+  No. of Hold Violations:      0.0000
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                428
+  Buf/Inv Cell Count:              74
+  Buf Cell Count:                  23
+  Inv Cell Count:                  51
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       284
+  Sequential Cell Count:          144
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:         55.5206
+  Noncombinational Area:     151.8912
+  Buf/Inv Area:               10.1606
+  Total Buffer Area:           4.5619
+  Total Inverter Area:         5.5987
+  Macro/Black Box Area:        0.0000
+  Net Area:                    0.0000
+  Net XLength        :      1041.9210
+  Net YLength        :      1028.4370
+  -----------------------------------
+  Cell Area:                 207.4118
+  Design Area:               207.4118
+  Net Length        :       2070.3579
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           438
+  Nets With Violations:            26
+  Max Trans Violations:            25
+  Max Cap Violations:              12
+  Max Fanout Violations:            1
+  -----------------------------------
+
+
+  Hostname: astro-38
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                  0.0000
+  Logic Optimization:                0.0000
+  Mapping Optimization:             22.3703
+  -----------------------------------------
+  Overall Compile Time:             73.0356
+  Overall Compile Wall Clock Time:  73.9671
+
+  --------------------------------------------------------------------
+
+  Scenario: norm.tt0p8v85c.typical_CCworst   WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+  Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest   WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+  Scenario: norm.ssgnp0p72v125c.rcworst_CCworst   WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+  Design  WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+
+
+  Scenario: norm.tt0p8v85c.typical_CCworst  (Hold)  WNS: 0.0075  TNS: 0.0207  Number of Violating Paths: 3
+  Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest  (Hold)  WNS: 0.0140  TNS: 0.5569  Number of Violating Paths: 120
+  Scenario: norm.ssgnp0p72v125c.rcworst_CCworst  (Hold)  WNS: 0.0000  TNS: 0.0000  Number of Violating Paths: 0
+  Design (Hold)  WNS: 0.0140  TNS: 0.5569  Number of Violating Paths: 120
+
+  --------------------------------------------------------------------
+
+
+1

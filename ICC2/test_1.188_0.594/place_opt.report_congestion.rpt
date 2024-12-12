@@ -1,0 +1,632 @@
+
+Running global router for congestion map ...
+Info: Set app option 'route.global.deterministic' to on
+
+Generating Timing information  
+Design  Scenario norm.tt0p8v85c.typical_CCworst (Mode norm.tt0p8v85c.typical_CCworst Corner norm.tt0p8v85c.typical_CCworst)
+Running High Resistance Flow
+Estimated unitRes/unitCap :
+Layer M1 : Res  28.9344 ohm/um Cap  0.144283 ff/um
+Layer M2 : Res  29.0876 ohm/um Cap  0.187289 ff/um
+Layer M3 : Res  24.0799 ohm/um Cap  0.192036 ff/um
+Layer M4 : Res  15.3194 ohm/um Cap  0.20871 ff/um
+Layer M5 : Res  13.2975 ohm/um Cap  0.218835 ff/um
+Layer M6 : Res  13.2975 ohm/um Cap  0.21882 ff/um
+Layer M7 : Res  13.2975 ohm/um Cap  0.218819 ff/um
+Layer M8 : Res  13.2975 ohm/um Cap  0.221973 ff/um
+Layer M9 : Res  4.48207 ohm/um Cap  0.228198 ff/um
+Layer M10 : Res  4.48207 ohm/um Cap  0.212184 ff/um
+Layer M11 : Res  0.0444978 ohm/um Cap  0.452321 ff/um
+Layer M12 : Res  0.0444978 ohm/um Cap  0.364907 ff/um
+Layer AP : Res  0.00751112 ohm/um Cap  0.287285 ff/um
+Generating Timing information  ... Done
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used    7  Alloctr    7  Proc 9042 
+Printing options for 'route.common.*'
+common.concurrent_redundant_via_effort_level            :	 low                 
+common.concurrent_redundant_via_mode                    :	 off                 
+common.connect_within_pins_by_layer_name                :	 {M1 via_wire_standard_cell_pins}
+common.extra_nonpreferred_direction_wire_cost_multiplier_by_layer_name:	 {M4 3} {M5 3} {M6 3} {M7 3} {M8 3}
+common.global_min_layer_mode                            :	 allow_pin_connection
+common.net_min_layer_mode                               :	 soft                
+common.post_detail_route_redundant_via_insertion        :	 off                 
+common.via_array_mode                                   :	 rotate              
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 on                  
+global.timing_driven                                    :	 true                
+global.via_cut_modeling                                 :	 true                
+
+Begin global routing.
+Two layer enclosure iso-dense via enclosure rule is defined.
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M2
+Cell Max-Routing-Layer = M10
+Skipping 4 internal pins that are not physical. Set route.common.verbose_level to > 0 and run routing command to get skipped pin names.
+Info: number of net_type_blockage: 110 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.064 may be too small: wire/via-down 0.100, wire/via-up 0.064. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.080 may be too small: wire/via-down 0.080, wire/via-up 0.120. (ZRT-026)
+Via on layer (VIA10) needs more than one tracks
+Warning: Layer M10 pitch 0.126 may be too small: wire/via-down 0.126, wire/via-up 0.320. (ZRT-026)
+Via on layer (RV) needs more than one tracks
+Warning: Layer M12 pitch 0.900 may be too small: wire/via-down 0.900, wire/via-up 2.475. (ZRT-026)
+Via on layer (RV) needs more than one tracks
+Warning: Layer AP pitch 3.600 may be too small: wire/via-down 4.500, wire/via-up 3.600. (ZRT-026)
+Transition layer name: M8(7)
+Current Stage stats:
+[End of Read DB] Elapsed real time: 0:00:00 
+[End of Read DB] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Read DB] Stage (MB): Used  177  Alloctr  177  Proc    8 
+[End of Read DB] Total (MB): Used  184  Alloctr  185  Proc 9050 
+Loading timing information to the router from design
+Timing information loaded to the router.
+Constructing data structure ...
+Information: Double patterning layer M1 will be routed with target utilization ratio of 80 per cent. (ZRT-138)
+Information: Double patterning layer M2 will be routed with target utilization ratio of 80 per cent. (ZRT-138)
+Information: Double patterning layer M3 will be routed with target utilization ratio of 85 per cent. (ZRT-138)
+Information: Non-DPT layer M4 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer M5 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer M6 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer M7 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer M8 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer M9 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer M10 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer M11 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer M12 will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Information: Non-DPT layer AP will be routed with target utilization ratio of 100 per cent. (ZRT-138)
+Design statistics:
+Design Bounding Box (0.00,0.00,61.94,31.97)
+Number of routing layers = 13
+layer M1, dir Ver, min width = 0.032, min space = 0.032 pitch = 0.09
+layer M2, dir Hor, min width = 0.032, min space = 0.032 pitch = 0.064
+layer M3, dir Ver, min width = 0.032, min space = 0.032 pitch = 0.07
+layer M4, dir Hor, min width = 0.04, min space = 0.04 pitch = 0.08
+layer M5, dir Ver, min width = 0.04, min space = 0.04 pitch = 0.08
+layer M6, dir Hor, min width = 0.04, min space = 0.04 pitch = 0.08
+layer M7, dir Ver, min width = 0.04, min space = 0.04 pitch = 0.08
+layer M8, dir Hor, min width = 0.04, min space = 0.04 pitch = 0.08
+layer M9, dir Ver, min width = 0.062, min space = 0.064 pitch = 0.126
+layer M10, dir Hor, min width = 0.062, min space = 0.064 pitch = 0.126
+layer M11, dir Ver, min width = 0.45, min space = 0.45 pitch = 0.9
+layer M12, dir Hor, min width = 0.45, min space = 0.45 pitch = 0.9
+layer AP, dir Hor, min width = 1.8, min space = 1.8 pitch = 3.6
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Tech Data] Total (MB): Used  184  Alloctr  185  Proc 9050 
+Net statistics:
+Total number of nets     = 538
+Number of nets to route  = 536
+2 nets are fully connected,
+ of which 2 are detail routed and 0 are global routed.
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build All Nets] Total (MB): Used  185  Alloctr  186  Proc 9050 
+Average gCell capacity  0.46	 on layer (1)	 M1
+Average gCell capacity  4.87	 on layer (2)	 M2
+Average gCell capacity  6.78	 on layer (3)	 M3
+Average gCell capacity  5.37	 on layer (4)	 M4
+Average gCell capacity  5.65	 on layer (5)	 M5
+Average gCell capacity  5.65	 on layer (6)	 M6
+Average gCell capacity  5.65	 on layer (7)	 M7
+Average gCell capacity  5.64	 on layer (8)	 M8
+Average gCell capacity  3.39	 on layer (9)	 M9
+Average gCell capacity  3.39	 on layer (10)	 M10
+Average gCell capacity  0.62	 on layer (11)	 M11
+Average gCell capacity  0.00	 on layer (12)	 M12
+Average gCell capacity  0.00	 on layer (13)	 AP
+Average number of tracks per gCell 6.38	 on layer (1)	 M1
+Average number of tracks per gCell 8.93	 on layer (2)	 M2
+Average number of tracks per gCell 8.20	 on layer (3)	 M3
+Average number of tracks per gCell 7.16	 on layer (4)	 M4
+Average number of tracks per gCell 7.18	 on layer (5)	 M5
+Average number of tracks per gCell 7.16	 on layer (6)	 M6
+Average number of tracks per gCell 7.18	 on layer (7)	 M7
+Average number of tracks per gCell 7.16	 on layer (8)	 M8
+Average number of tracks per gCell 4.56	 on layer (9)	 M9
+Average number of tracks per gCell 4.54	 on layer (10)	 M10
+Average number of tracks per gCell 0.64	 on layer (11)	 M11
+Average number of tracks per gCell 0.64	 on layer (12)	 M12
+Average number of tracks per gCell 0.18	 on layer (13)	 AP
+Number of gCells = 78624
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[End of Build Congestion map] Total (MB): Used  186  Alloctr  187  Proc 9050 
+Information: RC layer preference is turned on for this design. (ZRT-613)
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[End of Build Data] Total (MB): Used  186  Alloctr  187  Proc 9050 
+Warning: The global router sees the pin (i_img2_jtag_attn_stat_shift_reg_reg_0_ Q) of net dbg_stat_so as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net dbg_stat_so having 1/3 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_attn_cont_reg_reg_3_ Q) of net i_img2_jtag_attn_cont_reg_3_ as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_attn_cont_reg_3_ having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_attn_dbg_rstatn_r1_reg_0_ Q) of net i_img2_jtag_attn_dbg_rstatn_r1_0_ as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_attn_dbg_rstatn_r1_0_ having 1/3 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_attn_stat_reg_reg_2_ Q) of net i_img2_jtag_attn_stat_reg[2] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_attn_stat_reg[2] having 1/4 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_14_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[14] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[14] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_17_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[17] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[17] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_1_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[1] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[1] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_2_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[2] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[2] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_36_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[36] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[36] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_39_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[39] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[39] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_44_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[44] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[44] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_57_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[57] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[57] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_60_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[60] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[60] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_61_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[61] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[61] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_pnp_jpnp_shift_reg_reg_67_ Q) of net i_img2_jtag_pnp_jpnp_shift_reg[67] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_pnp_jpnp_shift_reg[67] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_3_ Q) of net i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate[3] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate[3] having 1/12 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_tap_idcode_reg_reg_10_ Q) of net i_img2_jtag_tap_idcode_reg[10] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_tap_idcode_reg[10] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_tap_idcode_reg_reg_13_ Q) of net i_img2_jtag_tap_idcode_reg[13] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_tap_idcode_reg[13] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_tap_idcode_reg_reg_17_ Q) of net i_img2_jtag_tap_idcode_reg[17] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_tap_idcode_reg[17] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_tap_idcode_reg_reg_18_ Q) of net i_img2_jtag_tap_idcode_reg[18] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_tap_idcode_reg[18] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_tap_idcode_reg_reg_21_ Q) of net i_img2_jtag_tap_idcode_reg[21] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_tap_idcode_reg[21] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_tap_idcode_reg_reg_22_ Q) of net i_img2_jtag_tap_idcode_reg[22] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_tap_idcode_reg[22] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_tap_idcode_reg_reg_9_ Q) of net i_img2_jtag_tap_idcode_reg[9] as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net i_img2_jtag_tap_idcode_reg[9] having 1/2 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_attn_stat_shift_reg_reg_2_ QN) of net n1 as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net n1 having 1/4 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_attn_stat_shift_reg_reg_3_ QN) of net n2 as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net n2 having 1/4 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_attn_cont_reg_reg_0_ Q) of net n416 as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net n416 having 1/3 blocked pins. (ZRT-127)
+Warning: The global router sees the pin (i_img2_jtag_attn_attn_shift_reg_reg_0_ QN) of net n53 as blocked and might route the net through the blockages. (ZRT-110)
+Warning: The global router sees net n53 having 1/3 blocked pins. (ZRT-127)
+Warning: Total number of blocked standard cell pins according to global router modelling: 27. With blocked pins, global routing runtime can be higher. (ZRT-129)
+Warning: If the placement is not legalized, the presence of blocked standard cell pins might be expected. If the placement is legalized, the number of blocked standard cell pins should be minimized by design entering routing to ensure routing quality. In addition, global routing reported blocked standard cell pins can be different from the set reported by check command because they use different mechanism. (ZRT-137)
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used   32  Alloctr   32  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  218  Alloctr  219  Proc 9050 
+Information: Using 4 threads for routing. (ZRT-444)
+multi gcell levels ON
+
+Start GR phase 0
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:00 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Initial Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Initial Routing] Total (MB): Used  219  Alloctr  220  Proc 9050 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =    61 Max = 4 GRCs =    77 (0.64%)
+Initial. H routing: Overflow =    61 Max = 4 (GRCs =  2) GRCs =    75 (1.24%)
+Initial. V routing: Overflow =     0 Max = 1 (GRCs =  2) GRCs =     2 (0.03%)
+Initial. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M2         Overflow =    61 Max = 4 (GRCs =  2) GRCs =    75 (1.24%)
+Initial. M3         Overflow =     0 Max = 1 (GRCs =  2) GRCs =     2 (0.03%)
+Initial. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M10        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M11        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M12        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. AP         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Via overflow
+
+Initial. Total:     Overflow =     2 Max =  1 GRCs =     2 (0.02%)
+Initial. VIA1       Overflow =     2 Max =  1 (GRCs =  2) GRCs =     2 (0.03%)
+Initial. VIA2       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA3       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA4       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA5       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA6       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA7       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA8       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA9       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA10      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. VIA11      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. RV         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       92.8 7.18 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       6.75 73.1 0.05 11.0 0.00 0.48 4.50 0.00 1.92 0.00 1.75 0.00 0.21 0.17
+M3       31.6 45.6 10.1 7.51 0.89 2.83 0.88 0.20 0.25 0.00 0.12 0.00 0.00 0.00
+M4       85.2 9.06 2.35 2.02 0.46 0.64 0.23 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M5       98.9 0.98 0.07 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M6       98.9 0.71 0.26 0.05 0.02 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M7       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M8       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M9       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M10      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M11      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M12      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+AP       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    85.3 10.7 1.01 1.62 0.11 0.31 0.44 0.02 0.17 0.00 0.15 0.00 0.02 0.01
+
+
+Initial. Total Wire Length = 2449.01
+Initial. Layer M1 wire length = 0.00
+Initial. Layer M2 wire length = 643.26
+Initial. Layer M3 wire length = 1205.54
+Initial. Layer M4 wire length = 534.05
+Initial. Layer M5 wire length = 22.01
+Initial. Layer M6 wire length = 44.15
+Initial. Layer M7 wire length = 0.00
+Initial. Layer M8 wire length = 0.00
+Initial. Layer M9 wire length = 0.00
+Initial. Layer M10 wire length = 0.00
+Initial. Layer M11 wire length = 0.00
+Initial. Layer M12 wire length = 0.00
+Initial. Layer AP wire length = 0.00
+Initial. Total Number of Contacts = 3664
+Initial. Via VIA12_1cut_W1A count = 1487
+Initial. Via VIA23_1cut count = 1649
+Initial. Via VIA34_1cut count = 474
+Initial. Via VIA45_1cut count = 27
+Initial. Via VIA56_1cut count = 27
+Initial. Via VIA67_1cut count = 0
+Initial. Via VIA78_1cut count = 0
+Initial. Via VIA89_1cut count = 0
+Initial. Via VIA910_1cut count = 0
+Initial. Via VIA1011_1cut count = 0
+Initial. Via VIA1112_1cut count = 0
+Initial. Via VIA12AP count = 0
+Initial. completed.
+
+Start GR phase 1
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  219  Alloctr  220  Proc 9050 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =    54 Max = 4 GRCs =    67 (0.55%)
+phase1. H routing: Overflow =    54 Max = 4 (GRCs =  1) GRCs =    67 (1.11%)
+phase1. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =    54 Max = 4 (GRCs =  1) GRCs =    67 (1.11%)
+phase1. M3         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M10        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M11        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M12        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. AP         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Via overflow
+
+phase1. Total:     Overflow =     2 Max =  1 GRCs =     2 (0.02%)
+phase1. VIA1       Overflow =     2 Max =  1 (GRCs =  2) GRCs =     2 (0.03%)
+phase1. VIA2       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA3       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA4       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA5       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA6       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA7       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA8       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA9       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA10      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. VIA11      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. RV         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       92.8 7.18 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       6.80 73.1 0.05 11.0 0.00 0.50 4.51 0.00 1.97 0.00 1.62 0.00 0.20 0.17
+M3       31.6 45.4 10.1 7.54 0.93 2.81 0.93 0.25 0.23 0.00 0.08 0.00 0.00 0.00
+M4       85.2 8.88 2.41 2.00 0.53 0.69 0.26 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M5       98.9 1.01 0.07 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M6       98.9 0.71 0.26 0.05 0.02 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M7       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M8       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M9       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M10      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M11      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M12      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+AP       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    85.3 10.7 1.02 1.62 0.12 0.32 0.45 0.02 0.17 0.00 0.13 0.00 0.02 0.01
+
+
+phase1. Total Wire Length = 2451.73
+phase1. Layer M1 wire length = 0.00
+phase1. Layer M2 wire length = 632.82
+phase1. Layer M3 wire length = 1207.45
+phase1. Layer M4 wire length = 544.69
+phase1. Layer M5 wire length = 22.62
+phase1. Layer M6 wire length = 44.15
+phase1. Layer M7 wire length = 0.00
+phase1. Layer M8 wire length = 0.00
+phase1. Layer M9 wire length = 0.00
+phase1. Layer M10 wire length = 0.00
+phase1. Layer M11 wire length = 0.00
+phase1. Layer M12 wire length = 0.00
+phase1. Layer AP wire length = 0.00
+phase1. Total Number of Contacts = 3681
+phase1. Via VIA12_1cut_W1A count = 1487
+phase1. Via VIA23_1cut count = 1652
+phase1. Via VIA34_1cut count = 486
+phase1. Via VIA45_1cut count = 29
+phase1. Via VIA56_1cut count = 27
+phase1. Via VIA67_1cut count = 0
+phase1. Via VIA78_1cut count = 0
+phase1. Via VIA89_1cut count = 0
+phase1. Via VIA910_1cut count = 0
+phase1. Via VIA1011_1cut count = 0
+phase1. Via VIA1112_1cut count = 0
+phase1. Via VIA12AP count = 0
+phase1. completed.
+
+Start GR phase 2
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  219  Alloctr  220  Proc 9050 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =    18 Max = 2 GRCs =    29 (0.24%)
+phase2. H routing: Overflow =    18 Max = 2 (GRCs =  2) GRCs =    29 (0.48%)
+phase2. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =    18 Max = 2 (GRCs =  2) GRCs =    29 (0.48%)
+phase2. M3         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M10        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M11        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M12        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. AP         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Via overflow
+
+phase2. Total:     Overflow =     3 Max =  1 GRCs =     3 (0.02%)
+phase2. VIA1       Overflow =     3 Max =  1 (GRCs =  3) GRCs =     3 (0.05%)
+phase2. VIA2       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA3       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA4       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA5       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA6       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA7       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA8       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA9       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA10      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. VIA11      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. RV         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       92.8 7.18 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       6.71 73.1 0.05 11.4 0.00 0.60 4.78 0.00 1.80 0.00 1.32 0.00 0.00 0.10
+M3       31.7 45.6 9.92 7.64 0.93 2.68 0.93 0.23 0.21 0.00 0.08 0.00 0.00 0.00
+M4       85.2 8.85 2.41 2.00 0.55 0.68 0.26 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M5       98.9 1.01 0.07 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M6       98.9 0.71 0.26 0.05 0.02 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M7       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M8       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M9       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M10      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M11      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M12      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+AP       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    85.3 10.7 1.00 1.67 0.12 0.31 0.47 0.02 0.16 0.00 0.11 0.00 0.00 0.01
+
+
+phase2. Total Wire Length = 2451.73
+phase2. Layer M1 wire length = 0.00
+phase2. Layer M2 wire length = 632.82
+phase2. Layer M3 wire length = 1207.45
+phase2. Layer M4 wire length = 544.69
+phase2. Layer M5 wire length = 22.62
+phase2. Layer M6 wire length = 44.15
+phase2. Layer M7 wire length = 0.00
+phase2. Layer M8 wire length = 0.00
+phase2. Layer M9 wire length = 0.00
+phase2. Layer M10 wire length = 0.00
+phase2. Layer M11 wire length = 0.00
+phase2. Layer M12 wire length = 0.00
+phase2. Layer AP wire length = 0.00
+phase2. Total Number of Contacts = 3681
+phase2. Via VIA12_1cut_W1A count = 1487
+phase2. Via VIA23_1cut count = 1652
+phase2. Via VIA34_1cut count = 486
+phase2. Via VIA45_1cut count = 29
+phase2. Via VIA56_1cut count = 27
+phase2. Via VIA67_1cut count = 0
+phase2. Via VIA78_1cut count = 0
+phase2. Via VIA89_1cut count = 0
+phase2. Via VIA910_1cut count = 0
+phase2. Via VIA1011_1cut count = 0
+phase2. Via VIA1112_1cut count = 0
+phase2. Via VIA12AP count = 0
+phase2. completed.
+
+Start GR phase 3
+Current Stage stats:
+[End of Phase3 Routing] Elapsed real time: 0:00:00 
+[End of Phase3 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase3 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase3 Routing] Total (MB): Used  219  Alloctr  220  Proc 9050 
+phase3. Routing result:
+phase3. Both Dirs: Overflow =    18 Max = 2 GRCs =    29 (0.24%)
+phase3. H routing: Overflow =    18 Max = 2 (GRCs =  2) GRCs =    29 (0.48%)
+phase3. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M2         Overflow =    18 Max = 2 (GRCs =  2) GRCs =    29 (0.48%)
+phase3. M3         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M10        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M11        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M12        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. AP         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Via overflow
+
+phase3. Total:     Overflow =     3 Max =  1 GRCs =     3 (0.02%)
+phase3. VIA1       Overflow =     3 Max =  1 (GRCs =  3) GRCs =     3 (0.05%)
+phase3. VIA2       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA3       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA4       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA5       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA6       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA7       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA8       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA9       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA10      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. VIA11      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. RV         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       92.8 7.18 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       6.71 73.1 0.05 11.4 0.00 0.60 4.78 0.00 1.80 0.00 1.32 0.00 0.00 0.10
+M3       31.7 45.6 9.92 7.64 0.93 2.68 0.93 0.23 0.21 0.00 0.08 0.00 0.00 0.00
+M4       85.2 8.85 2.41 2.00 0.55 0.68 0.26 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M5       98.9 1.01 0.07 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M6       98.9 0.71 0.26 0.05 0.02 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M7       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M8       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M9       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M10      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M11      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M12      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+AP       100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    85.3 10.7 1.00 1.67 0.12 0.31 0.47 0.02 0.16 0.00 0.11 0.00 0.00 0.01
+
+
+phase3. Total Wire Length = 2451.73
+phase3. Layer M1 wire length = 0.00
+phase3. Layer M2 wire length = 632.82
+phase3. Layer M3 wire length = 1207.45
+phase3. Layer M4 wire length = 544.69
+phase3. Layer M5 wire length = 22.62
+phase3. Layer M6 wire length = 44.15
+phase3. Layer M7 wire length = 0.00
+phase3. Layer M8 wire length = 0.00
+phase3. Layer M9 wire length = 0.00
+phase3. Layer M10 wire length = 0.00
+phase3. Layer M11 wire length = 0.00
+phase3. Layer M12 wire length = 0.00
+phase3. Layer AP wire length = 0.00
+phase3. Total Number of Contacts = 3681
+phase3. Via VIA12_1cut_W1A count = 1487
+phase3. Via VIA23_1cut count = 1652
+phase3. Via VIA34_1cut count = 486
+phase3. Via VIA45_1cut count = 29
+phase3. Via VIA56_1cut count = 27
+phase3. Via VIA67_1cut count = 0
+phase3. Via VIA78_1cut count = 0
+phase3. Via VIA89_1cut count = 0
+phase3. Via VIA910_1cut count = 0
+phase3. Via VIA1011_1cut count = 0
+phase3. Via VIA1112_1cut count = 0
+phase3. Via VIA12AP count = 0
+phase3. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:00 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Whole Chip Routing] Stage (MB): Used   34  Alloctr   34  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  219  Alloctr  220  Proc 9050 
+
+Congestion utilization per direction:
+Average vertical track utilization   =  5.01 %
+Peak    vertical track utilization   = 60.00 %
+Average horizontal track utilization =  6.01 %
+Peak    horizontal track utilization = 70.00 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used   -1  Alloctr   -1  Proc    0 
+[GR: Done] Total (MB): Used  217  Alloctr  219  Proc 9050 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[GR: Done] Stage (MB): Used  210  Alloctr  211  Proc    8 
+[GR: Done] Total (MB): Used  217  Alloctr  219  Proc 9050 
+Writing out congestion map...
+Updating congestion ...
+Updating congestion ...
+[DBOUT] Elapsed real time: 0:00:00 
+[DBOUT] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DBOUT] Stage (MB): Used -177  Alloctr -177  Proc    0 
+[DBOUT] Total (MB): Used   36  Alloctr   37  Proc 9050 
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:00 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Global Routing] Stage (MB): Used   29  Alloctr   29  Proc    8 
+[End of Global Routing] Total (MB): Used   36  Alloctr   37  Proc 9050 
+
+****************************************
+Report : congestion
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Thu Nov 21 13:56:47 2024
+****************************************
+
+Layer     |    overflow     |                # GRCs has
+Name      |  total  |  max  | overflow (%)        | max overflow
+---------------------------------------------------------------
+M1        |       0 |     0 |       0  ( 0.0000%) |       0
+M2        |      31 |     2 |      29  ( 0.4795%) |       2
+M3        |       0 |     0 |       0  ( 0.0000%) |       0
+M4        |       0 |     0 |       0  ( 0.0000%) |       0
+M5        |       0 |     0 |       0  ( 0.0000%) |       0
+M6        |       0 |     0 |       0  ( 0.0000%) |       0
+M7        |       0 |     0 |       0  ( 0.0000%) |       0
+M8        |       0 |     0 |       0  ( 0.0000%) |       0
+M9        |       0 |     0 |       0  ( 0.0000%) |       0
+M10       |       0 |     0 |       0  ( 0.0000%) |       0
+M11       |       0 |     0 |       0  ( 0.0000%) |       0
+M12       |       0 |     0 |       0  ( 0.0000%) |       0
+AP        |       0 |     0 |       0  ( 0.0000%) |       0
+---------------------------------------------------------------
+Both Dirs |      31 |     2 |      29  ( 0.2397%) |       2
+H routing |      31 |     2 |      29  ( 0.4795%) |       2
+V routing |       0 |     0 |       0  ( 0.0000%) |       0
+
+1

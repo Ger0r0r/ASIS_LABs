@@ -1,0 +1,66 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 12:50:02 2024
+****************************************
+
+
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   HFSNET_35                  0.0600         0.0620        -0.0020  (VIOLATED) 
+     PIN : U379/B1            0.0600         0.0620        -0.0020  (VIOLATED) 
+     PIN : U377/B1            0.0600         0.0620        -0.0020  (VIOLATED) 
+     PIN : U382/B1            0.0600         0.0620        -0.0020  (VIOLATED) 
+     PIN : U387/B1            0.0600         0.0620        -0.0020  (VIOLATED) 
+     PIN : U370/A2            0.0600         0.0618        -0.0018  (VIOLATED) 
+     PIN : U376/A2            0.0600         0.0618        -0.0018  (VIOLATED) 
+     PIN : U381/B1            0.0600         0.0618        -0.0018  (VIOLATED) 
+     PIN : U385/B1            0.0600         0.0618        -0.0018  (VIOLATED) 
+     PIN : U375/B1            0.0600         0.0618        -0.0018  (VIOLATED) 
+     PIN : U380/B1            0.0600         0.0617        -0.0017  (VIOLATED) 
+     PIN : U384/B1            0.0600         0.0617        -0.0017  (VIOLATED) 
+     PIN : U386/B1            0.0600         0.0616        -0.0016  (VIOLATED) 
+     PIN : U378/B1            0.0600         0.0616        -0.0016  (VIOLATED) 
+     PIN : U383/B1            0.0600         0.0616        -0.0016  (VIOLATED) 
+     PIN : U374/A2            0.0600         0.0615        -0.0015  (VIOLATED) 
+     PIN : U394/B1            0.0600         0.0615        -0.0014  (VIOLATED) 
+     PIN : U363/A2            0.0600         0.0615        -0.0014  (VIOLATED) 
+     PIN : U361/B1            0.0600         0.0614        -0.0014  (VIOLATED) 
+     PIN : U362/A2            0.0600         0.0614        -0.0014  (VIOLATED) 
+     PIN : U369/B1            0.0600         0.0612        -0.0012  (VIOLATED) 
+     PIN : U368/B1            0.0600         0.0611        -0.0011  (VIOLATED) 
+     PIN : U373/A2            0.0600         0.0611        -0.0011  (VIOLATED) 
+     PIN : U366/B1            0.0600         0.0611        -0.0010  (VIOLATED) 
+     PIN : U371/B1            0.0600         0.0610        -0.0010  (VIOLATED) 
+     PIN : U364/B1            0.0600         0.0610        -0.0010  (VIOLATED) 
+     PIN : U372/A2            0.0600         0.0609        -0.0009  (VIOLATED) 
+     PIN : U365/B1            0.0600         0.0603        -0.0003  (VIOLATED) 
+
+   dbg_datm_sh[0]             0.0300         0.0302        -0.0002  (VIOLATED) 
+     PORT: dbg_datm_sh[0]     0.0300         0.0302        -0.0002  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 2
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n204                       0.0170         0.0022         0.0147  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 2
+1

@@ -1,0 +1,69 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Warning: The scenario norm.ffgnp0p88vm40c.rcbest_CCbest has max transition DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+Warning: The scenario norm.ffgnp0p88vm40c.rcbest_CCbest has max capacitance DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+****************************************
+Report : clock qor
+        -type summary
+        -nosplit
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 20:26:22 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+========================================================================
+==== Summary Reporting for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ====
+========================================================================
+
+==================================== Summary Table for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ====================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count
+                                                                Count      Area      Area
+------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ffgnp0p88vm40c.rcbest_CCbest, Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+clock                                   M,D       139      6       13    6.6355   12.1306    0.0477    0.0044         0         0
+------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139      6       13    6.6355   12.1306    0.0477    0.0044         0         0
+
+
+Warning: The scenario norm.ssgnp0p72v125c.rcworst_CCworst has max transition DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+Warning: The scenario norm.ssgnp0p72v125c.rcworst_CCworst has max capacitance DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+==========================================================================
+==== Summary Reporting for Corner norm.ssgnp0p72v125c.rcworst_CCworst ====
+==========================================================================
+
+=================================== Summary Table for Corner norm.ssgnp0p72v125c.rcworst_CCworst ===================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count
+                                                                Count      Area      Area
+------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ssgnp0p72v125c.rcworst_CCworst, Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+clock                                   M,D       139      6       13    6.6355   12.1306    0.0798    0.0091         0         0
+------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139      6       13    6.6355   12.1306    0.0798    0.0091         0         0
+
+
+=====================================================================
+==== Summary Reporting for Corner norm.tt0p8v85c.typical_CCworst ====
+=====================================================================
+
+===================================== Summary Table for Corner norm.tt0p8v85c.typical_CCworst ======================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count
+                                                                Count      Area      Area
+------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.tt0p8v85c.typical_CCworst, Scenario: norm.tt0p8v85c.typical_CCworst
+clock                                   M,D       139      6       13    6.6355   12.1306    0.0623    0.0059         0         0
+------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139      6       13    6.6355   12.1306    0.0623    0.0059         0         0
+
+
+1

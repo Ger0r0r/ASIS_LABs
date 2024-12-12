@@ -1,0 +1,56 @@
+****************************************
+Report : mode
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 14:21:07 2024
+****************************************
+
+------------------------------------------------------------------------------------------
+Mode norm.ffgnp0p88vm40c.rcbest_CCbest
+--------------------------------------------------------------------------------
+
+Current: false  Default: false  Empty: false
+
+Scenarios associated with this mode:
+
+                                                         Leakage   Dynamic
+Scenario            Corner          Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+norm.ffgnp0p88vm40c.rcbest_CCbest
+                    norm.ffgnp0p88vm40c.rcbest_CCbest
+                                    true    false  true  false     false     false     false    false    false    false
+
+
+------------------------------------------------------------------------------------------
+Mode norm.ssgnp0p72v125c.rcworst_CCworst
+--------------------------------------------------------------------------------
+
+Current: false  Default: false  Empty: false
+
+Scenarios associated with this mode:
+
+                                                         Leakage   Dynamic
+Scenario            Corner          Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+norm.ssgnp0p72v125c.rcworst_CCworst
+                    norm.ssgnp0p72v125c.rcworst_CCworst
+                                    true    false  true  false     false     false     false    false    false    false
+
+
+------------------------------------------------------------------------------------------
+Mode norm.tt0p8v85c.typical_CCworst
+--------------------------------------------------------------------------------
+
+Current: true  Default: false  Empty: false
+
+Scenarios associated with this mode:
+
+                                                         Leakage   Dynamic
+Scenario            Corner          Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+norm.tt0p8v85c.typical_CCworst
+                    norm.tt0p8v85c.typical_CCworst
+                                    true    true   true  true      false     true      true     false    false    true
+
+
+1

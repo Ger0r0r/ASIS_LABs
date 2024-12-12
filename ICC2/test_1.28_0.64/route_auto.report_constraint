@@ -1,0 +1,70 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 14:24:56 2024
+****************************************
+
+
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   HFSNET_12                  0.0600         0.0652        -0.0052  (VIOLATED) 
+     PIN : i_img2_jtag_tap_idcode_reg_reg_21_/CDN   0.0600   0.0652  -0.0052 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_14_/CDN   0.0600   0.0649  -0.0049 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_20_/CDN   0.0600   0.0649  -0.0049 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_16_/CDN   0.0600   0.0649  -0.0049 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_18_/CDN   0.0600   0.0649  -0.0049 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_22_/CDN   0.0600   0.0648  -0.0048 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_17_/CDN   0.0600   0.0648  -0.0048 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_19_/CDN   0.0600   0.0647  -0.0047 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_23_/CDN   0.0600   0.0646  -0.0046 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_16_/CDN   0.0600   0.0646  -0.0046 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_14_/CDN   0.0600   0.0646  -0.0046 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_13_/CDN   0.0600   0.0645  -0.0045 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_10_/CDN   0.0600   0.0644  -0.0044 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_24_/CDN   0.0600   0.0644  -0.0044 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_11_/CDN   0.0600   0.0644  -0.0044 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_10_/CDN   0.0600   0.0643  -0.0043 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_2_/CDN   0.0600   0.0642  -0.0042 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_15_/SDN   0.0600   0.0642  -0.0042 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_66_/CDN   0.0600   0.0634  -0.0034 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_12_/CDN   0.0600   0.0632  -0.0032 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_67_/CDN   0.0600   0.0631  -0.0031 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_11_/CDN   0.0600   0.0631  -0.0031 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_6_/CDN   0.0600   0.0621  -0.0021 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_26_/CDN   0.0600   0.0618  -0.0018 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_9_/CDN   0.0600   0.0616  -0.0016 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_25_/CDN   0.0600   0.0616  -0.0016 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_7_/CDN   0.0600   0.0616  -0.0016 (VIOLATED)
+     PIN : i_img2_jtag_tap_idcode_reg_reg_8_/SDN   0.0600   0.0612  -0.0012 (VIOLATED)
+
+   dbg_datf_sh[0]             0.0300         0.0301        -0.0001  (VIOLATED) 
+     PORT: dbg_datf_sh[0]     0.0300         0.0301        -0.0001  (VIOLATED) 
+
+   dbg_datf_ud[0]             0.0300         0.0300        -0.0000  (VIOLATED) 
+     PORT: dbg_datf_ud[0]     0.0300         0.0300        -0.0000  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 3
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n223                       0.0162         0.0034         0.0129  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 3
+1

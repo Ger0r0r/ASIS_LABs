@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : clock_gating
+        -ungated
+        -nosplit
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 17:45:57 2024
+****************************************
+
+
+--------------------------------------------------------------------------------
+                             Ungated Register Report
+--------------------------------------------------------------------------------
+           Ungated Register     |  Reason                  |  What Next?
+--------------------------------------------------------------------------------
+    i_img2_jtag_tap_tdi_i_reg   |  Always enabled register |  -
+    i_img2_jtag_attn_dbg_ext_stat_r0_reg_0_ | Always enabled register | -
+    i_img2_jtag_attn_dbg_rstatn_r0_reg_0_ | Always enabled register | -
+    i_img2_jtag_attn_dbg_rstatn_r1_reg_0_ | Always enabled register | -
+    i_img2_jtag_attn_dbg_attn_flags_r0_reg_0_ | Always enabled register | -
+    i_img2_jtag_attn_dbg_attn_flags_r1_reg_0_ | Always enabled register | -
+    i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_ | Always enabled register | -
+    i_img2_jtag_attn_stat_reg_reg_0_ | Always enabled register | -
+    i_img2_jtag_attn_stat_reg_reg_1_ | Always enabled register | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_3_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_3_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_2_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_1_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_ir_reg_i_reg_0_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_0_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_1_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_2_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_ | Min bitwidth not met | -
+    i_img2_jtag_attn_stat_reg_reg_3_ | Min bitwidth not met | -
+    i_img2_jtag_attn_stat_reg_reg_2_ | Min bitwidth not met | -
+    i_img2_jtag_tap_tdo_enable_reg | Always enabled register | -
+    i_img2_jtag_tap_tdo_reg     |  Always enabled register |  -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_1_ | Min bitwidth not met | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_0_ | Always enabled register | -
+    i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_2_ | Min bitwidth not met | -
+                                |                          |
+--------------------------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |        5         |
+          |                                       |                  |
+          |    Number of Gated registers          |   114 (82.01%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |    25 (17.99%)   |
+          |                                       |                  |
+          |    Total number of registers          |      139         |
+          ------------------------------------------------------------
+
+
+
+1

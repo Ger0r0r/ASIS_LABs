@@ -1,0 +1,600 @@
+Warning: Use -per_clock_root option along with -type latency option to split the reporting of a clock to per clock root, so that the clock trees associated with different root pins are reported separately
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+****************************************
+Report : clock qor
+        -type latency
+        -show_paths
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 19:22:08 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+========================================================================
+==== Latency Reporting for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ====
+========================================================================
+
+====================================== Summary Table for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ======================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ffgnp0p88vm40c.rcbest_CCbest, Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+clock                                   M,D       139        --    0.0000        --    0.0000    0.0000    0.0000    0.0000        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139        --    0.0000        --    0.0000    0.0000        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+============================= Details Table for Corner norm.ffgnp0p88vm40c.rcbest_CCbest =============================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ffgnp0p88vm40c.rcbest_CCbest, Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+clock
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+
+
+===================================================================
+==== Path Reports for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ====
+===================================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #2
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #3
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #4
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #5
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #1
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #2
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #3
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #4
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #5
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+==========================================================================
+==== Latency Reporting for Corner norm.ssgnp0p72v125c.rcworst_CCworst ====
+==========================================================================
+
+===================================== Summary Table for Corner norm.ssgnp0p72v125c.rcworst_CCworst =====================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ssgnp0p72v125c.rcworst_CCworst, Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+clock                                   M,D       139        --    0.0000        --    0.0000    0.0000    0.0000    0.0000        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139        --    0.0000        --    0.0000    0.0000        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+============================ Details Table for Corner norm.ssgnp0p72v125c.rcworst_CCworst ============================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ssgnp0p72v125c.rcworst_CCworst, Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+clock
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+
+
+=====================================================================
+==== Path Reports for Corner norm.ssgnp0p72v125c.rcworst_CCworst ====
+=====================================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #2
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #3
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #4
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #5
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #1
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #2
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #3
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #4
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #5
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+=====================================================================
+==== Latency Reporting for Corner norm.tt0p8v85c.typical_CCworst ====
+=====================================================================
+
+======================================= Summary Table for Corner norm.tt0p8v85c.typical_CCworst ========================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.tt0p8v85c.typical_CCworst, Scenario: norm.tt0p8v85c.typical_CCworst
+clock                                   M,D       139        --    0.0000        --    0.0000    0.0000    0.0000    0.0000        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139        --    0.0000        --    0.0000    0.0000        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+============================== Details Table for Corner norm.tt0p8v85c.typical_CCworst ===============================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: norm.tt0p8v85c.typical_CCworst, Scenario: norm.tt0p8v85c.typical_CCworst
+clock
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+                                   S   i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+                                                                        0.0000 r    0.0000 r        --          --
+
+
+================================================================
+==== Path Reports for Corner norm.tt0p8v85c.typical_CCworst ====
+================================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #2
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #3
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #4
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Largest Path #5
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #1
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_22_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #2
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #3
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #4
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+---------------------------------------------
+Smallest Path #5
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP
+Latency             : 0.0000
+---------------------------------------------
+
+The clock has ideal latency for the sink, a path cannot be reported.
+
+1

@@ -1,0 +1,25 @@
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP4
+Date:        Wed Nov 13 19:39:08 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      5
+    Feedthrough (LINT-29)                                           3
+    Shorted outputs (LINT-31)                                       2
+
+Cells                                                               1
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'img2_jtag_tap_wrap', input port 'tdi' is connected directly to output port 'dbg_datm_si[0]'. (LINT-29)
+Warning: In design 'img2_jtag_tap_wrap', input port 'tdi' is connected directly to output port 'dbg_datf_si[0]'. (LINT-29)
+Warning: In design 'img2_jtag_tap_wrap', input port 'tdi' is connected directly to output port 'dbg_dat_si[0]'. (LINT-29)
+Warning: In design 'img2_jtag_tap_wrap', output port 'dbg_dat_si[0]' is connected directly to output port 'dbg_datm_si[0]'. (LINT-31)
+Warning: In design 'img2_jtag_tap_wrap', output port 'dbg_dat_si[0]' is connected directly to output port 'dbg_datf_si[0]'. (LINT-31)
+Warning: In design 'img2_jtag_tap_wrap', the same net is connected to more than one pin on submodule 'i_img2_jtag_attn'. (LINT-33)
+   Net 'dbg_dat_si[0]' is connected to pins 'dbg_stat_si', 'dbg_cont_si''.
+1

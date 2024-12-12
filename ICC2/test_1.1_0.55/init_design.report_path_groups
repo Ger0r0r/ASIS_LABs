@@ -1,0 +1,58 @@
+****************************************
+Report : path_group
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 18:38:29 2024
+****************************************
+
+
+Path groups for mode 'norm.tt0p8v85c.typical_CCworst':
+
+
+Path_Group    Weight    From/Through/To
+------------------------------------------------------------------------------------------
+**async_default** 1.0000 -
+**clock_gating_default** 1.0000 -
+**default**   1.0000    -
+**in2out_default** 0.1000 -
+**in2reg_default** 0.1000 -
+**reg2out_default** 0.1000 -
+FEEDTHROUGH   1.0000    -from [get_ports {trstn tdi tms dbg_dat_so[0] dbg_datf_so[0] dbg_datm_so[0] dbg_attn_flags[0] dbg_rstatn[0] dbg_ext_stat[0]}] -to [get_ports {tdo tdo_enable dbg_dat_si[0] dbg_dat_sh[0] dbg_dat_cp[0] dbg_dat_ud[0] dbg_datf_si[0] dbg_datf_sh[0] dbg_datf_cp[0] dbg_datf_ud[0] dbg_datm_si[0] dbg_datm_sh[0] dbg_datm_cp[0] dbg_datm_ud[0] dbg_avail_force[0] dbg_resetn_force[0] dbg_resetn_flevel[0]}]
+REGIN         1.0000    -from [get_ports {trstn tdi tms dbg_dat_so[0] dbg_datf_so[0] dbg_datm_so[0] dbg_attn_flags[0] dbg_rstatn[0] dbg_ext_stat[0]}]
+REGOUT        1.0000    -to [get_ports {tdo tdo_enable dbg_dat_si[0] dbg_dat_sh[0] dbg_dat_cp[0] dbg_dat_ud[0] dbg_datf_si[0] dbg_datf_sh[0] dbg_datf_cp[0] dbg_datf_ud[0] dbg_datm_si[0] dbg_datm_sh[0] dbg_datm_cp[0] dbg_datm_ud[0] dbg_avail_force[0] dbg_resetn_force[0] dbg_resetn_flevel[0]}]
+clock         1.0000    -to [get_clocks {clock}]
+
+
+Path groups for mode 'norm.ffgnp0p88vm40c.rcbest_CCbest':
+
+
+Path_Group    Weight    From/Through/To
+------------------------------------------------------------------------------------------
+**async_default** 1.0000 -
+**clock_gating_default** 1.0000 -
+**default**   1.0000    -
+**in2out_default** 0.1000 -
+**in2reg_default** 0.1000 -
+**reg2out_default** 0.1000 -
+FEEDTHROUGH   1.0000    -from [get_ports {trstn tdi tms dbg_dat_so[0] dbg_datf_so[0] dbg_datm_so[0] dbg_attn_flags[0] dbg_rstatn[0] dbg_ext_stat[0]}] -to [get_ports {tdo tdo_enable dbg_dat_si[0] dbg_dat_sh[0] dbg_dat_cp[0] dbg_dat_ud[0] dbg_datf_si[0] dbg_datf_sh[0] dbg_datf_cp[0] dbg_datf_ud[0] dbg_datm_si[0] dbg_datm_sh[0] dbg_datm_cp[0] dbg_datm_ud[0] dbg_avail_force[0] dbg_resetn_force[0] dbg_resetn_flevel[0]}]
+REGIN         1.0000    -from [get_ports {trstn tdi tms dbg_dat_so[0] dbg_datf_so[0] dbg_datm_so[0] dbg_attn_flags[0] dbg_rstatn[0] dbg_ext_stat[0]}]
+REGOUT        1.0000    -to [get_ports {tdo tdo_enable dbg_dat_si[0] dbg_dat_sh[0] dbg_dat_cp[0] dbg_dat_ud[0] dbg_datf_si[0] dbg_datf_sh[0] dbg_datf_cp[0] dbg_datf_ud[0] dbg_datm_si[0] dbg_datm_sh[0] dbg_datm_cp[0] dbg_datm_ud[0] dbg_avail_force[0] dbg_resetn_force[0] dbg_resetn_flevel[0]}]
+clock         1.0000    -to [get_clocks {clock}]
+
+
+Path groups for mode 'norm.ssgnp0p72v125c.rcworst_CCworst':
+
+
+Path_Group    Weight    From/Through/To
+------------------------------------------------------------------------------------------
+**async_default** 1.0000 -
+**clock_gating_default** 1.0000 -
+**default**   1.0000    -
+**in2out_default** 0.1000 -
+**in2reg_default** 0.1000 -
+**reg2out_default** 0.1000 -
+FEEDTHROUGH   1.0000    -from [get_ports {trstn tdi tms dbg_dat_so[0] dbg_datf_so[0] dbg_datm_so[0] dbg_attn_flags[0] dbg_rstatn[0] dbg_ext_stat[0]}] -to [get_ports {tdo tdo_enable dbg_dat_si[0] dbg_dat_sh[0] dbg_dat_cp[0] dbg_dat_ud[0] dbg_datf_si[0] dbg_datf_sh[0] dbg_datf_cp[0] dbg_datf_ud[0] dbg_datm_si[0] dbg_datm_sh[0] dbg_datm_cp[0] dbg_datm_ud[0] dbg_avail_force[0] dbg_resetn_force[0] dbg_resetn_flevel[0]}]
+REGIN         1.0000    -from [get_ports {trstn tdi tms dbg_dat_so[0] dbg_datf_so[0] dbg_datm_so[0] dbg_attn_flags[0] dbg_rstatn[0] dbg_ext_stat[0]}]
+REGOUT        1.0000    -to [get_ports {tdo tdo_enable dbg_dat_si[0] dbg_dat_sh[0] dbg_dat_cp[0] dbg_dat_ud[0] dbg_datf_si[0] dbg_datf_sh[0] dbg_datf_cp[0] dbg_datf_ud[0] dbg_datm_si[0] dbg_datm_sh[0] dbg_datm_cp[0] dbg_datm_ud[0] dbg_avail_force[0] dbg_resetn_force[0] dbg_resetn_flevel[0]}]
+clock         1.0000    -to [get_clocks {clock}]
+1

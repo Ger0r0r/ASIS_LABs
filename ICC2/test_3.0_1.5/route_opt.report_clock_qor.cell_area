@@ -1,0 +1,109 @@
+****************************************
+Report : report clock qor
+        -type area
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 18:45:39 2024
+****************************************
+
+
+==========================
+==== Area (per clock) ====
+==========================
+
+Clock                                 Sinks          Clock          Clock          Clock          Clock          Sinks           Sink
+                                 (balanced)     Cell Count        Stdcell       Repeater       Repeater     (physical)        Stdcell          Macro
+                                                (non sink)           Area          Count           Area                          Area           Area
+------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.tt0p8v85c.typical_CCworst
+clock                                   139             18        14.6189             13         8.3981            139       146.4998         0.0000
+
+### Mode: norm.ffgnp0p88vm40c.rcbest_CCbest
+clock                                   139             18        14.6189             13         8.3981            139       146.4998         0.0000
+
+### Mode: norm.ssgnp0p72v125c.rcworst_CCworst
+clock                                   139             18        14.6189             13         8.3981            139       146.4998         0.0000
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                   139             18        14.6189             13         8.3981            139       146.4998         0.0000
+
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+
+
+=================================
+==== Area (per library cell) ====
+=================================
+
+===== Summary =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+Clock Repeaters                          13              -         8.3981              -              -              -
+Other Network Cells                       5              -         6.2208              -              -              -
+Standard Cell Sinks                     139              -       146.4998              -              -              -
+Macro Cells                               0              -         0.0000              -              -              -
+
+===== Clock Repeaters =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+CKBD2BWP16P90CPDULVT                      2         0.2074         0.4147         Buffer              -              -
+CKND2BWP16P90CPDULVT                      2         0.1555         0.3110       Inverter              -              -
+CKND3BWP16P90CPDULVT                      1         0.2074         0.2074       Inverter              -              -
+DCCKBD4BWP16P90CPDULVT                    2         0.6221         1.2442         Buffer              -              -
+DCCKND4BWP16P90CPDULVT                    2         0.5184         1.0368       Inverter              -              -
+DCCKND8BWP16P90CPDULVT                    1         0.9331         0.9331       Inverter              -              -
+DCCKND12BWP16P90CPDULVT                   2         1.3478         2.6957       Inverter              -              -
+DCCKND14BWP16P90CPDULVT                   1         1.5552         1.5552       Inverter              -              -
+------------------------------------------------------------------------------------------------------------------------
+Total                                    13              -         8.3981              -              -              -
+
+===== Other Network Cells =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+CKLNQD2BWP16P90CPDULVT                    1         0.8294         0.8294            ICG              -              -
+CKLNQD4BWP16P90CPDULVT                    1         1.1405         1.1405            ICG              -              -
+CKLNQD5BWP16P90CPDULVT                    2         1.1923         2.3846            ICG              -              -
+CKLNQD14BWP16P90CPDULVT                   1         1.8662         1.8662            ICG              -              -
+------------------------------------------------------------------------------------------------------------------------
+Total                                     5              -         6.2208              -              -              -
+
+===== Standard Cell Sinks =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+DFCNQD1BWP16P90CPD                       59         1.0368        61.1712           Flop              -              -
+DFCNQD1BWP16P90CPDILVT                   56         1.0368        58.0608           Flop              -              -
+DFCNQND1BWP16P90CPD                       7         1.0886         7.6205           Flop              -              -
+DFNCNQD1BWP16P90CPD                       2         1.0368         2.0736           Flop              -              -
+DFSNQD1BWP16P90CPD                        5         1.0886         5.4432           Flop              -              -
+DFSNQD1BWP16P90CPDILVT                    3         1.0886         3.2659           Flop              -              -
+DFSNQD2BWP16P90CPD                        2         1.0886         2.1773           Flop              -              -
+DFSNQND1BWP16P90CPD                       1         1.0886         1.0886           Flop              -              -
+EDFCNQD1BWP16P90CPD                       4         1.3997         5.5987           Flop              -              -
+------------------------------------------------------------------------------------------------------------------------
+Total                                   139              -       146.4998              -              -              -
+
+===== Macro Cells =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Total                                     0              -         0.0000              -              -              -
+
+
+
+==============================
+==== Area (per hierarchy) ====
+==============================
+
+Hierarchy                             Sinks          Clock          Clock          Clock          Clock          Sinks           Sink
+                                 (balanced)     Cell Count        Stdcell       Repeater       Repeater     (physical)        Stdcell          Macro
+                                                (non sink)           Area          Count           Area                          Area           Area
+------------------------------------------------------------------------------------------------------------------------------------------------------
+img2_jtag_tap_wrap                      139             18        14.6189             13         8.3981            139       146.4998         0.0000
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                   139             18        14.6189             13         8.3981            139       146.4998         0.0000
+
+1

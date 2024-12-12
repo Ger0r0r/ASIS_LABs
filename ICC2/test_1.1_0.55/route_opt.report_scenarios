@@ -1,0 +1,15 @@
+****************************************
+Report : scenario
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 19:18:13 2024
+****************************************
+
+                                                                     Leakage  Dynamic                              Cell  Signal
+Name            Mode            Corner          Active  Setup  Hold  Power    Power    Max_tran  Max_cap  Min_cap  EM    EM
+-------------------------------------------------------------------------------------------------------------------------------
+norm.ffgnp0p88vm40c.rcbest_CCbest norm.ffgnp0p88vm40c.rcbest_CCbest norm.ffgnp0p88vm40c.rcbest_CCbest true false true true false false false false false false
+norm.ssgnp0p72v125c.rcworst_CCworst norm.ssgnp0p72v125c.rcworst_CCworst norm.ssgnp0p72v125c.rcworst_CCworst true false true true false false false false false false
+norm.tt0p8v85c.typical_CCworst norm.tt0p8v85c.typical_CCworst norm.tt0p8v85c.typical_CCworst true true true true false true true false false true
+
+1

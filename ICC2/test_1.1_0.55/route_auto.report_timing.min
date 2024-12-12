@@ -1,0 +1,626 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -derate
+        -attributes
+        -physical
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 19:14:46 2024
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+  Startpoint: i_img2_jtag_tap_idcode_reg_reg_10_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: i_img2_jtag_tap_idcode_reg_reg_9_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Corner: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Path Group: clock
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                           Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                     0.0000      0.0000
+  clock network delay (propagated)                                                                           -0.0102     -0.0102
+
+  i_img2_jtag_tap_idcode_reg_reg_10_/CP (DFCNQD1BWP16P90CPDILVT)                        0.0118      0.9300    0.0000     -0.0102 r    (25.77,24.34)     s, n
+  i_img2_jtag_tap_idcode_reg_reg_10_/Q (DFCNQD1BWP16P90CPDILVT)                         0.0043      0.9120    0.0283      0.0181 f    (25.52,24.34)     s, n
+  i_img2_jtag_tap_idcode_reg[10] (net)                               1      0.0009
+  copt_h_inst_1330/I (CKBD1BWP16P90CPD)                                                 0.0043      0.9300    0.0000      0.0181 f    (28.25,25.49)
+  copt_h_inst_1330/Z (CKBD1BWP16P90CPD)                                                 0.0040      0.9120    0.0084      0.0265 f    (28.40,25.49)
+  copt_net_210 (net)                                                 1      0.0006
+  U408/A1 (INR2D1BWP16P90CPD)                                                           0.0040      0.9300    0.0000      0.0265 f    (28.65,25.46)
+  U408/ZN (INR2D1BWP16P90CPD)                                                           0.0067      0.9120    0.0099      0.0364 f    (28.79,25.49)
+  n269 (net)                                                         1      0.0012
+  i_img2_jtag_tap_idcode_reg_reg_9_/D (DFCNQD1BWP16P90CPDILVT)                          0.0067      0.9300    0.0001      0.0365 f    (34.81,25.46)     s, n
+  data arrival time                                                                                                       0.0365
+
+  clock clock (rise edge)                                                                                     0.0000      0.0000
+  clock network delay (propagated)                                                                           -0.0018     -0.0018
+  clock reconvergence pessimism                                                                              -0.0086     -0.0104
+  i_img2_jtag_tap_idcode_reg_reg_9_/CP (DFCNQD1BWP16P90CPDILVT)                         0.0121      1.0700    0.0000     -0.0104 r    (36.48,25.49)     s, n
+  clock uncertainty                                                                                           0.0430      0.0326
+  library hold time                                                                                 1.0000    0.0054      0.0380
+  data required time                                                                                                      0.0380
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                      0.0380
+  data arrival time                                                                                                      -0.0365
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                       -0.0016
+
+
+
+  Startpoint: tdi (input port clocked by clock)
+  Endpoint: dbg_datf_si[0] (output port clocked by clock)
+  Mode: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Corner: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                           Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                     0.0000      0.0000
+  clock network delay (ideal)                                                                                 0.0000      0.0000
+  input external delay                                                                                        0.5000      0.5000
+
+  tdi (in)                                                                              0.0094      0.9120    0.0049      0.5049 r    (61.75,13.65)
+  tdi (net)                                                          3      0.0093
+  U544/I (CKBD12BWP16P90CPDULVT)                                                        0.0094      0.9300    0.0003      0.5052 r    (59.19,15.70)
+  U544/Z (CKBD12BWP16P90CPDULVT)                                                        0.0204      0.9120    0.0176      0.5228 r    (60.00,15.70)
+  dbg_datf_si[0] (net)                                               2      0.1021
+  dbg_datf_si[0] (out)                                                                  0.0204      0.9300    0.0017      0.5245 r    (61.75,16.05)
+  data arrival time                                                                                                       0.5245
+
+  clock clock (rise edge)                                                                                     0.0000      0.0000
+  clock network delay (ideal)                                                                                 0.0000      0.0000
+  clock reconvergence pessimism                                                                              -0.0000      0.0000
+  clock uncertainty                                                                                           0.0430      0.0430
+  output external delay                                                                                      -0.5000     -0.4570
+  data required time                                                                                                     -0.4570
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                     -0.4570
+  data arrival time                                                                                                      -0.5245
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                             0.9815
+
+
+
+  Startpoint: trstn (input port clocked by clock)
+  Endpoint: i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_ (removal check against rising-edge clock clocked by clock)
+  Mode: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Corner: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Path Group: REGIN
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  input external delay                                                                                                             0.5000      0.5000
+
+  trstn (in)                                                                                                 0.0156      0.9120    0.0078      0.5078 r    (61.75,11.49)
+  trstn (net)                                                                            12      0.0178
+  i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/CDN (DFCNQD1BWP16P90CPD)                        0.0158      0.9300    0.0004      0.5083 r    (55.18,11.61)     s, n
+  data arrival time                                                                                                                            0.5083
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0043     -0.0043
+  clock reconvergence pessimism                                                                                                   -0.0000     -0.0043
+  i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/CP (DFCNQD1BWP16P90CPD)                         0.0159      1.0700    0.0000     -0.0043 r    (56.01,11.66)     s, n
+  clock uncertainty                                                                                                                0.0430      0.0387
+  library hold time                                                                                                      1.0000    0.0227      0.0614
+  data required time                                                                                                                           0.0614
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                           0.0614
+  data arrival time                                                                                                                           -0.5083
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.4468
+
+
+
+  Startpoint: i_img2_jtag_attn_cont_reg_reg_2_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dbg_resetn_flevel[0] (output port clocked by clock)
+  Mode: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Corner: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Path Group: REGOUT
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0136     -0.0136
+
+  i_img2_jtag_attn_cont_reg_reg_2_/CP (EDFCNQD1BWP16P90CPD)                                                  0.0165      0.9300    0.0000     -0.0136 r    (55.02,23.76)     s, n
+  i_img2_jtag_attn_cont_reg_reg_2_/Q (EDFCNQD1BWP16P90CPD)                                                   0.0179      0.9120    0.0436      0.0300 r    (54.77,23.76)     s, n
+  n410 (net)                                                                              2      0.0048
+  BUFT_RR_54/I (CKBD14BWP16P90CPDULVT)                                                                       0.0179      0.9300    0.0002      0.0302 r    (57.84,22.03)
+  BUFT_RR_54/Z (CKBD14BWP16P90CPDULVT)                                                                       0.0178      0.9120    0.0175      0.0477 r    (58.74,22.03)
+  dbg_resetn_flevel[0] (net)                                                              1      0.1010
+  dbg_resetn_flevel[0] (out)                                                                                 0.0184      0.9300    0.0039      0.0515 r    (61.75,16.77)
+  data arrival time                                                                                                                            0.0515
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  clock reconvergence pessimism                                                                                                   -0.0000      0.0000
+  clock uncertainty                                                                                                                0.0430      0.0430
+  output external delay                                                                                                           -0.5000     -0.4570
+  data required time                                                                                                                          -0.4570
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                          -0.4570
+  data arrival time                                                                                                                           -0.0515
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.5085
+
+
+
+  Startpoint: i_img2_jtag_pnp_jpnp_shift_reg_reg_27_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: i_img2_jtag_pnp_jpnp_shift_reg_reg_26_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: norm.ssgnp0p72v125c.rcworst_CCworst
+  Corner: norm.ssgnp0p72v125c.rcworst_CCworst
+  Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+  Path Group: clock
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0118     -0.0118
+
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CP (DFCNQD1BWP16P90CPDILVT)                                         0.0135      0.9300    0.0000     -0.0118 r    (18.21,9.36)      s, n
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/Q (DFCNQD1BWP16P90CPDILVT)                                          0.0081      0.9420    0.0544      0.0425 f    (17.96,9.36)      s, n
+  i_img2_jtag_pnp_jpnp_shift_reg[27] (net)                                                1      0.0011
+  copt_h_inst_1310/I (BUFFSKPD3BWP16P90CPD)                                                                  0.0081      0.9300    0.0002      0.0427 f    (15.57,12.82)
+  copt_h_inst_1310/Z (BUFFSKPD3BWP16P90CPD)                                                                  0.0072      0.9420    0.0193      0.0620 f    (15.79,12.82)
+  copt_net_190 (net)                                                                      1      0.0007
+  U357/A1 (INR2D1BWP16P90CPD)                                                                                0.0072      0.9300    0.0000      0.0621 f    (15.51,12.27)
+  U357/ZN (INR2D1BWP16P90CPD)                                                                                0.0115      0.9420    0.0187      0.0807 f    (15.65,12.24)
+  n318 (net)                                                                              1      0.0009
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_26_/D (DFCNQD1BWP16P90CPDILVT)                                          0.0115      0.9300    0.0001      0.0809 f    (18.43,11.12)     s, n
+  data arrival time                                                                                                                            0.0809
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0027     -0.0027
+  clock reconvergence pessimism                                                                                                   -0.0084     -0.0112
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_26_/CP (DFCNQD1BWP16P90CPDILVT)                                         0.0137      1.0700    0.0000     -0.0112 r    (20.10,11.09)     s, n
+  clock uncertainty                                                                                                                0.0530      0.0418
+  library hold time                                                                                                      1.0000    0.0131      0.0550
+  data required time                                                                                                                           0.0550
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                           0.0550
+  data arrival time                                                                                                                           -0.0809
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.0259
+
+
+
+  Startpoint: tdi (input port clocked by clock)
+  Endpoint: dbg_datf_si[0] (output port clocked by clock)
+  Mode: norm.ssgnp0p72v125c.rcworst_CCworst
+  Corner: norm.ssgnp0p72v125c.rcworst_CCworst
+  Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  input external delay                                                                                                             0.5000      0.5000
+
+  tdi (in)                                                                                                   0.0172      0.9420    0.0092      0.5092 r    (61.75,13.65)
+  tdi (net)                                                                               3      0.0093
+  U544/I (CKBD12BWP16P90CPDULVT)                                                                             0.0171      0.9300    0.0008      0.5100 r    (59.19,15.70)
+  U544/Z (CKBD12BWP16P90CPDULVT)                                                                             0.0304      0.9420    0.0284      0.5384 r    (60.00,15.70)
+  dbg_datf_si[0] (net)                                                                    2      0.1021
+  dbg_datf_si[0] (out)                                                                                       0.0326      0.9300    0.0093      0.5477 r    (61.75,16.05)
+  data arrival time                                                                                                                            0.5477
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  clock reconvergence pessimism                                                                                                   -0.0000      0.0000
+  clock uncertainty                                                                                                                0.0530      0.0530
+  output external delay                                                                                                           -0.5000     -0.4470
+  data required time                                                                                                                          -0.4470
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                          -0.4470
+  data arrival time                                                                                                                           -0.5477
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.9947
+
+
+
+  Startpoint: trstn (input port clocked by clock)
+  Endpoint: i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_ (removal check against rising-edge clock clocked by clock)
+  Mode: norm.ssgnp0p72v125c.rcworst_CCworst
+  Corner: norm.ssgnp0p72v125c.rcworst_CCworst
+  Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+  Path Group: REGIN
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  input external delay                                                                                                             0.5000      0.5000
+
+  trstn (in)                                                                                                 0.0280      0.9420    0.0138      0.5138 r    (61.75,11.49)
+  trstn (net)                                                                            12      0.0180
+  i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/CDN (DFCNQD1BWP16P90CPD)                        0.0288      0.9300    0.0013      0.5151 r    (55.18,11.61)     s, n
+  data arrival time                                                                                                                            0.5151
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0113     -0.0113
+  clock reconvergence pessimism                                                                                                   -0.0000     -0.0113
+  i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/CP (DFCNQD1BWP16P90CPD)                         0.0261      1.0700    0.0000     -0.0113 r    (56.01,11.66)     s, n
+  clock uncertainty                                                                                                                0.0530      0.0417
+  library hold time                                                                                                      1.0000    0.0534      0.0950
+  data required time                                                                                                                           0.0950
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                           0.0950
+  data arrival time                                                                                                                           -0.5151
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.4201
+
+
+
+  Startpoint: i_img2_jtag_attn_cont_reg_reg_2_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dbg_resetn_flevel[0] (output port clocked by clock)
+  Mode: norm.ssgnp0p72v125c.rcworst_CCworst
+  Corner: norm.ssgnp0p72v125c.rcworst_CCworst
+  Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+  Path Group: REGOUT
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0183     -0.0183
+
+  i_img2_jtag_attn_cont_reg_reg_2_/CP (EDFCNQD1BWP16P90CPD)                                                  0.0263      0.9300    0.0000     -0.0183 r    (55.02,23.76)     s, n
+  i_img2_jtag_attn_cont_reg_reg_2_/Q (EDFCNQD1BWP16P90CPD)                                                   0.0337      0.9420    0.0956      0.0773 r    (54.77,23.76)     s, n
+  n410 (net)                                                                              2      0.0048
+  BUFT_RR_54/I (CKBD14BWP16P90CPDULVT)                                                                       0.0337      0.9300    0.0007      0.0780 r    (57.84,22.03)
+  BUFT_RR_54/Z (CKBD14BWP16P90CPDULVT)                                                                       0.0266      0.9420    0.0292      0.1072 r    (58.74,22.03)
+  dbg_resetn_flevel[0] (net)                                                              1      0.1009
+  dbg_resetn_flevel[0] (out)                                                                                 0.0311      0.9300    0.0123      0.1195 r    (61.75,16.77)
+  data arrival time                                                                                                                            0.1195
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  clock reconvergence pessimism                                                                                                   -0.0000      0.0000
+  clock uncertainty                                                                                                                0.0530      0.0530
+  output external delay                                                                                                           -0.5000     -0.4470
+  data required time                                                                                                                          -0.4470
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                          -0.4470
+  data arrival time                                                                                                                           -0.1195
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.5665
+
+
+
+  Startpoint: i_img2_jtag_tap_idcode_reg_reg_10_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: i_img2_jtag_tap_idcode_reg_reg_9_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: norm.tt0p8v85c.typical_CCworst
+  Corner: norm.tt0p8v85c.typical_CCworst
+  Scenario: norm.tt0p8v85c.typical_CCworst
+  Path Group: clock
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0089     -0.0089
+
+  i_img2_jtag_tap_idcode_reg_reg_10_/CP (DFCNQD1BWP16P90CPDILVT)                                             0.0155      0.9300    0.0000     -0.0089 r    (25.77,24.34)     s, n
+  i_img2_jtag_tap_idcode_reg_reg_10_/Q (DFCNQD1BWP16P90CPDILVT)                                              0.0058      0.9270    0.0394      0.0305 f    (25.52,24.34)     s, n
+  i_img2_jtag_tap_idcode_reg[10] (net)                                                    1      0.0009
+  copt_h_inst_1330/I (CKBD1BWP16P90CPD)                                                                      0.0058      0.9300    0.0001      0.0306 f    (28.25,25.49)
+  copt_h_inst_1330/Z (CKBD1BWP16P90CPD)                                                                      0.0057      0.9270    0.0113      0.0418 f    (28.40,25.49)
+  copt_net_210 (net)                                                                      1      0.0006
+  U408/A1 (INR2D1BWP16P90CPD)                                                                                0.0057      0.9300    0.0000      0.0418 f    (28.65,25.46)
+  U408/ZN (INR2D1BWP16P90CPD)                                                                                0.0093      0.9270    0.0133      0.0552 f    (28.79,25.49)
+  n269 (net)                                                                              1      0.0012
+  i_img2_jtag_tap_idcode_reg_reg_9_/D (DFCNQD1BWP16P90CPDILVT)                                               0.0093      0.9300    0.0001      0.0553 f    (34.81,25.46)     s, n
+  data arrival time                                                                                                                            0.0553
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0036     -0.0036
+  clock reconvergence pessimism                                                                                                   -0.0057     -0.0093
+  i_img2_jtag_tap_idcode_reg_reg_9_/CP (DFCNQD1BWP16P90CPDILVT)                                              0.0159      1.0700    0.0000     -0.0093 r    (36.48,25.49)     s, n
+  clock uncertainty                                                                                                                0.0480      0.0387
+  library hold time                                                                                                      1.0000    0.0099      0.0487
+  data required time                                                                                                                           0.0487
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                           0.0487
+  data arrival time                                                                                                                           -0.0553
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.0066
+
+
+
+  Startpoint: tdi (input port clocked by clock)
+  Endpoint: dbg_datf_si[0] (output port clocked by clock)
+  Mode: norm.tt0p8v85c.typical_CCworst
+  Corner: norm.tt0p8v85c.typical_CCworst
+  Scenario: norm.tt0p8v85c.typical_CCworst
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  input external delay                                                                                                             0.5000      0.5000
+
+  tdi (in)                                                                                                   0.0124      0.9270    0.0066      0.5066 r    (61.75,13.65)
+  tdi (net)                                                                               3      0.0093
+  U544/I (CKBD12BWP16P90CPDULVT)                                                                             0.0124      0.9300    0.0005      0.5071 r    (59.19,15.70)
+  U544/Z (CKBD12BWP16P90CPDULVT)                                                                             0.0251      0.9270    0.0224      0.5295 r    (60.00,15.70)
+  dbg_datf_si[0] (net)                                                                    2      0.1021
+  dbg_datf_si[0] (out)                                                                                       0.0257      0.9300    0.0049      0.5344 r    (61.75,16.05)
+  data arrival time                                                                                                                            0.5344
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  clock reconvergence pessimism                                                                                                   -0.0000      0.0000
+  clock uncertainty                                                                                                                0.0480      0.0480
+  output external delay                                                                                                           -0.5000     -0.4520
+  data required time                                                                                                                          -0.4520
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                          -0.4520
+  data arrival time                                                                                                                           -0.5344
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.9864
+
+
+
+  Startpoint: trstn (input port clocked by clock)
+  Endpoint: i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_ (removal check against rising-edge clock clocked by clock)
+  Mode: norm.tt0p8v85c.typical_CCworst
+  Corner: norm.tt0p8v85c.typical_CCworst
+  Scenario: norm.tt0p8v85c.typical_CCworst
+  Path Group: REGIN
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  input external delay                                                                                                             0.5000      0.5000
+
+  trstn (in)                                                                                                 0.0205      0.9270    0.0100      0.5100 r    (61.75,11.49)
+  trstn (net)                                                                            12      0.0180
+  i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/CDN (DFCNQD1BWP16P90CPD)                        0.0210      0.9300    0.0009      0.5109 r    (55.18,11.61)     s, n
+  data arrival time                                                                                                                            0.5109
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0072     -0.0072
+  clock reconvergence pessimism                                                                                                   -0.0000     -0.0072
+  i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/CP (DFCNQD1BWP16P90CPD)                         0.0204      1.0700    0.0000     -0.0072 r    (56.01,11.66)     s, n
+  clock uncertainty                                                                                                                0.0480      0.0408
+  library hold time                                                                                                      1.0000    0.0341      0.0750
+  data required time                                                                                                                           0.0750
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                           0.0750
+  data arrival time                                                                                                                           -0.5109
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.4359
+
+
+
+  Startpoint: i_img2_jtag_attn_cont_reg_reg_2_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dbg_resetn_flevel[0] (output port clocked by clock)
+  Mode: norm.tt0p8v85c.typical_CCworst
+  Corner: norm.tt0p8v85c.typical_CCworst
+  Scenario: norm.tt0p8v85c.typical_CCworst
+  Path Group: REGOUT
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                Fanout     Cap        Trans      Derate      Incr        Path           Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (propagated)                                                                                                -0.0136     -0.0136
+
+  i_img2_jtag_attn_cont_reg_reg_2_/CP (EDFCNQD1BWP16P90CPD)                                                  0.0210      0.9300    0.0000     -0.0136 r    (55.02,23.76)     s, n
+  i_img2_jtag_attn_cont_reg_reg_2_/Q (EDFCNQD1BWP16P90CPD)                                                   0.0239      0.9270    0.0626      0.0490 r    (54.77,23.76)     s, n
+  n410 (net)                                                                              2      0.0048
+  BUFT_RR_54/I (CKBD14BWP16P90CPDULVT)                                                                       0.0239      0.9300    0.0004      0.0494 r    (57.84,22.03)
+  BUFT_RR_54/Z (CKBD14BWP16P90CPDULVT)                                                                       0.0219      0.9270    0.0227      0.0721 r    (58.74,22.03)
+  dbg_resetn_flevel[0] (net)                                                              1      0.1010
+  dbg_resetn_flevel[0] (out)                                                                                 0.0239      0.9300    0.0077      0.0798 r    (61.75,16.77)
+  data arrival time                                                                                                                            0.0798
+
+  clock clock (rise edge)                                                                                                          0.0000      0.0000
+  clock network delay (ideal)                                                                                                      0.0000      0.0000
+  clock reconvergence pessimism                                                                                                   -0.0000      0.0000
+  clock uncertainty                                                                                                                0.0480      0.0480
+  output external delay                                                                                                           -0.5000     -0.4520
+  data required time                                                                                                                          -0.4520
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                          -0.4520
+  data arrival time                                                                                                                           -0.0798
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                  0.5318
+
+
+1

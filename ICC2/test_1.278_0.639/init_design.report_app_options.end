@@ -1,0 +1,42 @@
+****************************************
+Report : app_option
+           -non_default
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 12 19:31:25 2024
+****************************************
+Name                                              Type       Value                User-default System-default Scope      Status     Source
+------------------------------------------------- ---------- -------------------- ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+design.on_disk_operation                          bool       true                 true         false          global     normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/icc2_pnr_setup.tcl:587
+lib.setting.on_disk_operation                     bool       true                 true         false          global     normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/init_design.tcl:111
+mv.upf.auto_resolve_pg_net                        bool       false                --           true           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1598
+opt.timing.effort                                 enum       high                 {}           low            block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/results/ICC2_files/img2_jtag_tap_wrap.settings.tcl:148
+place.coarse.channel_detect_mode                  bool       false                --           true           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/results/ICC2_files/img2_jtag_tap_wrap.settings.tcl:140
+place.coarse.enable_enhanced_soft_blockages       bool       true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/results/ICC2_files/img2_jtag_tap_wrap.settings.tcl:142
+place.coarse.max_density                          float      0.35                 --           0              block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/results/ICC2_files/img2_jtag_tap_wrap.settings.tcl:143
+plan.pgcheck.check_rdl_routing                    bool       true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:2365
+plan.pgcheck.treat_terminal_as_voltage_source     bool       true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:2365
+plan.pgcheck.via_site_threshold                   double     1                    --           0              block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:2365
+plan.pgroute.connect_user_route_shapes            bool       true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1655
+plan.pgroute.create_via_cellalign_maxpin_only     bool       false                --           true           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1615
+plan.pgroute.fix_via_drc_multiple_viadef          bool       true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1604
+plan.pgroute.load_frame_view                      bool       true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1608
+plan.pgroute.max_extension_distance               double     100                  --           -1             block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1655
+plan.pgroute.max_undo_steps                       integer    100                  --           5              block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1655
+plan.pgroute.maximize_total_cut_area              string     Vv Vh Vs             {}           --             block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1953
+plan.pgroute.maximum_cell_gap_for_alignment_strap double     10                   --           -1             block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1609
+plan.pgroute.merge_shapes_in_pad_cell             string     io_pad corner_pad flip_chip_pad -|- {}           --             block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1677
+plan.pgroute.snap_stdcell_rail                    bool       true                 --           false          block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1613
+plan.pgroute.stapling_via_fast_mode               bool       false                --           true           block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1655
+plan.pgroute.via_site_threshold                   double     1                    --           0              block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/flow/scripts/pg_mesh.tcl:1655
+power.default_toggle_rate_reference_clock         enum       fastest              {}           related        block      normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/results/ICC2_files/img2_jtag_tap_wrap.settings.tcl:119
+shell.common.report_default_significant_digits    integer    4                    4            2              global     normal     /export/data/verif/users/bochkar_f/selenga/img2_jtag_tap_wrap/setup/icc2_pnr_setup.tcl:584
+time.port_slew_derate_from_library                float      0.5                  0.5          1              block      normal     
+time.port_slew_lower_threshold_fall               float      30                   30           20             block      normal     
+time.port_slew_lower_threshold_rise               float      30                   30           20             block      normal     
+time.port_slew_upper_threshold_fall               float      70                   70           80             block      normal     
+time.port_slew_upper_threshold_rise               float      70                   70           80             block      normal     
+------------------------------------------------- ---------- -------------------- ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+
+There are additional internal differences with no available TBC source.
+1

@@ -1,0 +1,1221 @@
+Warning: Use -per_clock_root option along with -type latency option to split the reporting of a clock to per clock root, so that the clock trees associated with different root pins are reported separately
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+****************************************
+Report : clock qor
+        -type latency
+        -show_paths
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Thu Nov 21 14:01:33 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+========================================================================
+==== Latency Reporting for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ====
+========================================================================
+
+====================================== Summary Table for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ======================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ffgnp0p88vm40c.rcbest_CCbest, Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+clock                                   M,D       139        --    0.0034        --    0.0487    0.0453    0.0471    0.0010        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139        --    0.0034        --    0.0487    0.0453        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+============================= Details Table for Corner norm.ffgnp0p88vm40c.rcbest_CCbest =============================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ffgnp0p88vm40c.rcbest_CCbest, Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+clock
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP
+                                                                        0.0487 r    0.0487 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP
+                                                                        0.0487 r    0.0487 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP
+                                                                        0.0487 r    0.0487 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_62_/CP
+                                                                        0.0486 r    0.0486 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP
+                                                                        0.0486 r    0.0486 r        --          --
+                                   S   i_img2_jtag_attn_cont_shift_reg_reg_0_/CP
+                                                                        0.0453 r    0.0453 r        --          --
+                                   S   i_img2_jtag_attn_cont_reg_reg_1_/CP
+                                                                        0.0453 r    0.0453 r        --          --
+                                   S   i_img2_jtag_attn_cont_shift_reg_reg_1_/CP
+                                                                        0.0453 r    0.0453 r        --          --
+                                   S   i_img2_jtag_attn_cont_shift_reg_reg_2_/CP
+                                                                        0.0453 r    0.0453 r        --          --
+                                   S   i_img2_jtag_attn_cont_reg_reg_2_/CP
+                                                                        0.0453 r    0.0453 r        --          --
+
+
+===================================================================
+==== Path Reports for Corner norm.ffgnp0p88vm40c.rcbest_CCbest ====
+===================================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP
+Latency             : 0.0487
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0061    0.0002    0.0140 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0087    0.0064    0.0103    0.0243 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0064    0.0004    0.0247 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0043    0.0092    0.0339 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0043    0.0002    0.0340 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0122    0.0052    0.0048    0.0388 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0052    0.0004    0.0392 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0298    0.0124    0.0080    0.0472 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0127    0.0015    0.0487 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0487
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP
+Latency             : 0.0487
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0061    0.0002    0.0140 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0087    0.0064    0.0103    0.0243 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0064    0.0004    0.0247 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0043    0.0092    0.0339 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0043    0.0002    0.0340 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0122    0.0052    0.0048    0.0388 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0052    0.0004    0.0392 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0298    0.0124    0.0080    0.0472 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0128    0.0015    0.0487 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0487
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP
+Latency             : 0.0487
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0061    0.0002    0.0140 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0087    0.0064    0.0103    0.0243 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0064    0.0004    0.0247 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0043    0.0092    0.0339 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0043    0.0002    0.0340 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0122    0.0052    0.0048    0.0388 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0052    0.0004    0.0392 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0298    0.0124    0.0080    0.0472 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0128    0.0015    0.0487 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0487
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_62_/CP
+Latency             : 0.0486
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0061    0.0002    0.0140 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0087    0.0064    0.0103    0.0243 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0064    0.0004    0.0247 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0043    0.0092    0.0339 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0043    0.0002    0.0340 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0122    0.0052    0.0048    0.0388 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0052    0.0004    0.0392 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0298    0.0124    0.0080    0.0472 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_62_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0128    0.0014    0.0486 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0486
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP
+Latency             : 0.0486
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0061    0.0002    0.0140 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0087    0.0064    0.0103    0.0243 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0064    0.0004    0.0247 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0043    0.0092    0.0339 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0043    0.0002    0.0340 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0122    0.0052    0.0048    0.0388 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0052    0.0004    0.0392 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0298    0.0124    0.0080    0.0472 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0128    0.0014    0.0486 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0486
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_cont_shift_reg_reg_0_/CP
+Latency             : 0.0453
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  ctstcto_buf_1220/I (CKBD2BWP16P90CPDULVT)                          0.0061    0.0002    0.0140 r
+  ctstcto_buf_1220/Z (CKBD2BWP16P90CPDULVT)         1      0.0053    0.0066    0.0095    0.0235 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/CP (CKLNQD2BWP16P90CPDULVT)
+                                                                     0.0066    0.0003    0.0238 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/Q (CKLNQD2BWP16P90CPDULVT)
+                                                   14      0.0159    0.0191    0.0211    0.0449 r
+  i_img2_jtag_attn_cont_shift_reg_reg_0_/CP (DFCNQD1BWP16P90CPD)     0.0190    0.0004    0.0453 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0453
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_cont_reg_reg_1_/CP
+Latency             : 0.0453
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  ctstcto_buf_1220/I (CKBD2BWP16P90CPDULVT)                          0.0061    0.0002    0.0140 r
+  ctstcto_buf_1220/Z (CKBD2BWP16P90CPDULVT)         1      0.0053    0.0066    0.0095    0.0235 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/CP (CKLNQD2BWP16P90CPDULVT)
+                                                                     0.0066    0.0003    0.0238 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/Q (CKLNQD2BWP16P90CPDULVT)
+                                                   14      0.0159    0.0191    0.0211    0.0449 r
+  i_img2_jtag_attn_cont_reg_reg_1_/CP (EDFCNQD1BWP16P90CPDILVT)      0.0190    0.0004    0.0453 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0453
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_cont_shift_reg_reg_1_/CP
+Latency             : 0.0453
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  ctstcto_buf_1220/I (CKBD2BWP16P90CPDULVT)                          0.0061    0.0002    0.0140 r
+  ctstcto_buf_1220/Z (CKBD2BWP16P90CPDULVT)         1      0.0053    0.0066    0.0095    0.0235 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/CP (CKLNQD2BWP16P90CPDULVT)
+                                                                     0.0066    0.0003    0.0238 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/Q (CKLNQD2BWP16P90CPDULVT)
+                                                   14      0.0159    0.0191    0.0211    0.0449 r
+  i_img2_jtag_attn_cont_shift_reg_reg_1_/CP (DFCNQD1BWP16P90CPD)     0.0190    0.0004    0.0453 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0453
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_cont_shift_reg_reg_2_/CP
+Latency             : 0.0453
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  ctstcto_buf_1220/I (CKBD2BWP16P90CPDULVT)                          0.0061    0.0002    0.0140 r
+  ctstcto_buf_1220/Z (CKBD2BWP16P90CPDULVT)         1      0.0053    0.0066    0.0095    0.0235 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/CP (CKLNQD2BWP16P90CPDULVT)
+                                                                     0.0066    0.0003    0.0238 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/Q (CKLNQD2BWP16P90CPDULVT)
+                                                   14      0.0159    0.0191    0.0211    0.0449 r
+  i_img2_jtag_attn_cont_shift_reg_reg_2_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0190    0.0004    0.0453 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0453
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : norm.ffgnp0p88vm40c.rcbest_CCbest
+Corner              : norm.ffgnp0p88vm40c.rcbest_CCbest
+Scenario            : norm.ffgnp0p88vm40c.rcbest_CCbest
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_cont_reg_reg_2_/CP
+Latency             : 0.0453
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0536    0.0000
+  tck (in)                                          2      0.0079    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0002    0.0002 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0066    0.0061    0.0136    0.0138 r
+  ctstcto_buf_1220/I (CKBD2BWP16P90CPDULVT)                          0.0061    0.0002    0.0140 r
+  ctstcto_buf_1220/Z (CKBD2BWP16P90CPDULVT)         1      0.0053    0.0066    0.0095    0.0235 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/CP (CKLNQD2BWP16P90CPDULVT)
+                                                                     0.0066    0.0003    0.0238 r
+  clk_gate_i_img2_jtag_attn_cont_reg_reg_0_latch_0/Q (CKLNQD2BWP16P90CPDULVT)
+                                                   14      0.0159    0.0191    0.0211    0.0449 r
+  i_img2_jtag_attn_cont_reg_reg_2_/CP (EDFCNQD1BWP16P90CPDILVT)      0.0190    0.0004    0.0453 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0453
+
+
+==========================================================================
+==== Latency Reporting for Corner norm.ssgnp0p72v125c.rcworst_CCworst ====
+==========================================================================
+
+===================================== Summary Table for Corner norm.ssgnp0p72v125c.rcworst_CCworst =====================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ssgnp0p72v125c.rcworst_CCworst, Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+clock                                   M,D       139        --    0.0094        --    0.0812    0.0717    0.0801    0.0029        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139        --    0.0094        --    0.0812    0.0717        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+============================ Details Table for Corner norm.ssgnp0p72v125c.rcworst_CCworst ============================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: norm.ssgnp0p72v125c.rcworst_CCworst, Scenario: norm.ssgnp0p72v125c.rcworst_CCworst
+clock
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP
+                                                                        0.0812 r    0.0812 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP
+                                                                        0.0811 r    0.0811 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP
+                                                                        0.0811 r    0.0811 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP
+                                                                        0.0808 r    0.0808 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_59_/CP
+                                                                        0.0807 r    0.0807 r        --          --
+                                   S   i_img2_jtag_attn_dbg_rstatn_r0_reg_0_/CP
+                                                                        0.0717 r    0.0717 r        --          --
+                                   S   i_img2_jtag_tap_tdo_enable_reg/CPN
+                                                                        0.0718 f    0.0718 f        --          --
+                                   S   i_img2_jtag_attn_dbg_ext_stat_r0_reg_0_/CP
+                                                                        0.0718 r    0.0718 r        --          --
+                                   S   i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/CP
+                                                                        0.0721 r    0.0721 r        --          --
+                                   S   i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/CP
+                                                                        0.0722 r    0.0722 r        --          --
+
+
+=====================================================================
+==== Path Reports for Corner norm.ssgnp0p72v125c.rcworst_CCworst ====
+=====================================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP
+Latency             : 0.0812
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0010    0.0010 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0099    0.0197    0.0207 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0102    0.0012    0.0219 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0085    0.0107    0.0162    0.0382 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0117    0.0019    0.0401 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0070    0.0153    0.0553 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0070    0.0005    0.0559 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0123    0.0085    0.0077    0.0635 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0089    0.0023    0.0658 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0282    0.0182    0.0096    0.0754 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0222    0.0057    0.0812 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0812
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP
+Latency             : 0.0811
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0010    0.0010 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0099    0.0197    0.0207 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0102    0.0012    0.0219 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0085    0.0107    0.0162    0.0382 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0117    0.0019    0.0401 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0070    0.0153    0.0553 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0070    0.0005    0.0559 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0123    0.0085    0.0077    0.0635 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0089    0.0023    0.0658 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0282    0.0182    0.0096    0.0754 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0221    0.0057    0.0811 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0811
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP
+Latency             : 0.0811
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0010    0.0010 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0099    0.0197    0.0207 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0102    0.0012    0.0219 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0085    0.0107    0.0162    0.0382 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0117    0.0019    0.0401 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0070    0.0153    0.0553 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0070    0.0005    0.0559 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0123    0.0085    0.0077    0.0635 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0089    0.0023    0.0658 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0282    0.0182    0.0096    0.0754 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0223    0.0056    0.0811 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0811
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP
+Latency             : 0.0808
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0010    0.0010 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0099    0.0197    0.0207 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0102    0.0012    0.0219 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0085    0.0107    0.0162    0.0382 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0117    0.0019    0.0401 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0070    0.0153    0.0553 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0070    0.0005    0.0559 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0123    0.0085    0.0077    0.0635 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0089    0.0023    0.0658 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0282    0.0182    0.0096    0.0754 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0222    0.0054    0.0808 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0808
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_59_/CP
+Latency             : 0.0807
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0010    0.0010 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0099    0.0197    0.0207 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0102    0.0012    0.0219 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0085    0.0107    0.0162    0.0382 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0117    0.0019    0.0401 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0070    0.0153    0.0553 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0070    0.0005    0.0559 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0123    0.0085    0.0077    0.0635 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0089    0.0023    0.0658 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0282    0.0182    0.0096    0.0754 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_59_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0222    0.0053    0.0807 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0807
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_dbg_rstatn_r0_reg_0_/CP
+Latency             : 0.0717
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0009    0.0009 r
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0065    0.0196    0.0204 r
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0065    0.0005    0.0209 r
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0050    0.0130    0.0339 r
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0050    0.0002    0.0340 r
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0014    0.0049    0.0115    0.0455 r
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0049    0.0002    0.0456 r
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0055    0.0105    0.0085    0.0541 f
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0106    0.0016    0.0557 f
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0257    0.0238    0.0132    0.0690 r
+  i_img2_jtag_attn_dbg_rstatn_r0_reg_0_/CP (DFCNQD1BWP16P90CPD)      0.0261    0.0028    0.0717 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0717
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_tap_tdo_enable_reg/CPN
+Latency             : 0.0718
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 f
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0299    0.0009    0.0009 f
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0064    0.0178    0.0187 f
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0064    0.0005    0.0192 f
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0049    0.0124    0.0316 f
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0049    0.0002    0.0317 f
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0015    0.0050    0.0111    0.0429 f
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0050    0.0002    0.0430 f
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0055    0.0125    0.0095    0.0525 r
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0125    0.0016    0.0541 r
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0258    0.0250    0.0149    0.0690 f
+  i_img2_jtag_tap_tdo_enable_reg/CPN (DFNCNQD4BWP16P90CPDULVT)       0.0270    0.0028    0.0718 f
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0718
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_dbg_ext_stat_r0_reg_0_/CP
+Latency             : 0.0718
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0009    0.0009 r
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0065    0.0196    0.0204 r
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0065    0.0005    0.0209 r
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0050    0.0130    0.0339 r
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0050    0.0002    0.0340 r
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0014    0.0049    0.0115    0.0455 r
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0049    0.0002    0.0456 r
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0055    0.0105    0.0085    0.0541 f
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0106    0.0016    0.0557 f
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0257    0.0238    0.0132    0.0690 r
+  i_img2_jtag_attn_dbg_ext_stat_r0_reg_0_/CP (DFCNQD1BWP16P90CPD)    0.0260    0.0028    0.0718 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0718
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/CP
+Latency             : 0.0721
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0009    0.0009 r
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0065    0.0196    0.0204 r
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0065    0.0005    0.0209 r
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0050    0.0130    0.0339 r
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0050    0.0002    0.0340 r
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0014    0.0049    0.0115    0.0455 r
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0049    0.0002    0.0456 r
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0055    0.0105    0.0085    0.0541 f
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0106    0.0016    0.0557 f
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0257    0.0238    0.0132    0.0690 r
+  i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/CP (DFCNQD1BWP16P90CPD)    0.0262    0.0031    0.0721 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0721
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : norm.ssgnp0p72v125c.rcworst_CCworst
+Corner              : norm.ssgnp0p72v125c.rcworst_CCworst
+Scenario            : norm.ssgnp0p72v125c.rcworst_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/CP
+Latency             : 0.0722
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0855    0.0000
+  tck (in)                                          2      0.0076    0.0300    0.0000    0.0000 r
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0009    0.0009 r
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0065    0.0196    0.0204 r
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0065    0.0005    0.0209 r
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0050    0.0130    0.0339 r
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0050    0.0002    0.0340 r
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0014    0.0049    0.0115    0.0455 r
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0049    0.0002    0.0456 r
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0055    0.0105    0.0085    0.0541 f
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0106    0.0016    0.0557 f
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0257    0.0238    0.0132    0.0690 r
+  i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/CP (DFCNQD1BWP16P90CPD)      0.0262    0.0032    0.0722 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0722
+
+
+=====================================================================
+==== Latency Reporting for Corner norm.tt0p8v85c.typical_CCworst ====
+=====================================================================
+
+======================================= Summary Table for Corner norm.tt0p8v85c.typical_CCworst ========================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: norm.tt0p8v85c.typical_CCworst, Scenario: norm.tt0p8v85c.typical_CCworst
+clock                                   M,D       139        --    0.0052        --    0.0637    0.0585    0.0626    0.0017        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139        --    0.0052        --    0.0637    0.0585        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+============================== Details Table for Corner norm.tt0p8v85c.typical_CCworst ===============================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: norm.tt0p8v85c.typical_CCworst, Scenario: norm.tt0p8v85c.typical_CCworst
+clock
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP
+                                                                        0.0637 r    0.0637 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP
+                                                                        0.0637 r    0.0637 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP
+                                                                        0.0637 r    0.0637 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP
+                                                                        0.0635 r    0.0635 r        --          --
+                                   L   i_img2_jtag_pnp_jpnp_shift_reg_reg_59_/CP
+                                                                        0.0635 r    0.0635 r        --          --
+                                   S   i_img2_jtag_attn_dbg_rstatn_r0_reg_0_/CP
+                                                                        0.0585 r    0.0585 r        --          --
+                                   S   i_img2_jtag_tap_tdo_enable_reg/CPN
+                                                                        0.0585 f    0.0585 f        --          --
+                                   S   i_img2_jtag_attn_dbg_ext_stat_r0_reg_0_/CP
+                                                                        0.0585 r    0.0585 r        --          --
+                                   S   i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/CP
+                                                                        0.0587 r    0.0587 r        --          --
+                                   S   i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/CP
+                                                                        0.0587 r    0.0587 r        --          --
+
+
+================================================================
+==== Path Reports for Corner norm.tt0p8v85c.typical_CCworst ====
+================================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP
+Latency             : 0.0637
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0006    0.0006 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0080    0.0166    0.0172 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0082    0.0006    0.0178 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0086    0.0086    0.0131    0.0309 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0089    0.0011    0.0320 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0056    0.0120    0.0440 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0056    0.0003    0.0443 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0124    0.0070    0.0062    0.0505 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0071    0.0012    0.0517 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0289    0.0152    0.0086    0.0603 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_55_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0169    0.0034    0.0637 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0637
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP
+Latency             : 0.0637
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0006    0.0006 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0080    0.0166    0.0172 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0082    0.0006    0.0178 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0086    0.0086    0.0131    0.0309 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0089    0.0011    0.0320 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0056    0.0120    0.0440 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0056    0.0003    0.0443 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0124    0.0070    0.0062    0.0505 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0071    0.0012    0.0517 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0289    0.0152    0.0086    0.0603 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_56_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0169    0.0033    0.0637 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0637
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP
+Latency             : 0.0637
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0006    0.0006 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0080    0.0166    0.0172 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0082    0.0006    0.0178 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0086    0.0086    0.0131    0.0309 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0089    0.0011    0.0320 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0056    0.0120    0.0440 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0056    0.0003    0.0443 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0124    0.0070    0.0062    0.0505 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0071    0.0012    0.0517 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0289    0.0152    0.0086    0.0603 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_54_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0169    0.0033    0.0637 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0637
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP
+Latency             : 0.0635
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0006    0.0006 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0080    0.0166    0.0172 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0082    0.0006    0.0178 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0086    0.0086    0.0131    0.0309 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0089    0.0011    0.0320 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0056    0.0120    0.0440 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0056    0.0003    0.0443 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0124    0.0070    0.0062    0.0505 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0071    0.0012    0.0517 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0289    0.0152    0.0086    0.0603 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_58_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0170    0.0032    0.0635 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0635
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_pnp_jpnp_shift_reg_reg_59_/CP
+Latency             : 0.0635
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  clk_gate_ml_0_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                0.0300    0.0006    0.0006 r
+  clk_gate_ml_0_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0065    0.0080    0.0166    0.0172 r
+  clk_gate_ml_1_latch_0/CP (CKLNQD5BWP16P90CPDULVT)                  0.0082    0.0006    0.0178 r
+  clk_gate_ml_1_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    2      0.0086    0.0086    0.0131    0.0309 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/CP (CKLNQD5BWP16P90CPDULVT)
+                                                                     0.0089    0.0011    0.0320 r
+  clk_gate_i_img2_jtag_pnp_jpnp_shift_reg_reg_0_latch_0/Q (CKLNQD5BWP16P90CPDULVT)
+                                                    1      0.0042    0.0056    0.0120    0.0440 r
+  ctstcts_inv_8211006/I (DCCKND6BWP16P90CPDULVT)                     0.0056    0.0003    0.0443 r
+  ctstcts_inv_8211006/ZN (DCCKND6BWP16P90CPDULVT)
+                                                    3      0.0124    0.0070    0.0062    0.0505 f
+  ctstcts_inv_8161001/I (DCCKND6BWP16P90CPDULVT)                     0.0071    0.0012    0.0517 f
+  ctstcts_inv_8161001/ZN (DCCKND6BWP16P90CPDULVT)
+                                                   30      0.0289    0.0152    0.0086    0.0603 r
+  i_img2_jtag_pnp_jpnp_shift_reg_reg_59_/CP (DFCNQD1BWP16P90CPDILVT)
+                                                                     0.0168    0.0031    0.0635 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0635
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_dbg_rstatn_r0_reg_0_/CP
+Latency             : 0.0585
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0005    0.0005 r
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0056    0.0166    0.0172 r
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0056    0.0002    0.0174 r
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0041    0.0105    0.0280 r
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0041    0.0001    0.0280 r
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0014    0.0040    0.0093    0.0373 r
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0040    0.0001    0.0374 r
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0056    0.0087    0.0070    0.0444 f
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0087    0.0009    0.0453 f
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0262    0.0198    0.0117    0.0570 r
+  i_img2_jtag_attn_dbg_rstatn_r0_reg_0_/CP (DFCNQD1BWP16P90CPD)      0.0205    0.0015    0.0585 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0585
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_tap_tdo_enable_reg/CPN
+Latency             : 0.0585
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 f
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0005    0.0005 f
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0019    0.0056    0.0149    0.0154 f
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0056    0.0002    0.0157 f
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0041    0.0102    0.0258 f
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0041    0.0001    0.0259 f
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0015    0.0041    0.0091    0.0351 f
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0041    0.0001    0.0352 f
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0055    0.0103    0.0078    0.0429 r
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0103    0.0009    0.0438 r
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0264    0.0206    0.0132    0.0570 f
+  i_img2_jtag_tap_tdo_enable_reg/CPN (DFNCNQD4BWP16P90CPDULVT)       0.0213    0.0015    0.0585 f
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0585
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_dbg_ext_stat_r0_reg_0_/CP
+Latency             : 0.0585
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0005    0.0005 r
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0056    0.0166    0.0172 r
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0056    0.0002    0.0174 r
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0041    0.0105    0.0280 r
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0041    0.0001    0.0280 r
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0014    0.0040    0.0093    0.0373 r
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0040    0.0001    0.0374 r
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0056    0.0087    0.0070    0.0444 f
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0087    0.0009    0.0453 f
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0262    0.0198    0.0117    0.0570 r
+  i_img2_jtag_attn_dbg_ext_stat_r0_reg_0_/CP (DFCNQD1BWP16P90CPD)    0.0205    0.0015    0.0585 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0585
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/CP
+Latency             : 0.0587
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0005    0.0005 r
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0056    0.0166    0.0172 r
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0056    0.0002    0.0174 r
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0041    0.0105    0.0280 r
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0041    0.0001    0.0280 r
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0014    0.0040    0.0093    0.0373 r
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0040    0.0001    0.0374 r
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0056    0.0087    0.0070    0.0444 f
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0087    0.0009    0.0453 f
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0262    0.0198    0.0117    0.0570 r
+  i_img2_jtag_attn_dbg_rstatn_r1_reg_0_/CP (DFCNQD1BWP16P90CPD)      0.0206    0.0017    0.0587 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0587
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : norm.tt0p8v85c.typical_CCworst
+Corner              : norm.tt0p8v85c.typical_CCworst
+Scenario            : norm.tt0p8v85c.typical_CCworst
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/CP
+Latency             : 0.0587
+---------------------------------------------
+
+  Point                                          Fanout    Cap      Trans      Incr       Path  
+  ------------------------------------------------------------------------------------------------------
+  source latency                                                              -0.0665    0.0000
+  tck (in)                                          2      0.0077    0.0300    0.0000    0.0000 r
+  ctstcto_buf_1221/I (DCCKBD4BWP16P90CPDULVT)                        0.0301    0.0005    0.0005 r
+  ctstcto_buf_1221/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0018    0.0056    0.0166    0.0172 r
+  ctstcto_buf_1219/I (DCCKBD4BWP16P90CPDULVT)                        0.0056    0.0002    0.0174 r
+  ctstcto_buf_1219/Z (DCCKBD4BWP16P90CPDULVT)       1      0.0011    0.0041    0.0105    0.0280 r
+  ctstcto_buf_1173/I (CKBD3BWP16P90CPDULVT)                          0.0041    0.0001    0.0280 r
+  ctstcto_buf_1173/Z (CKBD3BWP16P90CPDULVT)         1      0.0014    0.0040    0.0093    0.0373 r
+  ctstcts_inv_8761061/I (CKND2BWP16P90CPDULVT)                       0.0040    0.0001    0.0374 r
+  ctstcts_inv_8761061/ZN (CKND2BWP16P90CPDULVT)     1      0.0056    0.0087    0.0070    0.0444 f
+  ctstcts_inv_8721057/I (DCCKND4BWP16P90CPDULVT)                     0.0087    0.0009    0.0453 f
+  ctstcts_inv_8721057/ZN (DCCKND4BWP16P90CPDULVT)
+                                                   25      0.0262    0.0198    0.0117    0.0570 r
+  i_img2_jtag_attn_dbg_ext_stat_r1_reg_0_/CP (DFCNQD1BWP16P90CPD)    0.0206    0.0017    0.0587 r
+  ------------------------------------------------------------------------------------------------------
+  total clock latency                                                                    0.0587
+
+
+1

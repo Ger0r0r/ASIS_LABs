@@ -1,0 +1,60 @@
+***********************************************
+Report          : create_qor_snapshot (img2_jtag_tap_wrap.qor_snapshot.rpt)
+Design          : img2_jtag_tap_wrap
+Version         : P-2019.03-SP4
+Date            : Tue Nov 19 18:37:07 2024
+Time unit       : 1.0e-09 Second(ns)
+Capacitance unit: 1.0e-12 Farad(pF)
+Voltage unit    : 1 Volt
+Power unit      : N/A
+Location        : reports/img2_jtag_tap_wrap.qor_snapshot
+***********************************************
+No. of scenario = 3
+s1 = norm.tt0p8v85c.typical_CCworst
+s2 = norm.ffgnp0p88vm40c.rcbest_CCbest
+s3 = norm.ssgnp0p72v125c.rcworst_CCworst
+----------------------------------------------------------------------------------
+WNS of each timing group:                       s1        s2        s3 
+----------------------------------------------------------------------------------
+REGIN                                       -0.048         -         - 
+REGOUT                                      -0.088    -0.013    -0.054 
+FEEDTHROUGH                                 -0.010         -         - 
+----------------------------------------------------------------------------------
+Setup WNS:                                  -0.088    -0.013    -0.054      -0.088 
+Setup TNS:                                  -0.254    -0.026    -0.132      -0.279
+Number of setup violations:                      6         2         5           9 
+Hold WNS:                                   -0.013    -0.019    -0.018      -0.019 
+Hold TNS:                                   -0.052    -0.681    -0.038      -0.681 
+Number of hold violations:                      14       126         7         126 
+Number of max trans violations:                 21        12        12          45 
+Number of max cap violations:                    8         8         8          24 
+Number of min pulse width violations:            0         0         0           0 
+----------------------------------------------------------------------------------
+Area:                                                                          212
+Cell count:                                                                    437
+Buf/inv cell count:                                                             79
+CPU/ELAPSE(hr):                                                          0.12/0.13
+Mem(Mb):                                                                      3532
+Host name:                                                                astro-38
+----------------------------------------------------------------------------------
+Histogram:             s1   s2   s3 
+----------------------------------------------------------------------------------
+Max violations:         6    2    5 
+   above ~ -0.7  ---    0    0    0 
+    -0.6 ~ -0.7  ---    0    0    0 
+    -0.5 ~ -0.6  ---    0    0    0 
+    -0.4 ~ -0.5  ---    0    0    0 
+    -0.3 ~ -0.4  ---    0    0    0 
+    -0.2 ~ -0.3  ---    0    0    0 
+    -0.1 ~ -0.2  ---    0    0    0 
+       0 ~ -0.1  ---    6    2    5 
+----------------------------------------------------------------------------------
+Min violations:        14  126    7 
+  -0.06 ~ above  ---    0    0    0 
+  -0.05 ~ -0.06  ---    0    0    0 
+  -0.04 ~ -0.05  ---    0    0    0 
+  -0.03 ~ -0.04  ---    0    0    0 
+  -0.02 ~ -0.03  ---    0    0    0 
+  -0.01 ~ -0.02  ---    2   14    2 
+      0 ~ -0.01  ---   12  112    5 
+----------------------------------------------------------------------------------

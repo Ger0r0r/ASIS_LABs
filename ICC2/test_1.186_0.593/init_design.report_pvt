@@ -1,0 +1,416 @@
+****************************************
+Report : pvt
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 20 19:49:41 2024
+****************************************
+
+--------------------------------------------------------------------------------
+Warning: Corner norm.tt0p8v85c.typical_CCworst:  0 process number, 10 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 911 cells affected for early, 911 for late. (PVT-031)
+Warning: 10 port driving_cells affected for early, 10 for late. (PVT-034)
+--------------------------------------------------------------------------------
+
+Warning: Mismatched process label in corner norm.tt0p8v85c.typical_CCworst. (PVT-023)
+Library has 12 panes
+Entry 289:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 0
+* Process Label:  specified: (none)        effective: tt0p8v85c   
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8000        dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 2 (VDD) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 85.0000       effective: 85.0000     
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 890      port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.tt0p8v85c.typical_CCworst. (PVT-023)
+Library has 12 panes
+Entry 290:
+  Lib: tcbn16ffplusglbwp16p90cpdulvt
+  Pane: 0
+* Process Label:  specified: (none)        effective: tt0p8v85c   
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8000        dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 85.0000       effective: 85.0000     
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 13       port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.tt0p8v85c.typical_CCworst. (PVT-023)
+Library has 12 panes
+Entry 291:
+  Lib: tcbn16ffplusglbwp16p90cpdlvt
+  Pane: 0
+* Process Label:  specified: (none)        effective: tt0p8v85c   
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8000        dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 85.0000       effective: 85.0000     
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.tt0p8v85c.typical_CCworst. (PVT-023)
+Library has 12 panes
+Entry 292:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 0
+* Process Label:  specified: (none)        effective: tt0p8v85c   
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 1 (COREVDD1) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 2 (VDD) Voltage: specified: 0.8000        dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 85.0000       effective: 85.0000     
+  Primary rail: 2  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.tt0p8v85c.typical_CCworst. (PVT-023)
+Library has 12 panes
+Entry 294:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 0
+* Process Label:  specified: (none)        effective: tt0p8v85c   
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8000        dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 2 (VDD) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 85.0000       effective: 85.0000     
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 890      port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.tt0p8v85c.typical_CCworst. (PVT-023)
+Library has 12 panes
+Entry 295:
+  Lib: tcbn16ffplusglbwp16p90cpdulvt
+  Pane: 0
+* Process Label:  specified: (none)        effective: tt0p8v85c   
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8000        dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 85.0000       effective: 85.0000     
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 13       port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.tt0p8v85c.typical_CCworst. (PVT-023)
+Library has 12 panes
+Entry 296:
+  Lib: tcbn16ffplusglbwp16p90cpdlvt
+  Pane: 0
+* Process Label:  specified: (none)        effective: tt0p8v85c   
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8000        dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 85.0000       effective: 85.0000     
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.tt0p8v85c.typical_CCworst. (PVT-023)
+Library has 12 panes
+Entry 297:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 0
+* Process Label:  specified: (none)        effective: tt0p8v85c   
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 1 (COREVDD1) Voltage: specified: --            dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 2 (VDD) Voltage: specified: 0.8000        dynamic: --            effective: 0.8000        static: 0.8000      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 85.0000       effective: 85.0000     
+  Primary rail: 2  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+
+
+--------------------------------------------------------------------------------
+Warning: Corner norm.ffgnp0p88vm40c.rcbest_CCbest:  0 process number, 10 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 911 cells affected for early, 911 for late. (PVT-031)
+Warning: 10 port driving_cells affected for early, 10 for late. (PVT-034)
+--------------------------------------------------------------------------------
+
+Warning: Mismatched process label in corner norm.ffgnp0p88vm40c.rcbest_CCbest. (PVT-023)
+Library has 12 panes
+Entry 289:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 4
+* Process Label:  specified: (none)        effective: ffgnp0p88vm40c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8800        dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 2 (VDD) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: -40.0000      effective: -40.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 890      port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ffgnp0p88vm40c.rcbest_CCbest. (PVT-023)
+Library has 12 panes
+Entry 290:
+  Lib: tcbn16ffplusglbwp16p90cpdulvt
+  Pane: 4
+* Process Label:  specified: (none)        effective: ffgnp0p88vm40c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8800        dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: -40.0000      effective: -40.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 13       port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ffgnp0p88vm40c.rcbest_CCbest. (PVT-023)
+Library has 12 panes
+Entry 291:
+  Lib: tcbn16ffplusglbwp16p90cpdlvt
+  Pane: 4
+* Process Label:  specified: (none)        effective: ffgnp0p88vm40c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8800        dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: -40.0000      effective: -40.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ffgnp0p88vm40c.rcbest_CCbest. (PVT-023)
+Library has 12 panes
+Entry 292:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 4
+* Process Label:  specified: (none)        effective: ffgnp0p88vm40c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 1 (COREVDD1) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 2 (VDD) Voltage: specified: 0.8800        dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: -40.0000      effective: -40.0000    
+  Primary rail: 2  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ffgnp0p88vm40c.rcbest_CCbest. (PVT-023)
+Library has 12 panes
+Entry 294:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 4
+* Process Label:  specified: (none)        effective: ffgnp0p88vm40c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8800        dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 2 (VDD) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: -40.0000      effective: -40.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 890      port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ffgnp0p88vm40c.rcbest_CCbest. (PVT-023)
+Library has 12 panes
+Entry 295:
+  Lib: tcbn16ffplusglbwp16p90cpdulvt
+  Pane: 4
+* Process Label:  specified: (none)        effective: ffgnp0p88vm40c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8800        dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: -40.0000      effective: -40.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 13       port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ffgnp0p88vm40c.rcbest_CCbest. (PVT-023)
+Library has 12 panes
+Entry 296:
+  Lib: tcbn16ffplusglbwp16p90cpdlvt
+  Pane: 4
+* Process Label:  specified: (none)        effective: ffgnp0p88vm40c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 1 (COREVDD1) Voltage: specified: 0.8800        dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: -40.0000      effective: -40.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ffgnp0p88vm40c.rcbest_CCbest. (PVT-023)
+Library has 12 panes
+Entry 297:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 4
+* Process Label:  specified: (none)        effective: ffgnp0p88vm40c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 1 (COREVDD1) Voltage: specified: --            dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 2 (VDD) Voltage: specified: 0.8800        dynamic: --            effective: 0.8800        static: 0.8800      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: -40.0000      effective: -40.0000    
+  Primary rail: 2  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+
+
+--------------------------------------------------------------------------------
+Warning: Corner norm.ssgnp0p72v125c.rcworst_CCworst:  0 process number, 10 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 911 cells affected for early, 911 for late. (PVT-031)
+Warning: 10 port driving_cells affected for early, 10 for late. (PVT-034)
+--------------------------------------------------------------------------------
+
+Warning: Mismatched process label in corner norm.ssgnp0p72v125c.rcworst_CCworst. (PVT-023)
+Library has 12 panes
+Entry 289:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 2
+* Process Label:  specified: (none)        effective: ssgnp0p72v125c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 1 (COREVDD1) Voltage: specified: 0.7200        dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 2 (VDD) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 125.0000      effective: 125.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 890      port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ssgnp0p72v125c.rcworst_CCworst. (PVT-023)
+Library has 12 panes
+Entry 290:
+  Lib: tcbn16ffplusglbwp16p90cpdulvt
+  Pane: 2
+* Process Label:  specified: (none)        effective: ssgnp0p72v125c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 1 (COREVDD1) Voltage: specified: 0.7200        dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 125.0000      effective: 125.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 13       port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ssgnp0p72v125c.rcworst_CCworst. (PVT-023)
+Library has 12 panes
+Entry 291:
+  Lib: tcbn16ffplusglbwp16p90cpdlvt
+  Pane: 2
+* Process Label:  specified: (none)        effective: ssgnp0p72v125c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 1 (COREVDD1) Voltage: specified: 0.7200        dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 125.0000      effective: 125.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ssgnp0p72v125c.rcworst_CCworst. (PVT-023)
+Library has 12 panes
+Entry 292:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 2
+* Process Label:  specified: (none)        effective: ssgnp0p72v125c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 1 (COREVDD1) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 2 (VDD) Voltage: specified: 0.7200        dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 125.0000      effective: 125.0000    
+  Primary rail: 2  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ssgnp0p72v125c.rcworst_CCworst. (PVT-023)
+Library has 12 panes
+Entry 294:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 2
+* Process Label:  specified: (none)        effective: ssgnp0p72v125c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 1 (COREVDD1) Voltage: specified: 0.7200        dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 2 (VDD) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 125.0000      effective: 125.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 890      port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ssgnp0p72v125c.rcworst_CCworst. (PVT-023)
+Library has 12 panes
+Entry 295:
+  Lib: tcbn16ffplusglbwp16p90cpdulvt
+  Pane: 2
+* Process Label:  specified: (none)        effective: ssgnp0p72v125c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 1 (COREVDD1) Voltage: specified: 0.7200        dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 125.0000      effective: 125.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 13       port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ssgnp0p72v125c.rcworst_CCworst. (PVT-023)
+Library has 12 panes
+Entry 296:
+  Lib: tcbn16ffplusglbwp16p90cpdlvt
+  Pane: 2
+* Process Label:  specified: (none)        effective: ssgnp0p72v125c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 1 (COREVDD1) Voltage: specified: 0.7200        dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 2 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 125.0000      effective: 125.0000    
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner norm.ssgnp0p72v125c.rcworst_CCworst. (PVT-023)
+Library has 12 panes
+Entry 297:
+  Lib: tcbn16ffplusglbwp16p90cpd
+  Pane: 2
+* Process Label:  specified: (none)        effective: ssgnp0p72v125c
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 1 (COREVDD1) Voltage: specified: --            dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 2 (VDD) Voltage: specified: 0.7200        dynamic: --            effective: 0.7200        static: 0.7200      
+  Rail 3 (COREGND1) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Rail 4 (VSS) Voltage: specified: 0.0000        dynamic: --            effective: 0.0000        static: 0.0000      
+  Temperature:    specified: 125.0000      effective: 125.0000    
+  Primary rail: 2  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 0        port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 4        port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+
+
+1

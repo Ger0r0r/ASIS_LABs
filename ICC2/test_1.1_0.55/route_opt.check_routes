@@ -1,0 +1,458 @@
+Two layer enclosure iso-dense via enclosure rule is defined.
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M2
+Cell Max-Routing-Layer = M10
+Skipping 3 internal pins that are not physical. Set route.common.verbose_level to > 0 and run routing command to get skipped pin names.
+Info: number of net_type_blockage: 110 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.064 may be too small: wire/via-down 0.100, wire/via-up 0.064. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.080 may be too small: wire/via-down 0.080, wire/via-up 0.120. (ZRT-026)
+Via on layer (VIA10) needs more than one tracks
+Warning: Layer M10 pitch 0.126 may be too small: wire/via-down 0.126, wire/via-up 0.320. (ZRT-026)
+Via on layer (RV) needs more than one tracks
+Warning: Layer M12 pitch 0.900 may be too small: wire/via-down 0.900, wire/via-up 2.475. (ZRT-026)
+Via on layer (RV) needs more than one tracks
+Warning: Layer AP pitch 3.600 may be too small: wire/via-down 4.500, wire/via-up 3.600. (ZRT-026)
+Transition layer name: M8(7)
+12 masters (12 pins) have donut holes
+
+
+Start checking for open nets ... 
+
+Total number of nets = 596, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 596 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used  177  Alloctr  179  Proc 6131 
+Printing options for 'route.common.*'
+common.concurrent_redundant_via_effort_level            :	 low                 
+common.concurrent_redundant_via_mode                    :	 off                 
+common.connect_within_pins_by_layer_name                :	 {M1 via_wire_standard_cell_pins}
+common.extra_nonpreferred_direction_wire_cost_multiplier_by_layer_name:	 {M4 3} {M5 3} {M6 3} {M7 3} {M8 3}
+common.global_max_layer_mode                            :	 allow_pin_connection
+common.global_min_layer_mode                            :	 allow_pin_connection
+common.interactive_mode_clear_timing                    :	 true                
+common.net_max_layer_mode                               :	 allow_pin_connection
+common.net_min_layer_mode                               :	 soft                
+common.post_detail_route_redundant_via_insertion        :	 off                 
+common.reshield_modified_nets                           :	 reshield            
+common.verbose_level                                    :	 0                   
+common.via_array_mode                                   :	 rotate              
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.antenna_fixing_preference                        :	 hop_layers          
+detail.antenna_on_iteration                             :	 1                   
+detail.antenna_verbose_level                            :	 1                   
+detail.check_antenna_on_pg                              :	 false               
+detail.check_port_min_area_min_length                   :	 false               
+detail.detail_route_special_design_rule_fixing_stage    :	 early_routing       
+detail.eco_max_number_of_iterations                     :	 3                   
+detail.eco_route_special_design_rule_fixing_stage       :	 early_routing       
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+detail.force_end_on_preferred_grid                      :	 true                
+detail.group_route_special_design_rule_fixing_stage     :	 early_routing       
+detail.hop_layers_to_fix_antenna                        :	 true                
+detail.incremental_detail_route_special_design_rule_fixing_stage:	 early_routing       
+detail.timing_driven                                    :	 true                
+detail.use_default_width_for_min_area_min_len_stub      :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 4 threads for routing. (ZRT-444)
+Checked	1/2 Partitions, Violations =	0
+Checked	2/2 Partitions, Violations =	0
+
+Check local double pattern cycle DRC:
+Checked	1/2 Partitions, Violations =	0
+Checked	2/2 Partitions, Violations =	0
+Information: Filtered 2 drcs of internal-only type. (ZRT-323)
+[DRC CHECK] Elapsed real time: 0:00:01 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used  546  Alloctr  547  Proc 6131 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+
+Total Wire Length =                    3415 micron
+Total Number of Contacts =             5717
+Total Number of Wires =                4165
+Total Number of PtConns =              1963
+Total Number of Routed Wires =       4165
+Total Routed Wire Length =           3226 micron
+Total Number of Routed Contacts =       5717
+	Layer                        M1 :          0 micron
+	Layer                        M2 :        750 micron
+	Layer                        M3 :       1187 micron
+	Layer                        M4 :        746 micron
+	Layer                        M5 :        162 micron
+	Layer                        M6 :         90 micron
+	Layer                        M7 :        197 micron
+	Layer                        M8 :        177 micron
+	Layer                        M9 :         63 micron
+	Layer                       M10 :         43 micron
+	Layer                       M11 :          0 micron
+	Layer                       M12 :          0 micron
+	Layer                        AP :          0 micron
+	Via                 VIA910_1cut :          4
+	Via           VIA910_FBDS27_1x2 :         15
+	Via                  VIA89_1cut :          4
+	Via                 VIA89_FBS27 :          1
+	Via            VIA89_FBDS27_2x1 :         11
+	Via       VIA89_FBDS27(rot)_1x2 :          1
+	Via                  VIA78_1cut :         38
+	Via              VIA78_1cut_W4C :          1
+	Via                VIA78_LONG_H :        111
+	Via                 VIA78_FBR20 :         39
+	Via            VIA78_FBR20(rot) :         18
+	Via                VIA78_PBR10B :          4
+	Via                 VIA78_PBR20 :          3
+	Via                VIA78_PBR20B :          3
+	Via                 VIA78_FBS10 :          1
+	Via              VIA78_1cut_FAT :          1
+	Via      VIA78_PBDS40B(rot)_2x1 :          1
+	Via                  VIA67_1cut :         47
+	Via               VIA67_1cut_W4 :          1
+	Via                VIA67_LONG_H :         12
+	Via                VIA67_LONG_V :          9
+	Via                 VIA67_FBR20 :         58
+	Via            VIA67_FBR20(rot) :          7
+	Via                VIA67_PBR10B :          5
+	Via                 VIA67_PBR20 :          8
+	Via                VIA67_PBR20B :          3
+	Via                 VIA67_FBS10 :          3
+	Via                VIA67_PBS10U :          1
+	Via                VIA67_PBS10B :          2
+	Via              VIA67_1cut_FAT :          1
+	Via      VIA67_PBDS40B(rot)_1x2 :          2
+	Via            VIA67_FBDS10_2x1 :          1
+	Via       VIA67_FBDS10(rot)_1x2 :          5
+	Via                  VIA56_1cut :         49
+	Via               VIA56_1cut_W3 :          1
+	Via                VIA56_LONG_H :          1
+	Via                VIA56_LONG_V :         15
+	Via                 VIA56_FBR20 :         43
+	Via            VIA56_FBR20(rot) :         22
+	Via                VIA56_PBR10B :          8
+	Via                 VIA56_PBR20 :         18
+	Via                VIA56_PBR20B :          9
+	Via                 VIA56_FBS10 :          6
+	Via                VIA56_PBS10B :          5
+	Via              VIA56_1cut_FAT :          4
+	Via            VIA56_FBDS10_1x2 :          6
+	Via           VIA56_PBDS40B_1x2 :          1
+	Via                  VIA45_1cut :         70
+	Via              VIA45_1cut_W2B :          3
+	Via              VIA45_1cut_W4A :          1
+	Via                VIA45_LONG_H :         15
+	Via                 VIA45_FBR20 :         47
+	Via            VIA45_FBR20(rot) :         31
+	Via                VIA45_PBR10B :         15
+	Via                 VIA45_PBR20 :         22
+	Via                VIA45_PBR20B :         10
+	Via                 VIA45_FBS10 :         11
+	Via                VIA45_PBS10U :          4
+	Via                VIA45_PBS10B :         11
+	Via              VIA45_1cut_FAT :         21
+	Via     VIA45_1cut_W4B(rot)_1x2 :          1
+	Via                  VIA34_1cut :        132
+	Via          VIA34_1cut_W4(rot) :          1
+	Via                VIA34_LONG_H :          4
+	Via           VIA34_LONG_H(rot) :          4
+	Via                VIA34_LONG_V :          4
+	Via           VIA34_LONG_V(rot) :          3
+	Via                VIA34_FBR25B :        490
+	Via                 VIA34_FBR14 :         31
+	Via                 VIA34_PBR3B :        150
+	Via            VIA34_PBR3B(rot) :          9
+	Via                 VIA34_FBS24 :          2
+	Via                 VIA34_FBS14 :         48
+	Via                  VIA34_FBS4 :         68
+	Via              VIA34_1cut_FAT :         58
+	Via   VIA34_LONG_H_80W_NDR(rot) :          1
+	Via       VIA34_FBDS14(rot)_2x1 :          1
+	Via         VIA23_1cut_W3C(rot) :          3
+	Via              VIA23_1cut_WA7 :          5
+	Via              VIA23_1cut_WAF :          1
+	Via         VIA23_1cut_WAF(rot) :          1
+	Via                  VIA23_1cut :        218
+	Via          VIA23_1cut_VV(rot) :          2
+	Via              VIA23_1cut_W3B :         15
+	Via                VIA23_LONG_H :         29
+	Via                VIA23_LONG_V :          2
+	Via           VIA23_LONG_V(rot) :          2
+	Via               VIA23_LONG_HH :          1
+	Via          VIA23_LONG_HH(rot) :          4
+	Via       VIA23_LONG_EN7HH(rot) :          1
+	Via                  VIA23_FBR7 :         27
+	Via             VIA23_FBR7(rot) :          3
+	Via                 VIA23_FBR16 :        211
+	Via            VIA23_FBR16(rot) :         77
+	Via                 VIA23_PBR7U :        165
+	Via            VIA23_PBR7U(rot) :         11
+	Via                  VIA23_FBS3 :        102
+	Via             VIA23_FBS3(rot) :          6
+	Via                 VIA23_FBS16 :          3
+	Via            VIA23_FBS16(rot) :         15
+	Via                 VIA23_PBS3B :          6
+	Via            VIA23_PBS3B(rot) :          3
+	Via              VIA23_1cut_FAT :        356
+	Via           VIA23_PBDS25B_2x1 :          6
+	Via      VIA23_PBDS25B(rot)_1x2 :          1
+	Via           VIA23_FBDS25B_2x1 :         17
+	Via      VIA23_FBDS25B(rot)_1x2 :         72
+	Via            VIA23_FBDS3B_2x1 :        525
+	Via       VIA23_FBDS3B(rot)_1x2 :        327
+	Via              VIA12_1cut_W1A :          1
+	Via         VIA12_1cut_W1A(rot) :        216
+	Via         VIA12_1cut_W1B(rot) :          2
+	Via              VIA12_1cut_WAC :          4
+	Via         VIA12_1cut_WAC(rot) :          4
+	Via              VIA12_1cut_WAD :          2
+	Via                  VIA12_1cut :        426
+	Via          VIA12_1cut_VV(rot) :         32
+	Via               VIA12_1cut_W1 :          2
+	Via              VIA12_1cut_W3B :         14
+	Via         VIA12_1cut_W3B(rot) :          1
+	Via                VIA12_LONG_H :          4
+	Via               VIA12_LONG_HH :          2
+	Via                  VIA12_FBR7 :          6
+	Via             VIA12_FBR7(rot) :         73
+	Via                 VIA12_FBR16 :          4
+	Via            VIA12_FBR16(rot) :         14
+	Via                 VIA12_PBR7U :         12
+	Via            VIA12_PBR7U(rot) :        181
+	Via                  VIA12_FBS3 :         73
+	Via             VIA12_FBS3(rot) :          1
+	Via            VIA12_FBS16(rot) :          9
+	Via                 VIA12_PBS3B :        256
+	Via              VIA12_1cut_FAT :        271
+	Via            VIA12_FBDS3B_2x1 :          8
+	Via       VIA12_FBDS3B(rot)_1x2 :          5
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 73.33% (4192 / 5717 vias)
+ 
+    Layer VIA1       = 56.25% (913    / 1623    vias)
+        Weight 10    =  0.80% (13      vias)
+        Weight 7     =  1.11% (18      vias)
+        Weight 6     =  4.87% (79      vias)
+        Weight 5     = 11.89% (193     vias)
+        Weight 4     =  0.55% (9       vias)
+        Weight 3     =  4.56% (74      vias)
+        Weight 2     = 15.77% (256     vias)
+        Weight 1     = 16.70% (271     vias)
+        Un-optimized = 29.27% (475     vias)
+        Un-mapped    = 14.48% (235     vias)
+    Layer VIA2       = 87.19% (1933   / 2217    vias)
+        Weight 10    = 38.43% (852     vias)
+        Weight 9     =  4.01% (89      vias)
+        Weight 8     =  0.32% (7       vias)
+        Weight 7     = 12.99% (288     vias)
+        Weight 6     =  1.35% (30      vias)
+        Weight 5     =  7.94% (176     vias)
+        Weight 4     =  0.81% (18      vias)
+        Weight 3     =  4.87% (108     vias)
+        Weight 2     =  0.41% (9       vias)
+        Weight 1     = 16.06% (356     vias)
+        Un-optimized = 11.95% (265     vias)
+        Un-mapped    =  0.86% (19      vias)
+    Layer VIA3       = 85.19% (857    / 1006    vias)
+        Weight 10    =  0.10% (1       vias)
+        Weight 8     = 48.71% (490     vias)
+        Weight 7     =  3.08% (31      vias)
+        Weight 6     = 15.81% (159     vias)
+        Weight 5     =  0.20% (2       vias)
+        Weight 4     =  4.77% (48      vias)
+        Weight 3     =  6.76% (68      vias)
+        Weight 2     =  5.77% (58      vias)
+        Un-optimized = 13.12% (132     vias)
+        Un-mapped    =  1.69% (17      vias)
+    Layer VIA4       = 66.03% (173    / 262     vias)
+        Weight 8     = 29.77% (78      vias)
+        Weight 7     =  3.82% (10      vias)
+        Weight 6     =  5.73% (15      vias)
+        Weight 5     =  8.40% (22      vias)
+        Weight 4     =  4.20% (11      vias)
+        Weight 3     =  1.53% (4       vias)
+        Weight 2     =  4.20% (11      vias)
+        Weight 1     =  8.40% (22      vias)
+        Un-optimized = 26.72% (70      vias)
+        Un-mapped    =  7.25% (19      vias)
+    Layer VIA5       = 64.89% (122    / 188     vias)
+        Weight 10    =  3.19% (6       vias)
+        Weight 9     =  0.53% (1       vias)
+        Weight 8     = 34.57% (65      vias)
+        Weight 7     =  4.79% (9       vias)
+        Weight 6     =  4.26% (8       vias)
+        Weight 5     =  9.57% (18      vias)
+        Weight 4     =  3.19% (6       vias)
+        Weight 2     =  2.66% (5       vias)
+        Weight 1     =  2.13% (4       vias)
+        Un-optimized = 26.60% (50      vias)
+        Un-mapped    =  8.51% (16      vias)
+    Layer VIA6       = 58.18% (96     / 165     vias)
+        Weight 10    =  3.64% (6       vias)
+        Weight 9     =  1.21% (2       vias)
+        Weight 8     = 39.39% (65      vias)
+        Weight 7     =  1.82% (3       vias)
+        Weight 6     =  3.03% (5       vias)
+        Weight 5     =  4.85% (8       vias)
+        Weight 4     =  1.82% (3       vias)
+        Weight 3     =  0.61% (1       vias)
+        Weight 2     =  1.21% (2       vias)
+        Weight 1     =  0.61% (1       vias)
+        Un-optimized = 29.09% (48      vias)
+        Un-mapped    = 12.73% (21      vias)
+    Layer VIA7       = 31.82% (70     / 220     vias)
+        Weight 8     = 25.91% (57      vias)
+        Weight 7     =  1.36% (3       vias)
+        Weight 6     =  1.82% (4       vias)
+        Weight 5     =  1.36% (3       vias)
+        Weight 4     =  0.45% (1       vias)
+        Weight 1     =  0.91% (2       vias)
+        Un-optimized = 17.73% (39      vias)
+        Un-mapped    = 50.45% (111     vias)
+    Layer VIA8       = 76.47% (13     / 17      vias)
+        Weight 10    = 70.59% (12      vias)
+        Weight 9     =  5.88% (1       vias)
+        Un-optimized = 23.53% (4       vias)
+        Un-mapped    =  0.00% (0       vias)
+    Layer VIA9       = 78.95% (15     / 19      vias)
+        Weight 10    = 78.95% (15      vias)
+        Un-optimized = 21.05% (4       vias)
+        Un-mapped    =  0.00% (0       vias)
+ 
+  Total double via conversion rate    = 17.60% (1006 / 5717 vias)
+ 
+    Layer VIA1       =  0.80% (13     / 1623    vias)
+    Layer VIA2       = 42.76% (948    / 2217    vias)
+    Layer VIA3       =  0.10% (1      / 1006    vias)
+    Layer VIA4       =  0.38% (1      / 262     vias)
+    Layer VIA5       =  3.72% (7      / 188     vias)
+    Layer VIA6       =  4.85% (8      / 165     vias)
+    Layer VIA7       =  0.45% (1      / 220     vias)
+    Layer VIA8       = 70.59% (12     / 17      vias)
+    Layer VIA9       = 78.95% (15     / 19      vias)
+ 
+  The optimized via conversion rate based on total routed via count = 73.33% (4192 / 5717 vias)
+ 
+    Layer VIA1       = 56.25% (913    / 1623    vias)
+        Weight 10    =  0.80% (13      vias)
+        Weight 7     =  1.11% (18      vias)
+        Weight 6     =  4.87% (79      vias)
+        Weight 5     = 11.89% (193     vias)
+        Weight 4     =  0.55% (9       vias)
+        Weight 3     =  4.56% (74      vias)
+        Weight 2     = 15.77% (256     vias)
+        Weight 1     = 16.70% (271     vias)
+        Un-optimized = 29.27% (475     vias)
+        Un-mapped    = 14.48% (235     vias)
+    Layer VIA2       = 87.19% (1933   / 2217    vias)
+        Weight 10    = 38.43% (852     vias)
+        Weight 9     =  4.01% (89      vias)
+        Weight 8     =  0.32% (7       vias)
+        Weight 7     = 12.99% (288     vias)
+        Weight 6     =  1.35% (30      vias)
+        Weight 5     =  7.94% (176     vias)
+        Weight 4     =  0.81% (18      vias)
+        Weight 3     =  4.87% (108     vias)
+        Weight 2     =  0.41% (9       vias)
+        Weight 1     = 16.06% (356     vias)
+        Un-optimized = 11.95% (265     vias)
+        Un-mapped    =  0.86% (19      vias)
+    Layer VIA3       = 85.19% (857    / 1006    vias)
+        Weight 10    =  0.10% (1       vias)
+        Weight 8     = 48.71% (490     vias)
+        Weight 7     =  3.08% (31      vias)
+        Weight 6     = 15.81% (159     vias)
+        Weight 5     =  0.20% (2       vias)
+        Weight 4     =  4.77% (48      vias)
+        Weight 3     =  6.76% (68      vias)
+        Weight 2     =  5.77% (58      vias)
+        Un-optimized = 13.12% (132     vias)
+        Un-mapped    =  1.69% (17      vias)
+    Layer VIA4       = 66.03% (173    / 262     vias)
+        Weight 8     = 29.77% (78      vias)
+        Weight 7     =  3.82% (10      vias)
+        Weight 6     =  5.73% (15      vias)
+        Weight 5     =  8.40% (22      vias)
+        Weight 4     =  4.20% (11      vias)
+        Weight 3     =  1.53% (4       vias)
+        Weight 2     =  4.20% (11      vias)
+        Weight 1     =  8.40% (22      vias)
+        Un-optimized = 26.72% (70      vias)
+        Un-mapped    =  7.25% (19      vias)
+    Layer VIA5       = 64.89% (122    / 188     vias)
+        Weight 10    =  3.19% (6       vias)
+        Weight 9     =  0.53% (1       vias)
+        Weight 8     = 34.57% (65      vias)
+        Weight 7     =  4.79% (9       vias)
+        Weight 6     =  4.26% (8       vias)
+        Weight 5     =  9.57% (18      vias)
+        Weight 4     =  3.19% (6       vias)
+        Weight 2     =  2.66% (5       vias)
+        Weight 1     =  2.13% (4       vias)
+        Un-optimized = 26.60% (50      vias)
+        Un-mapped    =  8.51% (16      vias)
+    Layer VIA6       = 58.18% (96     / 165     vias)
+        Weight 10    =  3.64% (6       vias)
+        Weight 9     =  1.21% (2       vias)
+        Weight 8     = 39.39% (65      vias)
+        Weight 7     =  1.82% (3       vias)
+        Weight 6     =  3.03% (5       vias)
+        Weight 5     =  4.85% (8       vias)
+        Weight 4     =  1.82% (3       vias)
+        Weight 3     =  0.61% (1       vias)
+        Weight 2     =  1.21% (2       vias)
+        Weight 1     =  0.61% (1       vias)
+        Un-optimized = 29.09% (48      vias)
+        Un-mapped    = 12.73% (21      vias)
+    Layer VIA7       = 31.82% (70     / 220     vias)
+        Weight 8     = 25.91% (57      vias)
+        Weight 7     =  1.36% (3       vias)
+        Weight 6     =  1.82% (4       vias)
+        Weight 5     =  1.36% (3       vias)
+        Weight 4     =  0.45% (1       vias)
+        Weight 1     =  0.91% (2       vias)
+        Un-optimized = 17.73% (39      vias)
+        Un-mapped    = 50.45% (111     vias)
+    Layer VIA8       = 76.47% (13     / 17      vias)
+        Weight 10    = 70.59% (12      vias)
+        Weight 9     =  5.88% (1       vias)
+        Un-optimized = 23.53% (4       vias)
+        Un-mapped    =  0.00% (0       vias)
+    Layer VIA9       = 78.95% (15     / 19      vias)
+        Weight 10    = 78.95% (15      vias)
+        Un-optimized = 21.05% (4       vias)
+        Un-mapped    =  0.00% (0       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 596, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+

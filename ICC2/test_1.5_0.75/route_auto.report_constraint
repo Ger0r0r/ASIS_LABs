@@ -1,0 +1,124 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 17:35:32 2024
+****************************************
+
+
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   HFSNET_30                  0.0600         0.0662        -0.0062  (VIOLATED) 
+     PIN : U345/A2            0.0600         0.0662        -0.0062  (VIOLATED) 
+     PIN : U358/B1            0.0600         0.0661        -0.0061  (VIOLATED) 
+     PIN : U344/B1            0.0600         0.0660        -0.0060  (VIOLATED) 
+     PIN : U352/B1            0.0600         0.0660        -0.0060  (VIOLATED) 
+     PIN : U356/B1            0.0600         0.0659        -0.0059  (VIOLATED) 
+     PIN : U354/B1            0.0600         0.0659        -0.0059  (VIOLATED) 
+     PIN : U341/B1            0.0600         0.0659        -0.0059  (VIOLATED) 
+     PIN : U357/B1            0.0600         0.0658        -0.0058  (VIOLATED) 
+     PIN : U343/B1            0.0600         0.0658        -0.0058  (VIOLATED) 
+     PIN : U371/B1            0.0600         0.0658        -0.0058  (VIOLATED) 
+     PIN : U355/B1            0.0600         0.0658        -0.0058  (VIOLATED) 
+     PIN : U353/B1            0.0600         0.0657        -0.0057  (VIOLATED) 
+     PIN : U359/B1            0.0600         0.0656        -0.0056  (VIOLATED) 
+     PIN : U350/B1            0.0600         0.0656        -0.0056  (VIOLATED) 
+     PIN : U351/A2            0.0600         0.0655        -0.0055  (VIOLATED) 
+     PIN : U349/A2            0.0600         0.0653        -0.0053  (VIOLATED) 
+     PIN : U348/A2            0.0600         0.0652        -0.0051  (VIOLATED) 
+     PIN : U346/B1            0.0600         0.0649        -0.0049  (VIOLATED) 
+     PIN : U347/A2            0.0600         0.0649        -0.0049  (VIOLATED) 
+     PIN : U340/B1            0.0600         0.0644        -0.0044  (VIOLATED) 
+     PIN : U339/B1            0.0600         0.0636        -0.0036  (VIOLATED) 
+     PIN : U337/A2            0.0600         0.0627        -0.0027  (VIOLATED) 
+     PIN : U336/B1            0.0600         0.0619        -0.0019  (VIOLATED) 
+     PIN : U338/A2            0.0600         0.0615        -0.0015  (VIOLATED) 
+
+   ZBUF_1680_0                0.0600         0.0643        -0.0043  (VIOLATED) 
+     PIN : U360/B1            0.0600         0.0643        -0.0043  (VIOLATED) 
+     PIN : U407/B1            0.0600         0.0643        -0.0043  (VIOLATED) 
+     PIN : U368/A2            0.0600         0.0642        -0.0042  (VIOLATED) 
+     PIN : U405/B1            0.0600         0.0642        -0.0042  (VIOLATED) 
+     PIN : U366/B1            0.0600         0.0641        -0.0041  (VIOLATED) 
+     PIN : U367/B1            0.0600         0.0641        -0.0041  (VIOLATED) 
+     PIN : U399/B1            0.0600         0.0641        -0.0041  (VIOLATED) 
+     PIN : U362/B1            0.0600         0.0640        -0.0040  (VIOLATED) 
+     PIN : U363/B1            0.0600         0.0640        -0.0040  (VIOLATED) 
+     PIN : U406/B1            0.0600         0.0640        -0.0040  (VIOLATED) 
+     PIN : U364/B1            0.0600         0.0639        -0.0039  (VIOLATED) 
+     PIN : U370/A2            0.0600         0.0639        -0.0039  (VIOLATED) 
+     PIN : U400/B1            0.0600         0.0639        -0.0039  (VIOLATED) 
+     PIN : U361/B1            0.0600         0.0639        -0.0039  (VIOLATED) 
+     PIN : U373/A2            0.0600         0.0638        -0.0038  (VIOLATED) 
+     PIN : U372/B1            0.0600         0.0638        -0.0038  (VIOLATED) 
+     PIN : U369/B1            0.0600         0.0638        -0.0038  (VIOLATED) 
+     PIN : U375/B1            0.0600         0.0636        -0.0036  (VIOLATED) 
+     PIN : U376/A2            0.0600         0.0634        -0.0034  (VIOLATED) 
+     PIN : U374/B1            0.0600         0.0631        -0.0031  (VIOLATED) 
+     PIN : U398/B1            0.0600         0.0623        -0.0023  (VIOLATED) 
+     PIN : U411/B1            0.0600         0.0621        -0.0021  (VIOLATED) 
+     PIN : U397/B1            0.0600         0.0616        -0.0016  (VIOLATED) 
+     PIN : U377/A2            0.0600         0.0601        -0.0001  (VIOLATED) 
+
+   HFSNET_9                   0.0600         0.0612        -0.0012  (VIOLATED) 
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_41_/CDN   0.0600   0.0612  -0.0012 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_23_/CDN   0.0600   0.0612  -0.0012 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_14_/CDN   0.0600   0.0611  -0.0011 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_40_/CDN   0.0600   0.0610  -0.0010 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_24_/CDN   0.0600   0.0610  -0.0010 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_27_/CDN   0.0600   0.0610  -0.0010 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_25_/CDN   0.0600   0.0610  -0.0010 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_18_/CDN   0.0600   0.0610  -0.0010 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_26_/CDN   0.0600   0.0610  -0.0010 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_28_/CDN   0.0600   0.0609  -0.0009 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_30_/CDN   0.0600   0.0608  -0.0008 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_29_/CDN   0.0600   0.0608  -0.0008 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_39_/CDN   0.0600   0.0606  -0.0006 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_42_/CDN   0.0600   0.0605  -0.0005 (VIOLATED)
+     PIN : i_img2_jtag_pnp_jpnp_shift_reg_reg_38_/CDN   0.0600   0.0604  -0.0004 (VIOLATED)
+
+   dbg_datm_si[0]             0.0300         0.0309        -0.0009  (VIOLATED) 
+     PORT: dbg_datm_si[0]     0.0300         0.0309        -0.0009  (VIOLATED) 
+
+   trstn                      0.0600         0.0605        -0.0005  (VIOLATED) 
+     PIN : HFSINV_1124_19/I   0.0600         0.0605        -0.0005  (VIOLATED) 
+     PIN : i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_2_/CDN   0.0600   0.0605  -0.0005 (VIOLATED)
+     PIN : i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_3_/CDN   0.0600   0.0605  -0.0005 (VIOLATED)
+     PIN : i_img2_jtag_attn_attn_shift_reg_reg_0_/CDN   0.0600   0.0603  -0.0003 (VIOLATED)
+     PIN : i_img2_jtag_tap_tdo_enable_reg/CDN   0.0600   0.0603  -0.0003 (VIOLATED)
+     PIN : i_img2_jtag_tap_i_img2_jtag_tap_controller_data_out_reg_1_/CDN   0.0600   0.0603  -0.0002 (VIOLATED)
+     PIN : i_img2_jtag_tap_tdi_i_reg/CDN   0.0600   0.0602  -0.0002 (VIOLATED) 
+     PIN : i_img2_jtag_tap_tdo_reg/CDN   0.0600   0.0602   -0.0002  (VIOLATED) 
+     PIN : i_img2_jtag_attn_attn_shift_reg_reg_1_/CDN   0.0600   0.0602  -0.0002 (VIOLATED)
+     PIN : i_img2_jtag_attn_stat_reg_reg_3_/CDN   0.0600   0.0602  -0.0002 (VIOLATED)
+     PIN : i_img2_jtag_tap_i_img2_jtag_tap_controller_jstate_reg_3_/CDN   0.0600   0.0602  -0.0002 (VIOLATED)
+     PIN : i_img2_jtag_attn_cont_reg_reg_3_/CDN   0.0600   0.0601  -0.0001 (VIOLATED)
+     PIN : i_img2_jtag_attn_cont_reg_reg_1_/CDN   0.0600   0.0601  -0.0001 (VIOLATED)
+
+   dbg_dat_sh[0]              0.0300         0.0302        -0.0002  (VIOLATED) 
+     PORT: dbg_dat_sh[0]      0.0300         0.0302        -0.0002  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 6
+
+   Mode: norm.tt0p8v85c.typical_CCworst Corner: norm.tt0p8v85c.typical_CCworst
+   Scenario: norm.tt0p8v85c.typical_CCworst
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n183                       0.0170         0.0021         0.0149  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 6
+1

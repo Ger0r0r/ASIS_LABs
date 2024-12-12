@@ -1,0 +1,142 @@
+****************************************
+Report : qor
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 17:47:42 2024
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'img2_jtag_tap_wrap.nlib:img2_jtag_tap_wrap.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 440, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 0, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Information: Timer using 'Zero-interconnect Delay Calculation'. (TIM-050)
+
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     11
+Critical Path Length:            0.2554
+Critical Path Slack:             0.2940
+Critical Path Clk Period:        1.2000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:           -0.0096
+Total Hold Violation:           -0.0976
+No. of Hold Violations:              23
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                      3
+Critical Path Length:            0.6101
+Critical Path Slack:             0.0530
+Critical Path Clk Period:        1.2000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      1
+Critical Path Length:            0.5537
+Critical Path Slack:            -0.0083
+Critical Path Clk Period:        1.2000
+Total Negative Slack:           -0.0083
+No. of Violating Paths:               1
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'norm.tt0p8v85c.typical_CCworst'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      1
+Critical Path Length:            0.0605
+Critical Path Slack:             0.0005
+Critical Path Clk Period:        1.2000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                    430
+Buf/Inv Cell Count:                  68
+Buf Cell Count:                      19
+Inv Cell Count:                      49
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:           286
+Sequential Cell Count:              144
+   Integrated Clock-Gating Cell Count:                     5
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       139
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             57.0240
+Noncombinational Area:         152.1504
+Buf/Inv Area:                    9.9014
+Total Buffer Area:               4.0435
+Total Inverter Area:             5.8579
+Macro/Black Box Area:            0.0000
+Net Area:                             0
+Net XLength:                  1327.0965
+Net YLength:                  1226.4340
+----------------------------------------
+Cell Area (netlist):                          209.1744
+Cell Area (netlist and physical only):        332.3980
+Net Length:                   2553.5305
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:               442
+Nets with Violations:                22
+Max Trans Violations:                22
+Max Cap Violations:                  11
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Tue Nov 19 17:47:42 2024
+****************************************
+Information: Timer using 'Zero-interconnect Delay Calculation'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+norm.tt0p8v85c.typical_CCworst (Setup)        -0.0083        -0.0083              1
+Design             (Setup)          -0.0083        -0.0083              1
+
+norm.tt0p8v85c.typical_CCworst (Hold)        -0.0096        -0.0976             23
+Design             (Hold)           -0.0096        -0.0976             23
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          209.1744
+Cell Area (netlist and physical only):        332.3980
+Nets with DRC Violations:       22
+1

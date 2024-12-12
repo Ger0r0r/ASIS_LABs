@@ -1,0 +1,94 @@
+****************************************
+Report : Violation analysis
+Design : img2_jtag_tap_wrap
+Block  : img2_jtag_tap_wrap.nlib:img2_jtag_tap_wrap/cts.design
+Version: P-2019.03-SP4
+Date   : Wed Nov 13 18:39:07 2024
+****************************************
+
+  Detect 2 violating paths.
+      Worst: -0.000      Total: -0.000      Average: -0.000
+  0 violating paths are categorized.
+      Worst: 0.000      Total: 0.000      Average: 0.000
+  2 violating paths are uncategorized.
+      Worst: -0.000      Total: -0.000      Average: -0.000
+
+****** Summary of Path Analysis ******
+
+  ****** Hold timing categories ******
+  category                                                      Count      Worst      Total   Percentage
+  -----------------                                            -------    -------    -------    ----- 
+  * category  H1: Large clock skew(LCS)                              0
+  * category  H2: Large clock uncertainty(LCU)                       0
+  * category  H3: Large hold time of end point(LLH)                  0
+  * category  H4: Large external output delay(LOD)                   0
+  * category  H5: Delay setting is illegal(ID)                       0
+  * category  H6: Conflict with setup at endpoint(CSE)               0
+  * category  H7: Path ends up at scan in pin(SIP)                   0
+  * category  H8: Small violations(SM)                               2     -0.000     -0.000  100.00%
+  * category  H9: Remaining violating paths(OT)                      0
+
+  ****** Remaining violations distributed by slack ******
+
+  ****** Net analysis categories ******
+
+### Following metrics will be used for net based analysis. ###
+  * category  H1: Entire net is dont_touch(D)                        0
+  * category  H2: Net between pad cell and port(PAD)                 0
+  * category  H3: Tristate nets(TR)                                  0
+  * category  H4: Nets with multiple drivers(MD)                     0
+  * category  H5: Nets in read-only sub blocks(RO)                   0
+  * category  H6: Nets are highly blocked(BLK)                       0
+  * category  H7: Nets with port far from the core area(FP)          0
+  * category  H8: Nets with setup violation(CS)                      0
+  * category  H9: Nets with max_trans violation(CT)                  0
+
+  ****** Clock network ******
+  * category  H10: Clock is used as clock only(COC)                  0
+  * category  H11: Clock is used as data path only(COD)              0
+  * category  H12: Clock is used as clock and data(CAD)              0
+  * category  H13: Clock is used as others(CO)                       0
+
+  ****** Remaining uncategorized fixable violations ******
+  * category  H14: Net is crossing high density area(DEN)            0
+  * category  H15: Net is partially blocked(PB)                      0
+  * category  H16: Connect to excluded cell of XMB(XME)              0
+  * category  H17: Connect to excluded cell of HMB(HME)              0
+  * category  H18: Nets across different exclusive MBs(DXM)          0
+  * category  H19: Nets across different hard MBs(DHM)               0
+  * category  H20: Some segments of net are dont_touch(PD)           0
+  * category  H21: High fanout nets(> 40)(HF)                        0
+  * category  H22: Nets crossing different voltage areas(MV)         0
+  * category  H23: Nets are too short(TS)                            0
+  * category  H24: Nets are long(> 400.0um)(LN)                      0
+  * category  H25: Net with new generated violation after fix(NEW)       0
+  * category  H26: Other violations(OV)                              0
+
+
+### Detailed analysis results ###
+
+***************************************************************************
+  # 1:EP-i_img2_jtag_pnp_jpnp_shift_reg_reg_0_/D, -0.000,(SM)
+  Startpoint: i_img2_jtag_pnp_jpnp_shift_reg_reg_1_/CP
+  Endpoint: i_img2_jtag_pnp_jpnp_shift_reg_reg_0_/D
+  Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Path Group: clock
+  Slack: -0.000,  Require Time: 0.040, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 2:EP-i_img2_jtag_pnp_jpnp_shift_reg_reg_33_/D, -0.000,(SM)
+  Startpoint: i_img2_jtag_pnp_jpnp_shift_reg_reg_34_/CP
+  Endpoint: i_img2_jtag_pnp_jpnp_shift_reg_reg_33_/D
+  Scenario: norm.ffgnp0p88vm40c.rcbest_CCbest
+  Path Group: clock
+  Slack: -0.000,  Require Time: 0.038, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******

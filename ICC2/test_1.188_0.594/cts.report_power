@@ -1,0 +1,72 @@
+****************************************
+Report : power
+        -significant_digits 4
+Design : img2_jtag_tap_wrap
+Version: P-2019.03-SP4
+Date   : Thu Nov 21 14:01:33 2024
+****************************************
+Warning: Power analysis is disabled for scenario 'norm.ffgnp0p88vm40c.rcbest_CCbest' as leakage/swcap/internal mode power app options can be off and/or leakage_power/dynamic_power scenario flags are set to false. (POW-009)
+Warning: Power analysis is disabled for scenario 'norm.ssgnp0p72v125c.rcworst_CCworst' as leakage/swcap/internal mode power app options can be off and/or leakage_power/dynamic_power scenario flags are set to false. (POW-009)
+Information: Doing activity propagation for mode 'norm.tt0p8v85c.typical_CCworst' and corner 'norm.tt0p8v85c.typical_CCworst' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario norm.tt0p8v85c.typical_CCworst (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 1: expecting at least 5
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 2: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 3: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 4: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 5: expecting at least 6
+Scenario norm.tt0p8v85c.typical_CCworst, iteration 6: expecting at least 6
+Mode: norm.tt0p8v85c.typical_CCworst
+Corner: norm.tt0p8v85c.typical_CCworst
+Scenario: norm.tt0p8v85c.typical_CCworst
+Voltage: 0.8000
+Temperature: 85.0000
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.0000 (default)
+VSS (ground) probability 1.0000 (default)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!77', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!78', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!79', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!80', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!81', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!82', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!83', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!84', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!85', mismatches in operating condition settings have been found in the design. (POW-039)
+Warning: While computing leakage for instance 'boundarycell!BOUNDARY_PROW4BWP16P90CPD!86', mismatches in operating condition settings have been found in the design. (POW-039)
+Note - message 'POW-039' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = N/A ( N/A )
+  Net Switching Power    = N/A ( N/A )
+Total Dynamic Power      = N/A (  0.0%)
+
+Cell Leakage Power       = 2.9816e+04 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+memory                         N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+black_box                      N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+clock_network                  N/A                    N/A             6.5279e+03             6.5279e+03    ( 21.9%)      
+register                       N/A                    N/A             6.3351e+03             6.3351e+03    ( 21.2%)      
+sequential                     N/A                    N/A             0.0000e+00             0.0000e+00    (  0.0%)      
+combinational                  N/A                    N/A             1.6953e+04             1.6953e+04    ( 56.9%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                          N/A                    N/A             2.9816e+04 nW          2.9816e+04 nW
+1
